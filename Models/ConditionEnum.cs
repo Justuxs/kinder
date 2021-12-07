@@ -6,6 +6,9 @@
         Near_mint,
         Very_good,
         Good,
-        Fair
+        Fair,
+        Poor,
+        Very_poor,
+        Broken
     }
 }

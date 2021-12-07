@@ -33,7 +33,7 @@ namespace kinder_app.Models
             str += ID.ToString() + ';';
             str += DateOfPurchase.ToString("yyyy-MM-dd") + ';';
             str += Condition.ToString() + ';';
-            str += Cathegory.ToString() + ';';
+            str += Category.ToString() + ';';
             str += UserID.ToString() + ';';
             str += Size.ToString() + ';';
             str += KarmaPoints.ToString() + ';';
@@ -50,14 +50,10 @@ namespace kinder_app.Models
         }
 
         public int ID { get; set; }
-
         public DateTime DateOfPurchase { get; set; }
-
         public ConditionEnum Condition { get; set; }
-        public CathegoryEnum Cathegory { get; set; }
-
+        public CategoryEnum Category { get; set; }
         public int UserID { get; set; }
-
         public int Length { get; set; }
         public int Height { get; set; }
         public int Width { get; set; }
@@ -79,9 +75,7 @@ namespace kinder_app.Models
         }
 
         public string Name { get; set; }
-
         public string Description { get; set; }
-
         public int KarmaPoints { get; set; }
     }
 

@@ -226,7 +226,7 @@ namespace kinder_app.Data.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("Cathegory")
+                    b.Property<int>("Category")
                         .HasColumnType("int");
 
                     b.Property<int>("Condition")

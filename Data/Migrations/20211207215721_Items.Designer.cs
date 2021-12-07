@@ -10,8 +10,8 @@ using kinder_app.Data;
 namespace kinder_app.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20211130215847_InitialItems")]
-    partial class InitialItems
+    [Migration("20211207215721_Items")]
+    partial class Items
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -228,7 +228,7 @@ namespace kinder_app.Data.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("Cathegory")
+                    b.Property<int>("Category")
                         .HasColumnType("int");
 
                     b.Property<int>("Condition")

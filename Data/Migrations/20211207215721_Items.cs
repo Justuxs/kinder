@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace kinder_app.Data.Migrations
 {
-    public partial class InitialItems : Migration
+    public partial class Items : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -15,7 +15,7 @@ namespace kinder_app.Data.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     DateOfPurchase = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Condition = table.Column<int>(type: "int", nullable: false),
-                    Cathegory = table.Column<int>(type: "int", nullable: false),
+                    Category = table.Column<int>(type: "int", nullable: false),
                     UserID = table.Column<int>(type: "int", nullable: false),
                     Length = table.Column<int>(type: "int", nullable: false),
                     Height = table.Column<int>(type: "int", nullable: false),
