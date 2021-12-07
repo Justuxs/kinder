@@ -11,5 +11,6 @@ namespace kinder_app.Data
         public string UserUsername { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
+        public int Karma_points { get; set; }
     }
 }

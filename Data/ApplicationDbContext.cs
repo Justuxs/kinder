@@ -29,6 +29,9 @@ namespace kinder_app.Data
             modelBuilder.Entity<ApplicationUser>()
                 .Property(e => e.Surname)
                 .HasMaxLength(250);
+            modelBuilder.Entity<ApplicationUser>()
+                .Property(e => e.Karma_points);
+                
         }
     }
 }
