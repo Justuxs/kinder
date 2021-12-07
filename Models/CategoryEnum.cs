@@ -1,6 +1,6 @@
 ﻿namespace kinder_app.Models
 {
-    public enum CathegoryEnum
+    public enum CategoryEnum
     {
         Furniture,
         Transport,

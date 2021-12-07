@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using kinder_app.Data;
 using kinder_app.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace kinder_app.Controllers
 {
@@ -44,6 +45,7 @@ namespace kinder_app.Controllers
         }
 
         // GET: Items/Create
+        [Authorize]
         public IActionResult Create()
         {
             return View();
@@ -52,9 +54,10 @@ namespace kinder_app.Controllers
         // POST: Items/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,DateOfPurchase,Condition,Cathegory,UserID,Length,Height,Width,Name,Description,KarmaPoints")] Item item)
+        public async Task<IActionResult> Create([Bind("ID,DateOfPurchase,Condition,Category,UserID,Length,Height,Width,Name,Description,KarmaPoints")] Item item)
         {
             if (ModelState.IsValid)
             {
@@ -66,6 +69,7 @@ namespace kinder_app.Controllers
         }
 
         // GET: Items/Edit/5
+        [Authorize]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -84,9 +88,10 @@ namespace kinder_app.Controllers
         // POST: Items/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,DateOfPurchase,Condition,Cathegory,UserID,Length,Height,Width,Name,Description,KarmaPoints")] Item item)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,DateOfPurchase,Condition,Category,UserID,Length,Height,Width,Name,Description,KarmaPoints")] Item item)
         {
             if (id != item.ID)
             {
@@ -117,6 +122,7 @@ namespace kinder_app.Controllers
         }
 
         // GET: Items/Delete/5
+        [Authorize]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -135,6 +141,7 @@ namespace kinder_app.Controllers
         }
 
         // POST: Items/Delete/5
+        [Authorize]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
