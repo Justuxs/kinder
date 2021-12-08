@@ -14,11 +14,11 @@ namespace kinder_app.Models
         public int Key { get; set; }
 
         //Item that is liked
-        [ForeignKey("Item")]
+        [ForeignKey("dbo.Item")]
         public int ItemID { get; set; }
 
         //User that likes item
-        [ForeignKey("AspNetUsers")]
+        [ForeignKey("dbo.AspNetUsers")]
         public string UserID { get; set; }
     }
 }

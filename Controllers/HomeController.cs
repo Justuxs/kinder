@@ -33,24 +33,31 @@ namespace kinder_app.Controllers
             var filteredLiked = likedList.Where(x => x.UserID == CurrentUserExtention.getUserID(this.User))
                                          .Select(x => x.ItemID);
 
-            itemList = itemList.Where(x => !alreadyLiked.Contains(x.ID)).Where(x => !filteredLiked.Contains(x.ID));
+            itemList = itemList.Where(x => !filteredLiked.Contains(x.ID));
            
             if (current == itemList.Count())
             {
                 current = 0;
             }
 
-            TempData["name"] = itemList.ToList()[current].Name;
-            TempData["cat"] = itemList.ToList()[current].Category;
-            TempData["cond"] = itemList.ToList()[current].Condition;
-            TempData["desc"] = itemList.ToList()[current].Description;
-            TempData["size"] = itemList.ToList()[current].Size.ToString();
-            TempData["date"] = itemList.ToList()[current].DateOfPurchase.ToString("yyyy-mm-dd");
-            TempData["karma"] = itemList.ToList()[current].KarmaPoints;
+            if (itemList.Count() > 0)
+            {
+                TempData["name"] = itemList.ToList()[current].Name;
+                TempData["cat"] = itemList.ToList()[current].Category;
+                TempData["cond"] = itemList.ToList()[current].Condition;
+                TempData["desc"] = itemList.ToList()[current].Description;
+                TempData["size"] = itemList.ToList()[current].Size.ToString();
+                TempData["date"] = itemList.ToList()[current].DateOfPurchase.ToString("yyyy-mm-dd");
+                TempData["karma"] = itemList.ToList()[current].KarmaPoints;
 
-            currentID = itemList.ToList()[current].ID;
+                currentID = itemList.ToList()[current].ID; 
+            }
+            else
+            {
+                TempData["name"] = "no";
+            }
 
-            return View(itemList.ToList()[current]);
+            return View();
         }
 
         public IActionResult loadNext()
@@ -67,7 +74,7 @@ namespace kinder_app.Controllers
 
             alreadyLiked.Add(0 + currentID);
 
-            //inserting?????
+            //REQ: Insert
             _db.Entry(liked).State = EntityState.Added;
             _db.SaveChanges();
 
