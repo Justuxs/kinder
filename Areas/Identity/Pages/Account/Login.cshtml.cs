@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using kinder_app.Data;
+using kinder_app.Models;
 
 namespace kinder_app.Areas.Identity.Pages.Account
 {

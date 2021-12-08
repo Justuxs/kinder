@@ -1,5 +1,6 @@
 ﻿using System.Threading.Tasks;
 using kinder_app.Data;
+using kinder_app.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
