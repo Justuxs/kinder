@@ -267,7 +267,7 @@ namespace kinder_app.Data.Migrations
                     b.ToTable("Item");
                 });
 
-            modelBuilder.Entity("kinder_app.Data.ApplicationUser", b =>
+            modelBuilder.Entity("kinder_app.Models.ApplicationUser", b =>
                 {
                     b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
 
@@ -279,10 +279,6 @@ namespace kinder_app.Data.Migrations
                         .HasColumnType("nvarchar(250)");
 
                     b.Property<string>("Surname")
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
-
-                    b.Property<string>("UserUsername")
                         .HasMaxLength(250)
                         .HasColumnType("nvarchar(250)");
 

@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using kinder_app.Data;
+using kinder_app.Models;
 
 namespace kinder_app.Areas.Identity.Pages.Account.Manage
 {

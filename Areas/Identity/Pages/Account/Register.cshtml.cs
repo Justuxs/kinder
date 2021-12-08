@@ -6,6 +6,7 @@ using System.Text;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
 using kinder_app.Data;
+using kinder_app.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -92,7 +93,7 @@ namespace kinder_app.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = Input.Username, Email = Input.Email, Name = Input.Name, Surname = Input.Surname, UserUsername = Input.Username, Karma_points = 0 };
+                var user = new ApplicationUser { UserName = Input.Username, Email = Input.Email, Name = Input.Name, Surname = Input.Surname, Karma_points = 0 };
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
                 {

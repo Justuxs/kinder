@@ -1,0 +1,55 @@
+﻿@using kinder_app.Models;
+@model IEnumerable<kinder_app.Models.ApplicationUser>
+@{
+    ViewData["Title"] = "Index";
+}
+<div>
+    <table class="table table-striped border">
+        <tr class="table-info">
+            <th>
+                Place
+            </th>
+            <th>
+                Username
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Karma Points
+            </th>
+        </tr>
+
+        @foreach (var user in Model)
+        {
+            var index = Model.ToList().IndexOf(user) + 1;
+            
+            <tr>
+                
+                <td>
+                    @index
+                </td>
+                <td>
+                    @user.UserName
+                </td>
+                <td>
+                    @user.Name
+                </td>
+                <td>
+                    @user.Karma_points
+                </td>
+            </tr>
+        }
+    </table>
+</div>
+<style type="text/css">
+    .first{
+        background-color:gold;
+    }
+    .second{
+        background-color:silver;
+    }
+    .third {
+        background-color: #CD7F32;
+    }
+</style>
