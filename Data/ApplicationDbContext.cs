@@ -14,5 +14,7 @@ namespace kinder_app.Data
         {
         }
         public DbSet<kinder_app.Models.Item> Item { get; set; }
+        public DbSet<kinder_app.Models.LikedItems> LikedItems { get; set; }
+                
     }
 }

@@ -59,7 +59,7 @@ namespace kinder_app.Models
         public int Width { get; set; }
 
         [NotMapped]
-        private Dimensions Size 
+        public Dimensions Size 
         { 
             get 
             { 
