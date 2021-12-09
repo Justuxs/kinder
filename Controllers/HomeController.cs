@@ -30,7 +30,7 @@ namespace kinder_app.Controllers
             IEnumerable<Item> itemList = _db.Item;
             IEnumerable<LikedItems> likedList = _db.LikedItems;
 
-            var filteredLiked = likedList.Where(x => x.UserID == CurrentUserExtention.getUserID(this.User))
+            var filteredLiked = likedList.Where(x => x.UserID == CurrentUserExtention.GetUserID(this.User))
                                          .Select(x => x.ItemID);
 
             itemList = itemList.Where(x => !filteredLiked.Contains(x.ID));
@@ -60,17 +60,17 @@ namespace kinder_app.Controllers
             return View();
         }
 
-        public IActionResult loadNext()
+        public IActionResult LoadNext()
         {
             current++;
             return RedirectToAction("index");
         }
 
-        public IActionResult likeThis()
+        public IActionResult LikeThis()
         {
             LikedItems liked = new();
             liked.ItemID = currentID;
-            liked.UserID = CurrentUserExtention.getUserID(this.User);
+            liked.UserID = CurrentUserExtention.GetUserID(this.User);
 
             alreadyLiked.Add(0 + currentID);
 

@@ -8,7 +8,7 @@ namespace kinder_app.Models
 {
     public static class CurrentUserExtention
     {
-        public static string getUserID(this ClaimsPrincipal user)
+        public static string GetUserID(this ClaimsPrincipal user)
         {
             if (!user.Identity.IsAuthenticated)
                 return null;
