@@ -2,31 +2,20 @@
 <div class="text-center">
 
     <h1 class="display-4">Swiping</h1>
+        
+    <p><b>Item name:</b> @TempData["name"]</p>
 
-    <p>Item name:</p>
-    @TempData["name"]
+    <p><b>Category:</b> @TempData["cat"]</p>
 
-    <p>Category:</p>
-    @TempData["cat"]
+    <p><b>Condition:</b> @TempData["cond"]</p>
 
-    <p>Condition:</p>
-    @TempData["cond"]
+    <p><b>Description:</b> @TempData["desc"]</p>
 
-    <p>Description:</p>
-    @TempData["desc"]
+    <p><b>Size:</b> @TempData["size"]</p>
 
-    <p>Size:</p>
-    @TempData["size"]
+    <p><b>Date of purchase:</b> @TempData["date"]</p>
 
-    <p>Date of purchase:</p>
-    @TempData["date"]
-
-    <p>KarmaPrice:</p>
-    @TempData["karma"]
-
-    <br />
-    @TempData["user"]
-
+    <p><b>Karma Points:</b> @TempData["karma"]</p>
 
     <form>
         <button type="submit" name="button" value="Next" asp-action="loadNext" class="btn btn-primary">Next</button>

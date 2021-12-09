@@ -47,7 +47,7 @@ namespace kinder_app.Controllers
                 TempData["cond"] = itemList.ToList()[current].Condition;
                 TempData["desc"] = itemList.ToList()[current].Description;
                 TempData["size"] = itemList.ToList()[current].Size.ToString();
-                TempData["date"] = itemList.ToList()[current].DateOfPurchase.ToString("yyyy-mm-dd");
+                TempData["date"] = itemList.ToList()[current].DateOfPurchase.ToString("yyyy-MM-dd");
                 TempData["karma"] = itemList.ToList()[current].KarmaPoints;
 
                 currentID = itemList.ToList()[current].ID; 
