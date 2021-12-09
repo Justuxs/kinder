@@ -1,24 +1,27 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
-
+﻿
 <div class="text-center">
+
     <h1 class="display-4">Swiping</h1>
-    <p>Item:</p>
-    <p>Category:</p>
-    <select class="combo" name="CategoryCombo">
-        <option value="Select">Select....</option>
-        <option value="Furniture">Furniture</option>
-        <option value="Transport">Transport</option>
-        <option value="Technology">Technology</option>
-        <option value="Education">Education</option>
-        <option value="Other">Other</option>
-    </select>
-    <p>Condition:</p>
-    <p>Description:</p>
-    <p>Size:</p>
-    <p>Date of purchase:</p>
-    <p>KarmaPrice:</p>
-    <input type="button" value="Next" class="btn btn-primary">
-    <input type="button" value="Like it" class="btn btn-primary">
+        
+    <p><b>Item name:</b> @TempData["name"]</p>
+
+    <p><b>Category:</b> @TempData["cat"]</p>
+
+    <p><b>Condition:</b> @TempData["cond"]</p>
+
+    <p><b>Description:</b> @TempData["desc"]</p>
+
+    <p><b>Size:</b> @TempData["size"]</p>
+
+    <p><b>Date of purchase:</b> @TempData["date"]</p>
+
+    <p><b>Karma Points:</b> @TempData["karma"]</p>
+
+    <form>
+        <button type="submit" name="button" value="Next" asp-action="LoadNext" class="btn btn-primary">Next</button>
+        <button type="submit" name="button" value="Like" asp-action="LikeThis" class="btn btn-primary">Like</button>
+    </form>
+
+    <p></p>
+
 </div>
