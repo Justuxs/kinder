@@ -6,6 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Identity;
+using System.Collections;
 
 namespace kinder_app.Models
 {
@@ -53,7 +54,7 @@ namespace kinder_app.Models
         public DateTime DateOfPurchase { get; set; }
         public ConditionEnum Condition { get; set; }
         public CategoryEnum Category { get; set; }
-        public int UserID { get; set; }
+        public string UserID { get; set; }
         public int Length { get; set; }
         public int Height { get; set; }
         public int Width { get; set; }
