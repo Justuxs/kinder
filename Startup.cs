@@ -18,6 +18,8 @@ using Serilog;
 using kinder_app.Middleware;
 using Autofac.Extensions.DependencyInjection;
 using Autofac;
+using kinder_app.Controllers;
+using kinder_app.Aspects;
 
 namespace kinder_app
 {
