@@ -26,10 +26,23 @@ namespace kinder_app.Middleware
         public async Task InvokeAsync(HttpContext context)
         {
             // REQUIREMENT: logging 2
-            _logger.Information($"Request URL: {UriHelper.GetDisplayUrl(context.Request)}");
-            _logger.Information($"Response Status: {context.Response.StatusCode}");
-
-            await this._next(context);
+            try
+            {
+                await _next(context);
+            }
+            catch (Exception e)
+            {
+                _logger.Error("Encountered error: {message} \n Stack trace: {trace}", e.Message, e.StackTrace);
+                throw;
+            }
+            finally
+            {
+                _logger.Information("User {name} requested {url} (status: {statusCode})",
+                                    context.User.Identity.Name,
+                                    context.Request.Path.Value,
+                                    context.Response.StatusCode
+                                    );
+            }
         }
 
     }
