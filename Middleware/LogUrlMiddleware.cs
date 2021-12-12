@@ -26,7 +26,8 @@ namespace kinder_app.Middleware
         public async Task InvokeAsync(HttpContext context)
         {
             // REQUIREMENT: logging 2
-            _logger.Information($"Request URL: {Microsoft.AspNetCore.Http.Extensions.UriHelper.GetDisplayUrl(context.Request)}");
+            _logger.Information($"Request URL: {UriHelper.GetDisplayUrl(context.Request)}");
+            _logger.Information($"Response Status: {context.Response.StatusCode}");
 
             await this._next(context);
         }
