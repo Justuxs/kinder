@@ -22,7 +22,7 @@ namespace kinder_app.Controllers
         }
 
         [LogAspect]
-        private int AggregateSuming(List<ItemDTO> items)
+        private int AggregateSuming(List<ItemDTO> items, int someting=1)
         {
             //REQUIREMENT: aggregate
             return items.Select(x => x.KarmaPoints).Aggregate((a, b) => a + b);
