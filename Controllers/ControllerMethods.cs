@@ -73,7 +73,7 @@ namespace kinder_app.Controllers
         }
 
         public static List<TransferModel> LikedModelList
-            (ApplicationDbContext context, string userID,
+            (string userID,
             List<Item> items, List<LikedItems> likedItems, List<IdentityUser> users)
         {
             //REQUIREMENT: join
@@ -122,7 +122,7 @@ namespace kinder_app.Controllers
 
         public static void GiveItem(ApplicationDbContext context, string userID, int? id)
         {
-            var uniqueItem = LikedModelList(context, userID,
+            var uniqueItem = LikedModelList(userID,
                 context.Item.ToList(),context.LikedItems.ToList(), context.Users.ToList())
                 .FirstOrDefault(m => m.UniqID == id);
 
