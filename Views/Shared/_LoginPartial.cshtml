@@ -2,12 +2,32 @@
 @using kinder_app.Data;
 @inject SignInManager<ApplicationUser> SignInManager
 @inject UserManager<ApplicationUser> UserManager
+@inject ApplicationDbContext context
+
+@functions{
+    public int GetKarma()
+    {
+        if (!User.Identity.IsAuthenticated)
+            return 0;
+        else
+        {
+            string id = UserManager.GetUserId(User);
+
+            return context.ApplicationUsers
+                .FirstOrDefault(m => m.Id == id).Karma_points;
+        }
+
+    }
+}
 
 <ul class="navbar-nav">
     @if (SignInManager.IsSignedIn(User))
     {
         <li class="nav-item">
             <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @User.Identity.Name!</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage"> <i>You have @GetKarma() karma</i></a>
         </li>
         <li class="nav-item">
             <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">

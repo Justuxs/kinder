@@ -20,9 +20,9 @@ namespace kinder_app.Controllers
         }
 
         // GET: TakeItems
-        public async Task<IActionResult> Index()
-        {
-            return View(await _context.Item.Where(x => x.GivenTo == User.GetUserID()).ToListAsync());
+        public IActionResult Index()
+        { 
+            return View(ControllerMethods.GetGivenItems(User.GetUserID(), _context));
         }
 
         // GET: TakeItems/Details/5
@@ -51,10 +51,9 @@ namespace kinder_app.Controllers
                 return NotFound();
             }
 
-            var item = await _context.Item.FindAsync(id);
+            var item = ControllerMethods.GetItem((int)id, _context);
 
-            var user = await _context.ApplicationUsers
-                .FirstOrDefaultAsync(m => m.Id == item.UserID);
+            var user = ControllerMethods.GetUser((int)id, item, _context);
 
             var liked = _context.LikedItems.FirstOrDefault(m => m.ItemID == item.ID);
             _context.LikedItems.Remove(liked);
@@ -71,9 +70,7 @@ namespace kinder_app.Controllers
 
             _context.Item.Remove(item);
             await _context.SaveChangesAsync();
-
-            
-
+                 
             return RedirectToAction("index");
         }
     }
