@@ -35,6 +35,8 @@ namespace kinder_app.Controllers
             var users = from s in _context.ApplicationUsers
                         select s;
             users = users.OrderByDescending(s => s.Karma_points);
+
+            //REQUIREMENT: take
             return View(await users.AsNoTracking().Take(10).ToListAsync());
         }
 

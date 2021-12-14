@@ -1,21 +1,14 @@
-﻿@model IEnumerable<kinder_app.Models.ItemDTO>
+﻿@model IEnumerable<kinder_app.Models.Item>
 
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>Your items</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+<h1>You can take these items:</h1>
+<br />
 <table class="table">
-
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.ID)
-            </th>
             <th>
                 @Html.DisplayNameFor(model => model.Name)
             </th>
@@ -25,16 +18,15 @@
             <th>
                 @Html.DisplayNameFor(model => model.KarmaPoints)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GivenTo)
+            </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model)
-        {
+@foreach (var item in Model) {
         <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.ID)
-            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
@@ -45,19 +37,13 @@
                 @Html.DisplayFor(modelItem => item.KarmaPoints)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                @Html.DisplayFor(modelItem => item.GivenTo)
+            </td>
+            <td>
+                <a asp-action="Take" asp-route-id="@item.ID">Take</a> |
                 <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
             </td>
         </tr>
-        }
-        <tr>            
-            <td></td>
-            <td></td>
-            <td style="text-align: right"><i>Total karma posted: </i></td>
-            <td><i>@TempData["sum"]</i></td>
-            <td></td>            
-        </tr>
-
+}
     </tbody>
 </table>
