@@ -46,5 +46,21 @@ namespace kinder_app.Models
         {
             return this.GetEnumerator();
         }
+
+        public override string ToString()
+        {
+            string str = "";
+
+            str += ID.ToString() + ';';
+            str += DateOfPurchase.ToString("yyyy-MM-dd") + ';';
+            str += Condition.ToString() + ';';
+            str += Category.ToString() + ';';
+            str += Size.ToString() + ';';
+            str += KarmaPoints.ToString() + ';';
+            str += Name.ToString() + ';';
+            str += Description.ToString();
+
+            return str;
+        }
     }
 }

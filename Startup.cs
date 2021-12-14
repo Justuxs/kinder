@@ -14,6 +14,12 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Http;
 using kinder_app.Models;
+using Serilog;
+using kinder_app.Middleware;
+using Autofac.Extensions.DependencyInjection;
+using Autofac;
+using kinder_app.Controllers;
+using kinder_app.Aspects;
 
 namespace kinder_app
 {
@@ -25,10 +31,16 @@ namespace kinder_app
         }
 
         public IConfiguration Configuration { get; }
+        public ILifetimeScope AutofacContainer { get; private set; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //REQUIREMENT: logging 1
+            Log.Logger = new LoggerConfiguration()
+                .WriteTo.File("log-.txt", rollingInterval: RollingInterval.Day)
+                .CreateLogger();
+
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
@@ -37,7 +49,9 @@ namespace kinder_app
 
             services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = false)
               .AddEntityFrameworkStores<ApplicationDbContext>();
+
             services.AddControllersWithViews();
+            services.AddSingleton(x => Log.Logger);
 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
         }
@@ -56,10 +70,17 @@ namespace kinder_app
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
+            this.AutofacContainer = app.ApplicationServices.GetAutofacRoot();
+
+            //REQUIREMENT: middleware 1
+            app.UseMiddleware<LogUrlMiddleware>();
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
             app.UseRouting();
+            
 
             app.UseAuthentication();
             app.UseAuthorization();

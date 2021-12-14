@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using kinder_app.Data;
 using kinder_app.Models;
 using Microsoft.AspNetCore.Authorization;
+using kinder_app.Aspects;
 
 namespace kinder_app.Controllers
 {
@@ -20,12 +21,14 @@ namespace kinder_app.Controllers
             _context = context;
         }
 
-        private int AggregateSuming(List<ItemDTO> items)
+        [LogAspect]
+        private int AggregateSuming(List<ItemDTO> items, int someting=1)
         {
             //REQUIREMENT: aggregate
             return items.Select(x => x.KarmaPoints).Aggregate((a, b) => a + b);
         }
 
+        
         public async Task<IActionResult> Index()
         {
             //REQUIREMENT: select

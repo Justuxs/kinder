@@ -1,0 +1,135 @@
+2021-12-14 00:50:43.059 +02:00 [INF] User null requested / (status: 200)
+2021-12-14 00:50:43.250 +02:00 [INF] User null requested /js/site.js (status: 200)
+2021-12-14 00:50:43.250 +02:00 [INF] User null requested /css/site.css (status: 200)
+2021-12-14 00:50:43.302 +02:00 [INF] User null requested /lib/jquery/dist/jquery.min.js (status: 200)
+2021-12-14 00:50:43.302 +02:00 [INF] User null requested /lib/bootstrap/dist/css/bootstrap.min.css (status: 200)
+2021-12-14 00:50:43.302 +02:00 [INF] User null requested /lib/bootstrap/dist/js/bootstrap.bundle.min.js (status: 200)
+2021-12-14 00:50:43.333 +02:00 [INF] User null requested /favicon.ico (status: 200)
+2021-12-14 00:50:46.048 +02:00 [INF] User null requested /Identity/Account/Login (status: 200)
+2021-12-14 00:50:49.285 +02:00 [INF] User null requested /Identity/Account/Login (status: 302)
+2021-12-14 00:50:49.326 +02:00 [INF] User a requested / (status: 200)
+2021-12-14 00:50:50.801 +02:00 [INF] Calling "AggregateSuming" method
+2021-12-14 00:50:50.801 +02:00 [INF] Arguments: 
+2021-12-14 00:50:50.823 +02:00 [INF] User a requested /Items (status: 200)
+2021-12-14 00:52:11.889 +02:00 [INF] User null requested / (status: 200)
+2021-12-14 00:52:12.078 +02:00 [INF] User null requested /lib/bootstrap/dist/js/bootstrap.bundle.min.js (status: 200)
+2021-12-14 00:52:12.078 +02:00 [INF] User null requested /lib/bootstrap/dist/css/bootstrap.min.css (status: 200)
+2021-12-14 00:52:12.078 +02:00 [INF] User null requested /css/site.css (status: 200)
+2021-12-14 00:52:12.078 +02:00 [INF] User null requested /lib/jquery/dist/jquery.min.js (status: 200)
+2021-12-14 00:52:12.078 +02:00 [INF] User null requested /js/site.js (status: 200)
+2021-12-14 00:52:12.122 +02:00 [INF] User null requested /favicon.ico (status: 200)
+2021-12-14 00:52:13.387 +02:00 [INF] User null requested /Identity/Account/Login (status: 200)
+2021-12-14 00:52:16.297 +02:00 [INF] User null requested /Identity/Account/Login (status: 302)
+2021-12-14 00:52:16.351 +02:00 [INF] User a requested / (status: 200)
+2021-12-14 00:52:17.382 +02:00 [INF] Calling "AggregateSuming" method
+2021-12-14 00:52:17.382 +02:00 [INF] Arguments: 
+2021-12-14 00:52:17.405 +02:00 [INF] User a requested /Items (status: 200)
+2021-12-14 00:53:34.189 +02:00 [INF] User a requested / (status: 200)
+2021-12-14 00:53:34.372 +02:00 [INF] User null requested /js/site.js (status: 304)
+2021-12-14 00:53:34.372 +02:00 [INF] User null requested /lib/jquery/dist/jquery.min.js (status: 304)
+2021-12-14 00:53:34.372 +02:00 [INF] User null requested /css/site.css (status: 304)
+2021-12-14 00:53:34.372 +02:00 [INF] User null requested /lib/bootstrap/dist/js/bootstrap.bundle.min.js (status: 304)
+2021-12-14 00:53:34.381 +02:00 [INF] User null requested /lib/bootstrap/dist/css/bootstrap.min.css (status: 200)
+2021-12-14 00:53:34.423 +02:00 [INF] User null requested /favicon.ico (status: 200)
+2021-12-14 00:53:36.172 +02:00 [INF] Calling "AggregateSuming" method
+2021-12-14 00:53:36.172 +02:00 [INF] Arguments: System.Collections.Generic.List`1[kinder_app.Models.ItemDTO] | 
+2021-12-14 00:53:36.199 +02:00 [INF] User a requested /Items (status: 200)
+2021-12-14 00:55:11.241 +02:00 [INF] User a requested / (status: 200)
+2021-12-14 00:55:11.403 +02:00 [INF] User null requested /css/site.css (status: 200)
+2021-12-14 00:55:11.403 +02:00 [INF] User null requested /lib/bootstrap/dist/css/bootstrap.min.css (status: 200)
+2021-12-14 00:55:11.403 +02:00 [INF] User null requested /js/site.js (status: 200)
+2021-12-14 00:55:11.441 +02:00 [INF] User null requested /favicon.ico (status: 200)
+2021-12-14 00:55:13.675 +02:00 [INF] Calling "AggregateSuming" method
+2021-12-14 00:55:13.675 +02:00 [INF] Arguments: System.Collections.Generic.List`1[kinder_app.Models.ItemDTO]
+2021-12-14 00:55:13.705 +02:00 [INF] User a requested /Items (status: 200)
+2021-12-14 00:56:59.977 +02:00 [INF] User a requested / (status: 200)
+2021-12-14 00:57:00.175 +02:00 [INF] User null requested /lib/jquery/dist/jquery.min.js (status: 304)
+2021-12-14 00:57:00.175 +02:00 [INF] User null requested /lib/bootstrap/dist/js/bootstrap.bundle.min.js (status: 304)
+2021-12-14 00:57:00.184 +02:00 [INF] User null requested /css/site.css (status: 200)
+2021-12-14 00:57:00.184 +02:00 [INF] User null requested /js/site.js (status: 200)
+2021-12-14 00:57:00.198 +02:00 [INF] User null requested /lib/bootstrap/dist/css/bootstrap.min.css (status: 200)
+2021-12-14 00:57:00.239 +02:00 [INF] User null requested /favicon.ico (status: 200)
+2021-12-14 00:57:01.496 +02:00 [INF] Calling "AggregateSuming" method
+2021-12-14 00:57:01.496 +02:00 [INF] Arguments: System.Collections.Generic.List`1[kinder_app.Models.ItemDTO],1
+2021-12-14 00:57:01.526 +02:00 [INF] User a requested /Items (status: 200)
+2021-12-14 01:13:06.660 +02:00 [INF] User a requested / (status: 200)
+2021-12-14 01:13:06.845 +02:00 [INF] User null requested /lib/jquery/dist/jquery.min.js (status: 304)
+2021-12-14 01:13:06.845 +02:00 [INF] User null requested /lib/bootstrap/dist/js/bootstrap.bundle.min.js (status: 304)
+2021-12-14 01:13:06.852 +02:00 [INF] User null requested /css/site.css (status: 200)
+2021-12-14 01:13:06.852 +02:00 [INF] User null requested /js/site.js (status: 200)
+2021-12-14 01:13:06.882 +02:00 [INF] User null requested /lib/bootstrap/dist/css/bootstrap.min.css (status: 200)
+2021-12-14 01:13:06.909 +02:00 [INF] User null requested /favicon.ico (status: 200)
+2021-12-14 01:13:12.332 +02:00 [INF] Calling "AggregateSuming" method
+2021-12-14 01:13:12.564 +02:00 [ERR] Encountered error: Unable to cast object of type 'System.Collections.Generic.List`1[kinder_app.Models.ItemDTO]' to type 'System.Collections.Generic.List`1[System.Object]'. 
+ Stack trace:    at kinder_app.Aspects.LogAspect.LogEnter(String name, Object[] args) in C:\Users\PC\Desktop\another_kinder\kinder\Aspects\LogAspect.cs:line 28
+   at kinder_app.Controllers.ItemsController.AggregateSuming(List`1 items, Int32 someting)
+   at kinder_app.Controllers.ItemsController.Index() in C:\Users\PC\Desktop\another_kinder\kinder\Controllers\ItemsController.cs:line 52
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at kinder_app.Middleware.LogUrlMiddleware.InvokeAsync(HttpContext context) in C:\Users\PC\Desktop\another_kinder\kinder\Middleware\LogUrlMiddleware.cs:line 31
+2021-12-14 01:13:12.651 +02:00 [INF] User a requested /Items (status: 200)
+2021-12-14 01:16:50.090 +02:00 [INF] User a requested / (status: 200)
+2021-12-14 01:16:50.266 +02:00 [INF] User null requested /lib/bootstrap/dist/css/bootstrap.min.css (status: 200)
+2021-12-14 01:16:50.266 +02:00 [INF] User null requested /css/site.css (status: 200)
+2021-12-14 01:16:50.266 +02:00 [INF] User null requested /js/site.js (status: 200)
+2021-12-14 01:16:50.302 +02:00 [INF] User null requested /favicon.ico (status: 200)
+2021-12-14 01:16:52.119 +02:00 [INF] Calling "AggregateSuming" method
+2021-12-14 01:16:52.119 +02:00 [INF] Arguments: System.Collections.Generic.List`1[kinder_app.Models.ItemDTO]| 1| 
+2021-12-14 01:16:52.148 +02:00 [INF] User a requested /Items (status: 200)
+2021-12-14 01:17:35.360 +02:00 [INF] User a requested / (status: 200)
+2021-12-14 01:17:35.527 +02:00 [INF] User null requested /lib/jquery/dist/jquery.min.js (status: 304)
+2021-12-14 01:17:35.527 +02:00 [INF] User null requested /lib/bootstrap/dist/js/bootstrap.bundle.min.js (status: 304)
+2021-12-14 01:17:35.536 +02:00 [INF] User null requested /css/site.css (status: 200)
+2021-12-14 01:17:35.549 +02:00 [INF] User null requested /lib/bootstrap/dist/css/bootstrap.min.css (status: 200)
+2021-12-14 01:17:35.578 +02:00 [INF] User null requested /favicon.ico (status: 200)
+2021-12-14 01:18:01.977 +02:00 [INF] Calling "AggregateSuming" method
+2021-12-14 01:18:01.977 +02:00 [INF] Arguments: System.Collections.Generic.List`1[kinder_app.Models.ItemDTO]| 1| 
+2021-12-14 01:18:02.006 +02:00 [INF] User a requested /Items (status: 200)
+2021-12-14 01:18:37.264 +02:00 [INF] User a requested / (status: 200)
+2021-12-14 01:18:37.477 +02:00 [INF] User null requested /favicon.ico (status: 200)
+2021-12-14 01:18:38.717 +02:00 [INF] Calling "AggregateSuming" method
+2021-12-14 01:18:38.717 +02:00 [INF] Arguments: System.Collections.Generic.List`1[kinder_app.Models.ItemDTO]| 1| 
+2021-12-14 01:18:38.745 +02:00 [INF] User a requested /Items (status: 200)
+2021-12-14 01:19:52.552 +02:00 [INF] User a requested / (status: 200)
+2021-12-14 01:19:52.730 +02:00 [INF] User null requested /lib/bootstrap/dist/css/bootstrap.min.css (status: 200)
+2021-12-14 01:19:52.771 +02:00 [INF] User null requested /favicon.ico (status: 200)
+2021-12-14 01:19:54.199 +02:00 [INF] Calling "AggregateSuming" method
+2021-12-14 01:19:54.199 +02:00 [INF] Arguments: kinder_app.Models.ItemDTO; kinder_app.Models.ItemDTO; * 1| 
+2021-12-14 01:19:54.228 +02:00 [INF] User a requested /Items (status: 200)
+2021-12-14 01:21:25.165 +02:00 [INF] User a requested / (status: 200)
+2021-12-14 01:21:25.343 +02:00 [INF] User null requested /css/site.css (status: 200)
+2021-12-14 01:21:25.343 +02:00 [INF] User null requested /lib/bootstrap/dist/css/bootstrap.min.css (status: 200)
+2021-12-14 01:21:25.352 +02:00 [INF] User null requested /js/site.js (status: 200)
+2021-12-14 01:21:25.387 +02:00 [INF] User null requested /favicon.ico (status: 200)
+2021-12-14 01:21:26.419 +02:00 [INF] Calling "AggregateSuming" method
+2021-12-14 01:21:46.903 +02:00 [INF] User a requested / (status: 200)
+2021-12-14 01:21:47.074 +02:00 [INF] User null requested /lib/bootstrap/dist/css/bootstrap.min.css (status: 200)
+2021-12-14 01:21:47.074 +02:00 [INF] User null requested /css/site.css (status: 200)
+2021-12-14 01:21:47.074 +02:00 [INF] User null requested /js/site.js (status: 200)
+2021-12-14 01:21:47.129 +02:00 [INF] User null requested /favicon.ico (status: 200)
+2021-12-14 01:21:47.993 +02:00 [INF] Calling "AggregateSuming" method
+2021-12-14 01:21:47.998 +02:00 [INF] Arguments: 2;2021-12-21;Near_mint;Technology;12,14,15;12;Crowbar;sturdy, straight from black mesa east; 4;2021-12-22;Near_mint;Technology;11,15,10;7;Helmet;Helmet worn by one and only Master Chief; * 1| 
+2021-12-14 01:21:48.026 +02:00 [INF] User a requested /Items (status: 200)
+2021-12-14 01:40:13.519 +02:00 [INF] User a requested / (status: 200)
+2021-12-14 01:40:13.709 +02:00 [INF] User null requested /css/site.css (status: 304)
+2021-12-14 01:40:13.709 +02:00 [INF] User null requested /lib/bootstrap/dist/js/bootstrap.bundle.min.js (status: 304)
+2021-12-14 01:40:13.709 +02:00 [INF] User null requested /lib/jquery/dist/jquery.min.js (status: 304)
+2021-12-14 01:40:13.719 +02:00 [INF] User null requested /js/site.js (status: 200)
+2021-12-14 01:40:13.728 +02:00 [INF] User null requested /lib/bootstrap/dist/css/bootstrap.min.css (status: 200)
+2021-12-14 01:40:13.760 +02:00 [INF] User null requested /favicon.ico (status: 200)
+2021-12-14 01:40:24.327 +02:00 [INF] Calling "AggregateSuming" method
+2021-12-14 01:40:24.333 +02:00 [INF] Arguments: 2;2021-12-21;Near_mint;Technology;12,14,15;12;Crowbar;sturdy, straight from black mesa east;  4;2021-12-22;Near_mint;Technology;11,15,10;7;Helmet;Helmet worn by one and only Master Chief;  | 1| 
+2021-12-14 01:40:24.335 +02:00 [INF] Return: 19| 
+2021-12-14 01:40:24.361 +02:00 [INF] User a requested /Items (status: 200)
