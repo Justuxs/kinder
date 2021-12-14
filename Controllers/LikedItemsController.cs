@@ -39,83 +39,25 @@ namespace kinder_app.Controllers
             _context = context;
         }
 
-        public List<TransferModel> ModelList()
-        {
-            //TODO: separate methods
-            List<Item> items = _context.Item.ToList();
-            List<LikedItems> likedItems = _context.LikedItems.ToList();
-            List<IdentityUser> users = _context.Users.ToList();
-
-            //REQUIREMENT: join
-            var join = likedItems.Where(x => x.UserID != User.GetUserID())
-                            .Join(
-                            items,
-                            liked => liked.ItemID,
-                            item => item.ID,
-                            (liked, item) => new
-                            {
-                                ItemID = item.ID,
-                                ItemName = item.Name,
-                                ItemDesc = item.Description,
-                                UserID = liked.UserID,
-                                ItemBelong = item.UserID
-                            });
-
-            var join2 = join.Where(x => x.ItemBelong == User.GetUserID())
-                .Join(
-                users,
-                item => item.UserID,
-                user => user.Id,
-                (item, user) => new
-                {
-                    ItemID = item.ItemID,
-                    ItemName = item.ItemName,
-                    ItemDesc = item.ItemDesc,
-                    UserID = user.Id,
-                    UserEmail = user.Email
-                });
-
-            List<TransferModel> result = new();
-            int i = 0;
-
-            foreach (var elem in join2)
-            {
-                TransferModel temp = new
-                    (elem.ItemID, elem.ItemName, elem.ItemDesc, elem.UserEmail, i);
-
-                i++;
-                result.Add(temp);
-            }
-
-            return result;
-        }
-
         // GET: LikedItems
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-            return View(ModelList());
+            return View(
+                ControllerMethods
+                .LikedModelList
+                (_context, CurrentUserExtention.GetUserID(this.User),
+                _context.Item.ToList(), _context.LikedItems.ToList(), _context.Users.ToList()));
         }
 
         // GET: LikedItems/Edit/5
-        public async Task<IActionResult> Give(int? id)
+        public IActionResult Give(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var uniqueItem = ModelList()
-                .FirstOrDefault(m => m.UniqID == id);
-
-            var item = await _context.Item
-                .FirstOrDefaultAsync(m => m.ID == uniqueItem.ItemID);
-
-            var user = await _context.Users
-                .FirstOrDefaultAsync(m => m.Email == uniqueItem.UserEmail);
-
-            item.GivenTo = user.Id;
-            _context.Update(item);
-            await _context.SaveChangesAsync();
+            ControllerMethods.GiveItem(_context, this.User.GetUserID(), id);
 
             return RedirectToAction("index");
         }

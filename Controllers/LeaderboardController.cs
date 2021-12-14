@@ -30,14 +30,9 @@ namespace kinder_app.Controllers
             return View(_context.ApplicationUsers.ToList());
         }*/
 
-        public async Task<IActionResult> Index()
-        {
-            var users = from s in _context.ApplicationUsers
-                        select s;
-            users = users.OrderByDescending(s => s.Karma_points);
-
-            //REQUIREMENT: take
-            return View(await users.AsNoTracking().Take(10).ToListAsync());
+        public IActionResult Index()
+        {           
+            return View(ControllerMethods.GetUsersForLeaderboard(_context));
         }
 
     }

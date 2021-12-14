@@ -44,32 +44,14 @@ namespace kinder_app.Controllers
         }
 
         // GET: TakeItems/Edit/5
-        public async Task<IActionResult> Take(int? id)
+        public IActionResult Take(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var item = ControllerMethods.GetItem((int)id, _context);
-
-            var user = ControllerMethods.GetUser((int)id, item, _context);
-
-            var liked = _context.LikedItems.FirstOrDefault(m => m.ItemID == item.ID);
-            _context.LikedItems.Remove(liked);
-            await _context.SaveChangesAsync();
-
-            while(_context.LikedItems.FirstOrDefault(m => m.ItemID == item.ID) != null)
-            {
-                liked = _context.LikedItems.FirstOrDefault(m => m.ItemID == item.ID);
-                _context.LikedItems.Remove(liked);
-                _context.SaveChanges();
-            }             
-
-            user.Karma_points += item.KarmaPoints;
-
-            _context.Item.Remove(item);
-            await _context.SaveChangesAsync();
+            ControllerMethods.TakeItem((int)id, _context);
                  
             return RedirectToAction("index");
         }
