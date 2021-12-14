@@ -22,7 +22,7 @@ namespace kinder_app.Controllers
         }
 
         [LogAspect]
-        private int AggregateSuming(List<ItemDTO> items)
+        public int AggregateSuming(List<ItemDTO> items)
         {
             if (items.Count()>0)
             {
