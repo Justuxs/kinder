@@ -95,46 +95,6 @@ namespace kinder_app.Controllers
             return View(ModelList());
         }
 
-        // GET: LikedItems/Details/5
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var likedItems = await _context.LikedItems
-                .FirstOrDefaultAsync(m => m.Key == id);
-            if (likedItems == null)
-            {
-                return NotFound();
-            }
-
-            return View(likedItems);
-        }
-
-        // GET: LikedItems/Create
-        public IActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: LikedItems/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Key,ItemID,UserID")] LikedItems likedItems)
-        {
-            if (ModelState.IsValid)
-            {
-                _context.Add(likedItems);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(likedItems);
-        }
-
         // GET: LikedItems/Edit/5
         public async Task<IActionResult> Give(int? id)
         {
@@ -157,77 +117,6 @@ namespace kinder_app.Controllers
             await _context.SaveChangesAsync();
 
             return RedirectToAction("index");
-        }
-
-        // POST: LikedItems/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Key,ItemID,UserID")] LikedItems likedItems)
-        {
-            if (id != likedItems.Key)
-            {
-                return NotFound();
-            }
-
-            if (ModelState.IsValid)
-            {
-                try
-                {
-
-
-                    _context.Update(likedItems);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!LikedItemsExists(likedItems.Key))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
-            }
-            return View(likedItems);
-        }
-
-        // GET: LikedItems/Delete/5
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var likedItems = await _context.LikedItems
-                .FirstOrDefaultAsync(m => m.Key == id);
-            if (likedItems == null)
-            {
-                return NotFound();
-            }
-
-            return View(likedItems);
-        }
-
-        // POST: LikedItems/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            var likedItems = await _context.LikedItems.FindAsync(id);
-            _context.LikedItems.Remove(likedItems);
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
-        }
-
-        private bool LikedItemsExists(int id)
-        {
-            return _context.LikedItems.Any(e => e.Key == id);
         }
     }
 }
