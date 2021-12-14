@@ -33,14 +33,15 @@ namespace kinder_app.Controllers
             var filteredLiked = likedList.Where(x => x.UserID == CurrentUserExtention.GetUserID(this.User))
                                          .Select(x => x.ItemID);
 
-            itemList = itemList.Where(x => !filteredLiked.Contains(x.ID));
+            itemList = itemList.Where(x => !(filteredLiked.Contains(x.ID) ||
+                                      x.UserID == CurrentUserExtention.GetUserID(this.User)));
            
             if (current == itemList.Count())
             {
                 current = 0;
             }
 
-            if (itemList.Count() > 0)
+            if (itemList.Any())
             {
                 TempData["name"] = itemList.ToList()[current].Name;
                 TempData["cat"] = itemList.ToList()[current].Category;
@@ -74,7 +75,7 @@ namespace kinder_app.Controllers
 
             alreadyLiked.Add(0 + currentID);
 
-            //REQ: Insert
+            //REQUIREMENT: insert
             _db.Entry(liked).State = EntityState.Added;
             _db.SaveChanges();
 

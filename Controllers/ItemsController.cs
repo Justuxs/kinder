@@ -20,13 +20,37 @@ namespace kinder_app.Controllers
             _context = context;
         }
 
-        // GET: Items
-        public async Task<IActionResult> Index()
+        private int AggregateSuming(List<ItemDTO> items)
         {
-            return View(await _context.Item.ToListAsync());
+            //REQUIREMENT: aggregate
+            return items.Select(x => x.KarmaPoints).Aggregate((a, b) => a + b);
         }
 
-        // GET: Items/Details/5
+        public async Task<IActionResult> Index()
+        {
+            //REQUIREMENT: select
+            List<ItemDTO> list = await _context.Item
+                .Where(x => x.UserID == CurrentUserExtention.GetUserID(this.User))
+                .Select(x => new ItemDTO
+                {
+                    ID = x.ID,
+                    DateOfPurchase = x.DateOfPurchase,
+                    Condition = x.Condition,
+                    Category = x.Category,
+                    Length = x.Length,
+                    Height = x.Height,
+                    Width = x.Width,
+                    Name = x.Name,
+                    Description = x.Description,
+                    KarmaPoints = x.KarmaPoints
+                })
+                .ToListAsync();
+
+            TempData["sum"] = AggregateSuming(list);
+            
+            return View(list);
+        }
+
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -44,23 +68,21 @@ namespace kinder_app.Controllers
             return View(item);
         }
 
-        // GET: Items/Create
         [Authorize]
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Items/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,DateOfPurchase,Condition,Category,UserID,Length,Height,Width,Name,Description,KarmaPoints")] Item item)
+        public async Task<IActionResult> Create([Bind("ID,DateOfPurchase,Condition,Category,Length,Height,Width,Name,Description,KarmaPoints")] Item item)
         {
             if (ModelState.IsValid)
             {
+                item.UserID = CurrentUserExtention.GetUserID(this.User);
+                //REQUIREMENT: insert
                 _context.Add(item);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -68,7 +90,6 @@ namespace kinder_app.Controllers
             return View(item);
         }
 
-        // GET: Items/Edit/5
         [Authorize]
         public async Task<IActionResult> Edit(int? id)
         {
@@ -85,14 +106,13 @@ namespace kinder_app.Controllers
             return View(item);
         }
 
-        // POST: Items/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,DateOfPurchase,Condition,Category,UserID,Length,Height,Width,Name,Description,KarmaPoints")] Item item)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,DateOfPurchase,Condition,Category,Length,Height,Width,Name,Description,KarmaPoints")] Item item)
         {
+            item.UserID = CurrentUserExtention.GetUserID(this.User);
+
             if (id != item.ID)
             {
                 return NotFound();
@@ -102,6 +122,7 @@ namespace kinder_app.Controllers
             {
                 try
                 {
+                    //REQUIREMENT: update
                     _context.Update(item);
                     await _context.SaveChangesAsync();
                 }
@@ -121,7 +142,6 @@ namespace kinder_app.Controllers
             return View(item);
         }
 
-        // GET: Items/Delete/5
         [Authorize]
         public async Task<IActionResult> Delete(int? id)
         {
@@ -140,13 +160,13 @@ namespace kinder_app.Controllers
             return View(item);
         }
 
-        // POST: Items/Delete/5
         [Authorize]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var item = await _context.Item.FindAsync(id);
+            //REQUIREMENT: delete
             _context.Item.Remove(item);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
