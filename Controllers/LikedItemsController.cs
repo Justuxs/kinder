@@ -93,7 +93,6 @@ namespace kinder_app.Controllers
         // GET: LikedItems
         public async Task<IActionResult> Index()
         {
-
             return View(ModelList());
         }
 

@@ -967,3 +967,8 @@
 2021-12-14 16:45:10.297 +02:00 [INF] User a requested / (status: 200)
 2021-12-14 16:45:11.062 +02:00 [INF] User a requested /Identity/Account/Logout (status: 302)
 2021-12-14 16:45:11.087 +02:00 [INF] User null requested / (status: 200)
+2021-12-14 16:54:34.183 +02:00 [INF] User null requested / (status: 200)
+2021-12-14 16:54:34.352 +02:00 [INF] User null requested /lib/bootstrap/dist/css/bootstrap.min.css (status: 200)
+2021-12-14 16:54:34.352 +02:00 [INF] User null requested /js/site.js (status: 200)
+2021-12-14 16:54:34.352 +02:00 [INF] User null requested /css/site.css (status: 200)
+2021-12-14 16:54:34.382 +02:00 [INF] User null requested /favicon.ico (status: 200)
