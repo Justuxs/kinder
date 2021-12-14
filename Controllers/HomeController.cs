@@ -8,6 +8,7 @@ using Microsoft.Extensions.Logging;
 using kinder_app.Models;
 using kinder_app.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace kinder_app.Controllers
 {
@@ -23,7 +24,8 @@ namespace kinder_app.Controllers
         private static int current, currentID;
         private static List<int> alreadyLiked = new();
 
-        public IActionResult Index()
+        [Authorize]
+        public IActionResult Swiping()
         {
             var itemList = ControllerMethods.GetItemsSwiping(_db,
                 CurrentUserExtention.GetUserID(this.User));
@@ -56,7 +58,7 @@ namespace kinder_app.Controllers
         public IActionResult LoadNext()
         {
             current++;
-            return RedirectToAction("index");
+            return RedirectToAction("swiping");
         }
 
         public IActionResult LikeThis()
@@ -65,9 +67,15 @@ namespace kinder_app.Controllers
             ControllerMethods.LikeItem(_db, currentID, CurrentUserExtention.GetUserID(this.User), alreadyLiked);
             
             return RedirectToAction("index");
+
+            return RedirectToAction("swiping");
         }
 
         public IActionResult Privacy()
+        {
+            return View();
+        }
+        public IActionResult Index()
         {
             return View();
         }
