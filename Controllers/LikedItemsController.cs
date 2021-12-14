@@ -57,10 +57,12 @@ namespace kinder_app.Controllers
                                 ItemID = item.ID,
                                 ItemName = item.Name,
                                 ItemDesc = item.Description,
-                                UserID = liked.UserID
+                                UserID = liked.UserID,
+                                ItemBelong = item.UserID
                             });
 
-            var join2 = join.Join(
+            var join2 = join.Where(x => x.ItemBelong == User.GetUserID())
+                .Join(
                 users,
                 item => item.UserID,
                 user => user.Id,

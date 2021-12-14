@@ -56,15 +56,23 @@ namespace kinder_app.Controllers
             var user = await _context.ApplicationUsers
                 .FirstOrDefaultAsync(m => m.Id == item.UserID);
 
-            var liked = await _context.LikedItems.FirstOrDefaultAsync(m => m.ItemID == item.ID);
+            var liked = _context.LikedItems.FirstOrDefault(m => m.ItemID == item.ID);
+            _context.LikedItems.Remove(liked);
+            await _context.SaveChangesAsync();
+
+            while(_context.LikedItems.FirstOrDefault(m => m.ItemID == item.ID) != null)
+            {
+                liked = _context.LikedItems.FirstOrDefault(m => m.ItemID == item.ID);
+                _context.LikedItems.Remove(liked);
+                _context.SaveChanges();
+            }             
 
             user.Karma_points += item.KarmaPoints;
 
             _context.Item.Remove(item);
             await _context.SaveChangesAsync();
 
-            _context.LikedItems.Remove(liked);
-            await _context.SaveChangesAsync();
+            
 
             return RedirectToAction("index");
         }
