@@ -45,7 +45,7 @@ namespace kinder_app.Controllers
             return View(
                 ControllerMethods
                 .LikedModelList
-                (_context, CurrentUserExtention.GetUserID(this.User),
+                (CurrentUserExtention.GetUserID(this.User),
                 _context.Item.ToList(), _context.LikedItems.ToList(), _context.Users.ToList()));
         }
 
