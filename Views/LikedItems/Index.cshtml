@@ -1,0 +1,51 @@
+﻿@model IEnumerable<kinder_app.Controllers.TransferModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                ItemID
+            </th>
+            <th>
+                ItemName
+            </th>
+            <th>
+                ItemID
+            </th>
+            <th>
+                ItemName
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ItemID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ItemName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ItemDesc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserEmail)
+            </td>
+            <td>
+                <a asp-action="Give" asp-route-id="@item.UniqID">Give</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -78,6 +78,7 @@ namespace kinder_app.Models
         public string Name { get; set; }
         public string Description { get; set; }
         public int KarmaPoints { get; set; }
+        public String GivenTo { get; set; }
     }
 
 }
