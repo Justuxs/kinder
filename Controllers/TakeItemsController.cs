@@ -20,9 +20,9 @@ namespace kinder_app.Controllers
         }
 
         // GET: TakeItems
-        public async Task<IActionResult> Index()
-        {
-            return View(await _context.Item.Where(x => x.GivenTo == User.GetUserID()).ToListAsync());
+        public IActionResult Index()
+        { 
+            return View(ControllerMethods.GetGivenItems(User.GetUserID(), _context));
         }
 
         // GET: TakeItems/Details/5
@@ -44,36 +44,15 @@ namespace kinder_app.Controllers
         }
 
         // GET: TakeItems/Edit/5
-        public async Task<IActionResult> Take(int? id)
+        public IActionResult Take(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var item = await _context.Item.FindAsync(id);
-
-            var user = await _context.ApplicationUsers
-                .FirstOrDefaultAsync(m => m.Id == item.UserID);
-
-            var liked = _context.LikedItems.FirstOrDefault(m => m.ItemID == item.ID);
-            _context.LikedItems.Remove(liked);
-            await _context.SaveChangesAsync();
-
-            while(_context.LikedItems.FirstOrDefault(m => m.ItemID == item.ID) != null)
-            {
-                liked = _context.LikedItems.FirstOrDefault(m => m.ItemID == item.ID);
-                _context.LikedItems.Remove(liked);
-                _context.SaveChanges();
-            }             
-
-            user.Karma_points += item.KarmaPoints;
-
-            _context.Item.Remove(item);
-            await _context.SaveChangesAsync();
-
-            
-
+            ControllerMethods.TakeItem((int)id, _context);
+                 
             return RedirectToAction("index");
         }
     }

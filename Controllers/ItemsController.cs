@@ -27,7 +27,7 @@ namespace kinder_app.Controllers
             if (items.Count()>0)
             {
                 //REQUIREMENT: aggregate
-                return items.Select(x => x.KarmaPoints).Aggregate((a, b) => a + b); 
+                return items.Aggregate<ItemDTO, int>(0, (TotalKarma, item) => TotalKarma + item.KarmaPoints); 
             }
             else
             {

@@ -15,11 +15,9 @@ namespace kinder_app.Controllers
     public class HomeController : Controller
     {
         private readonly ApplicationDbContext _db;
-        private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger, ApplicationDbContext db)
+        public HomeController(ApplicationDbContext db)
         {
-            _logger = logger;
             _db = db;
         }
 
@@ -29,14 +27,8 @@ namespace kinder_app.Controllers
         [Authorize]
         public IActionResult Swiping()
         {
-            IEnumerable<Item> itemList = _db.Item;
-            IEnumerable<LikedItems> likedList = _db.LikedItems;
-
-            var filteredLiked = likedList.Where(x => x.UserID == CurrentUserExtention.GetUserID(this.User))
-                                         .Select(x => x.ItemID);
-
-            itemList = itemList.Where(x => !(filteredLiked.Contains(x.ID) ||
-                                      x.UserID == CurrentUserExtention.GetUserID(this.User)));
+            var itemList = ControllerMethods.GetItemsSwiping(_db,
+                CurrentUserExtention.GetUserID(this.User));
            
             if (current == itemList.Count())
             {
@@ -71,15 +63,10 @@ namespace kinder_app.Controllers
 
         public IActionResult LikeThis()
         {
-            LikedItems liked = new();
-            liked.ItemID = currentID;
-            liked.UserID = CurrentUserExtention.GetUserID(this.User);
-
-            alreadyLiked.Add(0 + currentID);
-
-            //REQUIREMENT: insert
-            _db.Entry(liked).State = EntityState.Added;
-            _db.SaveChanges();
+            alreadyLiked=
+            ControllerMethods.LikeItem(_db, currentID, CurrentUserExtention.GetUserID(this.User), alreadyLiked);
+            
+            return RedirectToAction("index");
 
             return RedirectToAction("swiping");
         }
@@ -98,8 +85,5 @@ namespace kinder_app.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-
-
-
     }
 }
