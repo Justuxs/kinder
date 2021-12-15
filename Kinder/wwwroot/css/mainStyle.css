@@ -1,0 +1,308 @@
+﻿body {
+    
+}
+
+h1 {
+    text-align: center;
+    font-size: 72px;
+}
+
+.mainBackground {
+    background-color: white;
+}
+
+p.description {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+    position: center;
+}
+
+h3 {
+    text-align: center;
+    position: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.textBoxDesign1 {
+    background-color: lightgray;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: black;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: gray 5px 5px 5px;
+}
+
+.textBoxDesign1 {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: gray 5px 5px 5px;
+}
+
+.infoContainer1 {
+    padding: 10px;
+    width: 100%;
+    height: max-content;
+    border-radius: 15px;
+    background-color: aliceblue;
+    align-content: baseline;
+    overflow: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.shortDesc {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.textBoxDesign2 {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.imgRound {
+    border-radius: 10px;
+}
+
+.description2 {
+    text-indent: 25px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.top-margin {
+    margin-top: 10px;
+}
+
+.textBoxDesign3 {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.infoContainer2 {
+    padding: 10px;
+    width: 100%;
+    height: max-content;
+    border-radius: 15px;
+    background-color: aliceblue;
+    align-content: baseline;
+    overflow: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inherit;
+}
+
+/* Rectangle 3 */
+.rect {
+    position: absolute;
+    width: 368px;
+    height: 522px;
+    left: 700px;
+    top: 288px;
+    border-radius: 38px;
+}
+
+/* Rectangle 4 */
+.rect4 {
+    position: absolute;
+    width: 368px;
+    height: 522px;
+    left: 700px;
+    top: 400px;
+    border-radius: 38px;
+}
+
+.rect1 {
+    position: absolute;
+    width: 368px;
+    height: 522px;
+    left: 100px;
+    top: 400px;
+    border-radius: 38px;
+}
+
+/* Welcome to Kinder! Give away. Get karma points. Compete with other people! */
+.welcome {
+    position: absolute;
+    width: 391px;
+    height: 317.52px;
+    left: 100px;
+    top: 453.24px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 33.8987px;
+    line-height: 40px;
+    color: #000000;
+}
+
+
+.par2 {
+    position: absolute;
+    width: 396px;
+    height: 350px;
+    left: 100px;
+    top: 450px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 33.9px;
+    line-height: 40px;
+    color: #000000;
+}
+
+.par3 {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    left: 0;
+    top: 250px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 33.9px;
+    line-height: 40px;
+    text-decoration-line: underline;
+    color: #000000;
+    text-align: center;
+}
+
+.par4 {
+    position: absolute;
+    width: 368px;
+    height: 350px;
+    left: 700px;
+    top: 450px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 33.9px;
+    line-height: 40px;
+    color: #000000;
+}
+
+.men1 {
+    /* Menu */
+    position: absolute;
+    width: 78px;
+    height: 35.23px;
+    left: 44px;
+    top: 31px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30.1935px;
+    line-height: 35px;
+    /* identical to box height */
+    color: #000000;
+}
+
+.par5 {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    left: 0;
+    top: 500px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 54.3041px;
+    line-height: 64px;
+    color: #000000;
+    text-indent: 75px;
+}
+
+.par7 {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    left: 0;
+    top: 700px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 37.3666px;
+    line-height: 44px;
+    text-align: center;
+    color: #000000;
+}
+
+.par8 {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    left: 0;
+    top: 750px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 37.3666px;
+    line-height: 44px;
+    text-align: center;
+    color: #000000;
+}
+
+.par1 {
+    position: relative;
+    width: 100%;
+    height: 64px;
+    left: 0;
+    top: 700px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 54.3041px;
+    line-height: 64px;
+    color: #000000;
+    text-align: center;
+}
+
+.par6 {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    left: 0;
+    top: 400px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 33.9px;
+    line-height: 40px;
+    color: #000000;
+    text-indent: 75px;
+}
+
+.rect2 {
+    /* Rectangle 2 */
+    position: absolute;
+    width: 1440px;
+    height: 98px;
+    left: 0px;
+    top: 0px;
+    background: #C4C4C4;
+}
+
+.par1-2 {
+    align-content: center;
+    height: 800px;
+    display:flex;
+    position: relative;
+}
