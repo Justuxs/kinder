@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Identity;
 using System.Collections;
+using System.ComponentModel.DataAnnotations;
 
 namespace kinder_app.Models
 {
@@ -55,8 +56,12 @@ namespace kinder_app.Models
         public ConditionEnum Condition { get; set; }
         public CategoryEnum Category { get; set; }
         public string UserID { get; set; }
+
+        [Range(0, int.MaxValue, ErrorMessage = "Only positive number allowed.")]
         public int Length { get; set; }
+        [Range(0, int.MaxValue, ErrorMessage = "Only positive number allowed.")]
         public int Height { get; set; }
+        [Range(0, int.MaxValue, ErrorMessage = "Only positive number allowed.")]
         public int Width { get; set; }
 
         [NotMapped]
