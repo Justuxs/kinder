@@ -40,10 +40,6 @@ namespace kinder_app.Aspects
                 }
                 else
                 {
-                    argumentsStr += arg.ToString() + "| ";
-
-                }
-
                     if(typeof(List<Item>) == type)
                     {
                         List<Item> temp = (List<Item>)arg;

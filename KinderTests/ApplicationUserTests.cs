@@ -1,5 +1,5 @@
-using System;
 using kinder_app.Models;
+using System;
 using Xunit;
 
 namespace KinderTests
@@ -7,7 +7,7 @@ namespace KinderTests
     public class ApplicationUserTests
     {
         [Fact]
-        public void ApplicationUser_Create_Creation()
+        public void CreateApplicationUser()
         {
             ApplicationUser applicationUser = new ApplicationUser();
 
