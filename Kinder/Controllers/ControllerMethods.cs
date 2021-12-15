@@ -43,7 +43,7 @@ namespace kinder_app.Controllers
 
             return users.AsNoTracking().Take(10).ToList();
         }
-      
+
         [LogAspect]//
         public static LikedItems GetLiked(Item item, ApplicationDbContext context)
         {
@@ -57,7 +57,7 @@ namespace kinder_app.Controllers
             context.LikedItems.Remove(liked);
             context.SaveChanges();
         }
-        
+
         [LogAspect]//
         public static void RemoveAllLiked(Item item, ApplicationDbContext context)
         {
@@ -147,7 +147,7 @@ namespace kinder_app.Controllers
             context.Update(item);
             context.SaveChanges();
         }
-      
+
         [LogAspect]
         public static List<Item> GetItemsSwiping(ApplicationDbContext context, string userID)
         {
@@ -162,7 +162,7 @@ namespace kinder_app.Controllers
 
             return itemList;
         }
-      
+
         [LogAspect]
         public static List<int> LikeItem(ApplicationDbContext context, int currentID, string userID, List<int> likeds)
         {

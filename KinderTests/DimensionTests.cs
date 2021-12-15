@@ -1,30 +1,25 @@
-﻿using System;
+﻿using kinder_app.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using kinder_app.Models;
 using Xunit;
 
 namespace KinderTests
 {
     public class DimensionTests
     {
-        [Theory]
-        [InlineData(14, 15, 16)]
-        [InlineData(0, -1, int.MinValue)]
-        [InlineData(int.MaxValue, int.MaxValue, int.MaxValue)]
-        public void Dimensions_Length_ValidDimensions(int x, int y, int z)
+        [Fact]
+        public void DimensionsLength()
         {
-            Dimensions dimensions = new Dimensions(x, y, z);
+            Dimensions dimensions = new Dimensions(14, 15, 16);
 
-            Assert.Equal(x, dimensions.Length);
-            Assert.Equal(y, dimensions.Height);
-            Assert.Equal(z, dimensions.Width);
+            Assert.Equal(14, dimensions.Length);
         }
 
         [Fact]
-        public void Dimensions_ToString_ValidString()
+        public void DimensionsToString()
         {
             Dimensions dimensions = new Dimensions(14, 15, 16);
 

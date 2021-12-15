@@ -62,6 +62,7 @@ namespace kinder_app.Models
         [Range(0, int.MaxValue, ErrorMessage = "Only positive number allowed.")]
         public int Height { get; set; }
         [Range(0, int.MaxValue, ErrorMessage = "Only positive number allowed.")]
+        public int Width { get; set; }
 
         [NotMapped]
         public Dimensions Size 
