@@ -10,12 +10,17 @@ namespace KinderTests
 {
     public class DimensionTests
     {
-        [Fact]
-        public void DimensionsLength()
+        [Theory]
+        [InlineData(14, 15, 16)]
+        [InlineData(0, -1, int.MinValue)]
+        [InlineData(int.MaxValue, int.MaxValue, int.MaxValue)]
+        public void DimensionsLength(int x, int y, int z)
         {
-            Dimensions dimensions = new Dimensions(14, 15, 16);
+            Dimensions dimensions = new Dimensions(x, y, z);
 
-            Assert.Equal(14, dimensions.Length);
+            Assert.Equal(x, dimensions.Length);
+            Assert.Equal(y, dimensions.Height);
+            Assert.Equal(z, dimensions.Width);
         }
 
         [Fact]
