@@ -12,32 +12,6 @@ namespace kinder_app.Models
 {
     public class Item : IComparable<Item>, IEquatable<Item>
     {
-        public Item()
-        {
-
-        }
-
-        public Item(int id)
-        {
-            this.ID = id;
-        }
-
-        public Item(int id, DateTime dateOfPurchase, ConditionEnum condition, CategoryEnum category, string userId,
-            int length, int height, int width, int karmaPoints, string name, string description)
-        {
-            this.ID = id;
-            this.DateOfPurchase = dateOfPurchase;
-            this.Condition = condition;
-            this.Category = category;
-            this.UserID = userId;
-            this.Length = length;
-            this.Height = height;
-            this.Width = width;
-            this.KarmaPoints = karmaPoints;
-            this.Name = name;
-            this.Description = description;
-        }
-
         public int CompareTo(Item other)
         {
             return other.ID.CompareTo(this.ID); // default: high to low
