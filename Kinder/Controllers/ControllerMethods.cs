@@ -9,27 +9,32 @@ using kinder_app.Data;
 using kinder_app.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using kinder_app.Aspects;
 
 namespace kinder_app.Controllers
 {
     public static class ControllerMethods
     {
+        [LogAspect]
         public static List<Item> GetGivenItems(string userID, ApplicationDbContext context)
         {
             return context.Item.Where(x => x.GivenTo == userID).ToList();
         }
 
+        [LogAspect]
         public static Item GetItem(int id, ApplicationDbContext context)
         {
             return context.Item.Find(id);
         }
 
+        [LogAspect]//
         public static ApplicationUser GetUser(Item item, ApplicationDbContext context)
         {
             return context.ApplicationUsers
                 .FirstOrDefault(m => m.Id == item.UserID);
         }
 
+        [LogAspect]//
         public static List<ApplicationUser> GetUsersForLeaderboard(ApplicationDbContext context)
         {
             var users = from s in context.ApplicationUsers
@@ -39,18 +44,21 @@ namespace kinder_app.Controllers
             return users.AsNoTracking().Take(10).ToList();
         }
 
+        [LogAspect]//
         public static LikedItems GetLiked(Item item, ApplicationDbContext context)
         {
             return context.LikedItems
                 .FirstOrDefault(m => m.ItemID == item.ID);
         }
 
+        [LogAspect]//
         public static void RemoveLiked(LikedItems liked, ApplicationDbContext context)
         {
             context.LikedItems.Remove(liked);
             context.SaveChanges();
         }
 
+        [LogAspect]//
         public static void RemoveAllLiked(Item item, ApplicationDbContext context)
         {
             while (GetLiked(item, context) != null)
@@ -59,6 +67,7 @@ namespace kinder_app.Controllers
             }
         }
 
+        [LogAspect]//
         public static void TakeItem(int id, ApplicationDbContext context)
         {
             var item = GetItem(id, context);
@@ -72,6 +81,7 @@ namespace kinder_app.Controllers
             context.SaveChanges();
         }
 
+        [LogAspect]//
         public static List<TransferModel> LikedModelList
             (string userID,
             List<Item> items, List<LikedItems> likedItems, List<IdentityUser> users)
@@ -120,6 +130,7 @@ namespace kinder_app.Controllers
             return result;
         }
 
+        [LogAspect]//
         public static void GiveItem(ApplicationDbContext context, string userID, int? id)
         {
             var uniqueItem = LikedModelList(userID,
@@ -137,6 +148,7 @@ namespace kinder_app.Controllers
             context.SaveChanges();
         }
 
+        [LogAspect]
         public static List<Item> GetItemsSwiping(ApplicationDbContext context, string userID)
         {
             List<Item> itemList = context.Item.ToList();
@@ -151,6 +163,7 @@ namespace kinder_app.Controllers
             return itemList;
         }
 
+        [LogAspect]
         public static List<int> LikeItem(ApplicationDbContext context, int currentID, string userID, List<int> likeds)
         {
             LikedItems liked = new();
