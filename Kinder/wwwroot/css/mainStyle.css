@@ -115,7 +115,7 @@ h3 {
     position: absolute;
     width: 368px;
     height: 522px;
-    left: 814px;
+    left: 700px;
     top: 288px;
     border-radius: 38px;
 }
@@ -125,18 +125,17 @@ h3 {
     position: absolute;
     width: 368px;
     height: 522px;
-    left: 814px;
-    top: 2105px;
+    left: 700px;
+    top: 400px;
     border-radius: 38px;
 }
 
-/* Rectangle 1 */
 .rect1 {
     position: absolute;
     width: 368px;
     height: 522px;
-    left: 202px;
-    top: 1213px;
+    left: 100px;
+    top: 400px;
     border-radius: 38px;
 }
 
@@ -145,7 +144,7 @@ h3 {
     position: absolute;
     width: 391px;
     height: 317.52px;
-    left: 241px;
+    left: 100px;
     top: 453.24px;
     font-family: Roboto;
     font-style: normal;
@@ -157,12 +156,11 @@ h3 {
 
 
 .par2 {
-    /* Some people just want to free some space from their variuos items, which are not being used by themselves , but can be useful for some people. */
     position: absolute;
     width: 396px;
     height: 350px;
-    left: 202px;
-    top: 2261px;
+    left: 100px;
+    top: 450px;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -172,29 +170,27 @@ h3 {
 }
 
 .par3 {
-    /* Give it a try */
-    position: absolute;
-    width: 168px;
+    position: relative;
+    width: 100%;
     height: 40px;
-    left: 636px;
-    top: 3438px;
+    left: 0;
+    top: 250px;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 33.9px;
     line-height: 40px;
-    /* identical to box height */
     text-decoration-line: underline;
     color: #000000;
+    text-align: center;
 }
 
 .par4 {
-    /* Each year, a lot of variuos trash is being produced. And sometimes, items that appear in our trash container, are not actually a real trash! */
     position: absolute;
     width: 368px;
     height: 350px;
-    left: 814px;
-    top: 1322px;
+    left: 700px;
+    top: 450px;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -220,59 +216,26 @@ h3 {
 }
 
 .par5 {
-    /* How does this application work? */
-    position: absolute;
-    width: 782px;
-    height: 64px;
-    left: 339px;
-    top: 4029px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 54.3041px;
-    line-height: 64px;
-    /* identical to box height */
-    color: #000000;
-}
-
-.par1 {
-    /* How do I help out / get items? */
-    position: absolute;
-    width: 723px;
-    height: 64px;
-    left: 358px;
-    top: 4683px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 54.3041px;
-    line-height: 64px;
-    /* identical to box height */
-    color: #000000;
-}
-
-.par6 {
-    /* So in order to fight this problem, our team created an application which will help people to give away some items that they dont need anymore, and also to give them not for utilization, but for those ones who really need something. */
-    position: absolute;
-    width: 1127px;
+    position: relative;
+    width: 100%;
     height: 350px;
-    left: 167px;
-    top: 3218px;
+    left: 0;
+    top: 500px;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 33.9px;
-    line-height: 40px;
+    font-size: 54.3041px;
+    line-height: 64px;
     color: #000000;
+    text-indent: 75px;
 }
 
 .par7 {
-    /* This application works on the concept of "swiping" that is being used in some other applications like "Tinder", so thats why it is called Kinder Karma application is an unified charity system */
-    position: absolute;
-    width: 1127px;
+    position: relative;
+    width: 100%;
     height: 350px;
-    left: 167px;
-    top: 4175px;
+    left: 0;
+    top: 700px;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -283,12 +246,11 @@ h3 {
 }
 
 .par8 {
-    /* It is easy! Only 3 steps to become a member! Step 1: Login or create a new account! Step 2 Create an item description and publish it, or swipe other people items in order to find the one thet you need! Step 3 Get or give away items that You want! */
-    position: absolute;
-    width: 1127px;
-    height: 350px;
-    left: 166px;
-    top: 4829px;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    left: 0;
+    top: 750px;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -296,6 +258,36 @@ h3 {
     line-height: 44px;
     text-align: center;
     color: #000000;
+}
+
+.par1 {
+    position: relative;
+    width: 100%;
+    height: 64px;
+    left: 0;
+    top: 700px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 54.3041px;
+    line-height: 64px;
+    color: #000000;
+    text-align: center;
+}
+
+.par6 {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    left: 0;
+    top: 400px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 33.9px;
+    line-height: 40px;
+    color: #000000;
+    text-indent: 75px;
 }
 
 .rect2 {
@@ -306,4 +298,11 @@ h3 {
     left: 0px;
     top: 0px;
     background: #C4C4C4;
+}
+
+.par1-2 {
+    align-content: center;
+    height: 800px;
+    display:flex;
+    position: relative;
 }
