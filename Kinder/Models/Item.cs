@@ -7,11 +7,22 @@ using System.Threading.Tasks;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Identity;
 using System.Collections;
+using System.ComponentModel.DataAnnotations;
 
 namespace kinder_app.Models
 {
     public class Item : IComparable<Item>, IEquatable<Item>
     {
+        public Item()
+        {
+
+        }
+
+        public Item(int id)
+        {
+            this.ID = id;
+        }
+
         public int CompareTo(Item other)
         {
             return other.ID.CompareTo(this.ID); // default: high to low
@@ -45,9 +56,12 @@ namespace kinder_app.Models
         public ConditionEnum Condition { get; set; }
         public CategoryEnum Category { get; set; }
         public string UserID { get; set; }
+
+        [Range(0, int.MaxValue, ErrorMessage = "Only positive number allowed.")]
         public int Length { get; set; }
+        [Range(0, int.MaxValue, ErrorMessage = "Only positive number allowed.")]
         public int Height { get; set; }
-        public int Width { get; set; }
+        [Range(0, int.MaxValue, ErrorMessage = "Only positive number allowed.")]
 
         [NotMapped]
         public Dimensions Size 

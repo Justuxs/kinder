@@ -1,0 +1,398 @@
+2021-12-15 00:59:22.725 +02:00 [INF] User null requested / (status: 200)
+2021-12-15 00:59:23.095 +02:00 [INF] User null requested /js/site.js (status: 200)
+2021-12-15 00:59:23.095 +02:00 [INF] User null requested /lib/bootstrap/dist/css/bootstrap.min.css (status: 200)
+2021-12-15 00:59:23.095 +02:00 [INF] User null requested /css/site.css (status: 200)
+2021-12-15 00:59:23.134 +02:00 [INF] User null requested /favicon.ico (status: 200)
+2021-12-15 00:59:25.171 +02:00 [INF] User null requested /Leaderboard (status: 200)
+2021-12-15 02:34:59.541 +02:00 [INF] User null requested / (status: 200)
+2021-12-15 02:34:59.871 +02:00 [INF] User null requested /css/site.css (status: 200)
+2021-12-15 02:34:59.890 +02:00 [INF] User null requested /js/site.js (status: 304)
+2021-12-15 02:34:59.901 +02:00 [INF] User null requested /lib/bootstrap/dist/css/bootstrap.min.css (status: 200)
+2021-12-15 02:34:59.901 +02:00 [INF] User null requested /lib/jquery/dist/jquery.min.js (status: 200)
+2021-12-15 02:34:59.901 +02:00 [INF] User null requested /lib/bootstrap/dist/js/bootstrap.bundle.min.js (status: 200)
+2021-12-15 02:34:59.944 +02:00 [INF] User null requested /favicon.ico (status: 200)
+2021-12-15 02:35:01.145 +02:00 [INF] User null requested /Identity/Account/Login (status: 200)
+2021-12-15 02:35:04.547 +02:00 [INF] User null requested /Identity/Account/Login (status: 302)
+2021-12-15 02:35:04.616 +02:00 [INF] User a requested / (status: 200)
+2021-12-15 02:35:06.025 +02:00 [INF] Calling "GetItemsSwiping" method
+2021-12-15 02:35:06.025 +02:00 [INF] Arguments: DB requested| f3588f1b-1656-442c-a059-96eac2fc70d4| 
+2021-12-15 02:35:06.076 +02:00 [INF] Return: | 
+2021-12-15 02:35:06.085 +02:00 [INF] User a requested /Home/Swiping (status: 200)
+2021-12-15 02:35:07.468 +02:00 [INF] Calling "GetUsersForLeaderboard" method
+2021-12-15 02:35:07.468 +02:00 [INF] Arguments: DB requested| 
+2021-12-15 02:35:07.478 +02:00 [INF] Return: b@b.lt;  qqq;  zz;  a;  pp;  qq;  c;  | 
+2021-12-15 02:35:07.485 +02:00 [INF] User a requested /Leaderboard (status: 200)
+2021-12-15 02:35:08.416 +02:00 [INF] Calling "LikedModelList" method
+2021-12-15 02:35:08.422 +02:00 [INF] Arguments: f3588f1b-1656-442c-a059-96eac2fc70d4| 2008;2021-12-15;Good;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;10,10,12;17;sertvgsrbyser;ar gfjh fgbyaerbn6tuywbyean ;  2009;2021-12-30;Mint;Furniture;3f265873-b20d-4c10-8105-f86605452701;9,11,12;6;JMHEW AFCGR7I;xdf,gnherj;  2010;2021-12-08;Mint;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;22,20,22;18;hfnjcislodefh;;dsofvimsakln hkui hrguihev  WRVAEW;  | System.Collections.Generic.List`1[kinder_app.Models.LikedItems]| b@b.lt;  pp;  qq;  c;  qqq;  zz;  a;  | 
+2021-12-15 02:35:08.426 +02:00 [INF] Return: | 
+2021-12-15 02:35:08.433 +02:00 [INF] User a requested /LikedItems (status: 200)
+2021-12-15 02:35:15.586 +02:00 [INF] Calling "GetGivenItems" method
+2021-12-15 02:35:15.586 +02:00 [INF] Arguments: f3588f1b-1656-442c-a059-96eac2fc70d4| DB requested| 
+2021-12-15 02:35:15.590 +02:00 [INF] Return: | 
+2021-12-15 02:35:15.600 +02:00 [INF] User a requested /TakeItems (status: 200)
+2021-12-15 02:35:16.237 +02:00 [INF] Calling "LikedModelList" method
+2021-12-15 02:35:16.238 +02:00 [INF] Arguments: f3588f1b-1656-442c-a059-96eac2fc70d4| 2008;2021-12-15;Good;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;10,10,12;17;sertvgsrbyser;ar gfjh fgbyaerbn6tuywbyean ;  2009;2021-12-30;Mint;Furniture;3f265873-b20d-4c10-8105-f86605452701;9,11,12;6;JMHEW AFCGR7I;xdf,gnherj;  2010;2021-12-08;Mint;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;22,20,22;18;hfnjcislodefh;;dsofvimsakln hkui hrguihev  WRVAEW;  | System.Collections.Generic.List`1[kinder_app.Models.LikedItems]| b@b.lt;  pp;  qq;  c;  qqq;  zz;  a;  | 
+2021-12-15 02:35:16.238 +02:00 [INF] Return: | 
+2021-12-15 02:35:16.239 +02:00 [INF] User a requested /LikedItems (status: 200)
+2021-12-15 02:35:40.571 +02:00 [INF] User a requested / (status: 200)
+2021-12-15 02:35:41.695 +02:00 [INF] User a requested / (status: 200)
+2021-12-15 02:35:42.667 +02:00 [INF] Calling "GetItemsSwiping" method
+2021-12-15 02:35:42.667 +02:00 [INF] Arguments: DB requested| f3588f1b-1656-442c-a059-96eac2fc70d4| 
+2021-12-15 02:35:42.668 +02:00 [INF] Return: | 
+2021-12-15 02:35:42.670 +02:00 [INF] User a requested /Home/Swiping (status: 200)
+2021-12-15 02:35:43.936 +02:00 [INF] User a requested /Home/LoadNext (status: 302)
+2021-12-15 02:35:43.962 +02:00 [INF] Calling "GetItemsSwiping" method
+2021-12-15 02:35:43.962 +02:00 [INF] Arguments: DB requested| f3588f1b-1656-442c-a059-96eac2fc70d4| 
+2021-12-15 02:35:43.963 +02:00 [INF] Return: | 
+2021-12-15 02:35:43.966 +02:00 [INF] User a requested /Home/swiping (status: 200)
+2021-12-15 02:35:44.477 +02:00 [INF] User a requested /Home/LoadNext (status: 302)
+2021-12-15 02:35:44.502 +02:00 [INF] Calling "GetItemsSwiping" method
+2021-12-15 02:35:44.502 +02:00 [INF] Arguments: DB requested| f3588f1b-1656-442c-a059-96eac2fc70d4| 
+2021-12-15 02:35:44.503 +02:00 [INF] Return: | 
+2021-12-15 02:35:44.505 +02:00 [INF] User a requested /Home/swiping (status: 200)
+2021-12-15 02:35:50.510 +02:00 [INF] Calling "AggregateSuming" method
+2021-12-15 02:35:50.511 +02:00 [INF] Arguments: 2008;2021-12-15;Good;Furniture;10,10,12;17;sertvgsrbyser;ar gfjh fgbyaerbn6tuywbyean ;  2010;2021-12-08;Mint;Furniture;22,20,22;18;hfnjcislodefh;;dsofvimsakln hkui hrguihev  WRVAEW;  | 
+2021-12-15 02:35:50.512 +02:00 [INF] Return: 35| 
+2021-12-15 02:35:50.539 +02:00 [INF] User a requested /Items (status: 200)
+2021-12-15 02:35:58.396 +02:00 [INF] User a requested /Identity/Account/Logout (status: 302)
+2021-12-15 02:35:58.417 +02:00 [INF] User null requested / (status: 200)
+2021-12-15 02:35:59.361 +02:00 [INF] User null requested /Identity/Account/Login (status: 200)
+2021-12-15 02:36:01.721 +02:00 [INF] User null requested /Identity/Account/Login (status: 302)
+2021-12-15 02:36:01.748 +02:00 [INF] User b@b.lt requested / (status: 200)
+2021-12-15 02:36:03.299 +02:00 [INF] Calling "GetItemsSwiping" method
+2021-12-15 02:36:03.299 +02:00 [INF] Arguments: DB requested| 3f265873-b20d-4c10-8105-f86605452701| 
+2021-12-15 02:36:03.300 +02:00 [INF] Return: 2008;2021-12-15;Good;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;10,10,12;17;sertvgsrbyser;ar gfjh fgbyaerbn6tuywbyean ;  2010;2021-12-08;Mint;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;22,20,22;18;hfnjcislodefh;;dsofvimsakln hkui hrguihev  WRVAEW;  | 
+2021-12-15 02:36:03.302 +02:00 [INF] User b@b.lt requested /Home/Swiping (status: 200)
+2021-12-15 02:36:04.892 +02:00 [INF] User b@b.lt requested /Home/LoadNext (status: 302)
+2021-12-15 02:36:04.917 +02:00 [INF] Calling "GetItemsSwiping" method
+2021-12-15 02:36:04.917 +02:00 [INF] Arguments: DB requested| 3f265873-b20d-4c10-8105-f86605452701| 
+2021-12-15 02:36:04.918 +02:00 [INF] Return: 2008;2021-12-15;Good;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;10,10,12;17;sertvgsrbyser;ar gfjh fgbyaerbn6tuywbyean ;  2010;2021-12-08;Mint;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;22,20,22;18;hfnjcislodefh;;dsofvimsakln hkui hrguihev  WRVAEW;  | 
+2021-12-15 02:36:04.919 +02:00 [INF] User b@b.lt requested /Home/swiping (status: 200)
+2021-12-15 02:36:05.408 +02:00 [INF] User b@b.lt requested /Home/LoadNext (status: 302)
+2021-12-15 02:36:05.431 +02:00 [INF] Calling "GetItemsSwiping" method
+2021-12-15 02:36:05.431 +02:00 [INF] Arguments: DB requested| 3f265873-b20d-4c10-8105-f86605452701| 
+2021-12-15 02:36:05.432 +02:00 [INF] Return: 2008;2021-12-15;Good;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;10,10,12;17;sertvgsrbyser;ar gfjh fgbyaerbn6tuywbyean ;  2010;2021-12-08;Mint;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;22,20,22;18;hfnjcislodefh;;dsofvimsakln hkui hrguihev  WRVAEW;  | 
+2021-12-15 02:36:05.433 +02:00 [INF] User b@b.lt requested /Home/swiping (status: 200)
+2021-12-15 02:36:05.930 +02:00 [INF] User b@b.lt requested /Home/LoadNext (status: 302)
+2021-12-15 02:36:05.952 +02:00 [INF] Calling "GetItemsSwiping" method
+2021-12-15 02:36:05.952 +02:00 [INF] Arguments: DB requested| 3f265873-b20d-4c10-8105-f86605452701| 
+2021-12-15 02:36:05.953 +02:00 [INF] Return: 2008;2021-12-15;Good;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;10,10,12;17;sertvgsrbyser;ar gfjh fgbyaerbn6tuywbyean ;  2010;2021-12-08;Mint;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;22,20,22;18;hfnjcislodefh;;dsofvimsakln hkui hrguihev  WRVAEW;  | 
+2021-12-15 02:36:05.955 +02:00 [INF] User b@b.lt requested /Home/swiping (status: 200)
+2021-12-15 02:36:06.441 +02:00 [INF] User b@b.lt requested /Home/LoadNext (status: 302)
+2021-12-15 02:36:06.474 +02:00 [INF] Calling "GetItemsSwiping" method
+2021-12-15 02:36:06.474 +02:00 [INF] Arguments: DB requested| 3f265873-b20d-4c10-8105-f86605452701| 
+2021-12-15 02:36:06.475 +02:00 [INF] Return: 2008;2021-12-15;Good;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;10,10,12;17;sertvgsrbyser;ar gfjh fgbyaerbn6tuywbyean ;  2010;2021-12-08;Mint;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;22,20,22;18;hfnjcislodefh;;dsofvimsakln hkui hrguihev  WRVAEW;  | 
+2021-12-15 02:36:06.477 +02:00 [INF] User b@b.lt requested /Home/swiping (status: 200)
+2021-12-15 02:36:06.982 +02:00 [INF] Calling "LikedModelList" method
+2021-12-15 02:36:06.982 +02:00 [INF] Arguments: 3f265873-b20d-4c10-8105-f86605452701| 2008;2021-12-15;Good;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;10,10,12;17;sertvgsrbyser;ar gfjh fgbyaerbn6tuywbyean ;  2009;2021-12-30;Mint;Furniture;3f265873-b20d-4c10-8105-f86605452701;9,11,12;6;JMHEW AFCGR7I;xdf,gnherj;  2010;2021-12-08;Mint;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;22,20,22;18;hfnjcislodefh;;dsofvimsakln hkui hrguihev  WRVAEW;  | System.Collections.Generic.List`1[kinder_app.Models.LikedItems]| b@b.lt;  pp;  qq;  c;  qqq;  zz;  a;  | 
+2021-12-15 02:36:06.983 +02:00 [INF] Return: 0,2009,JMHEW AFCGR7I,xdf,gnherj,e@e.lt;  1,2009,JMHEW AFCGR7I,xdf,gnherj,a@a.lt;  | 
+2021-12-15 02:36:06.988 +02:00 [INF] User b@b.lt requested /LikedItems (status: 200)
+2021-12-15 02:36:09.562 +02:00 [INF] Calling "AggregateSuming" method
+2021-12-15 02:36:09.562 +02:00 [INF] Arguments: 2009;2021-12-30;Mint;Furniture;9,11,12;6;JMHEW AFCGR7I;xdf,gnherj;  | 
+2021-12-15 02:36:09.562 +02:00 [INF] Return: 6| 
+2021-12-15 02:36:09.565 +02:00 [INF] User b@b.lt requested /Items (status: 200)
+2021-12-15 02:36:11.285 +02:00 [INF] Calling "LikedModelList" method
+2021-12-15 02:36:11.285 +02:00 [INF] Arguments: 3f265873-b20d-4c10-8105-f86605452701| 2008;2021-12-15;Good;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;10,10,12;17;sertvgsrbyser;ar gfjh fgbyaerbn6tuywbyean ;  2009;2021-12-30;Mint;Furniture;3f265873-b20d-4c10-8105-f86605452701;9,11,12;6;JMHEW AFCGR7I;xdf,gnherj;  2010;2021-12-08;Mint;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;22,20,22;18;hfnjcislodefh;;dsofvimsakln hkui hrguihev  WRVAEW;  | System.Collections.Generic.List`1[kinder_app.Models.LikedItems]| b@b.lt;  pp;  qq;  c;  qqq;  zz;  a;  | 
+2021-12-15 02:36:11.285 +02:00 [INF] Return: 0,2009,JMHEW AFCGR7I,xdf,gnherj,e@e.lt;  1,2009,JMHEW AFCGR7I,xdf,gnherj,a@a.lt;  | 
+2021-12-15 02:36:11.289 +02:00 [INF] User b@b.lt requested /LikedItems (status: 200)
+2021-12-15 02:36:18.259 +02:00 [INF] Calling "GiveItem" method
+2021-12-15 02:36:18.260 +02:00 [INF] Arguments: DB requested| 3f265873-b20d-4c10-8105-f86605452701| 0| 
+2021-12-15 02:36:18.261 +02:00 [INF] Calling "LikedModelList" method
+2021-12-15 02:36:18.261 +02:00 [INF] Arguments: 3f265873-b20d-4c10-8105-f86605452701| 2008;2021-12-15;Good;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;10,10,12;17;sertvgsrbyser;ar gfjh fgbyaerbn6tuywbyean ;  2009;2021-12-30;Mint;Furniture;3f265873-b20d-4c10-8105-f86605452701;9,11,12;6;JMHEW AFCGR7I;xdf,gnherj;  2010;2021-12-08;Mint;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;22,20,22;18;hfnjcislodefh;;dsofvimsakln hkui hrguihev  WRVAEW;  | System.Collections.Generic.List`1[kinder_app.Models.LikedItems]| b@b.lt;  pp;  qq;  c;  qqq;  zz;  a;  | 
+2021-12-15 02:36:18.261 +02:00 [INF] Return: 0,2009,JMHEW AFCGR7I,xdf,gnherj,e@e.lt;  1,2009,JMHEW AFCGR7I,xdf,gnherj,a@a.lt;  | 
+2021-12-15 02:37:45.139 +02:00 [INF] User null requested / (status: 200)
+2021-12-15 02:37:45.447 +02:00 [INF] User null requested /lib/bootstrap/dist/css/bootstrap.min.css (status: 200)
+2021-12-15 02:37:45.447 +02:00 [INF] User null requested /css/site.css (status: 200)
+2021-12-15 02:37:45.447 +02:00 [INF] User null requested /js/site.js (status: 200)
+2021-12-15 02:37:45.633 +02:00 [INF] User null requested /favicon.ico (status: 200)
+2021-12-15 02:37:46.682 +02:00 [INF] User null requested /Identity/Account/Login (status: 200)
+2021-12-15 02:38:03.139 +02:00 [INF] User null requested /Identity/Account/Login (status: 302)
+2021-12-15 02:38:03.209 +02:00 [INF] User c requested / (status: 200)
+2021-12-15 02:38:05.491 +02:00 [INF] Calling "GetGivenItems" method
+2021-12-15 02:38:05.491 +02:00 [INF] Arguments: 62805664-c834-47a2-a016-ea7a52440a56| DB requested| 
+2021-12-15 02:38:05.536 +02:00 [INF] Return: 2009;2021-12-30;Mint;Furniture;3f265873-b20d-4c10-8105-f86605452701;9,11,12;6;JMHEW AFCGR7I;xdf,gnherj;  | 
+2021-12-15 02:38:05.554 +02:00 [INF] User c requested /TakeItems (status: 200)
+2021-12-15 02:38:07.557 +02:00 [INF] Calling "TakeItem" method
+2021-12-15 02:38:07.557 +02:00 [INF] Arguments: 2009| DB requested| 
+2021-12-15 02:38:07.557 +02:00 [INF] Calling "GetItem" method
+2021-12-15 02:38:07.557 +02:00 [INF] Arguments: 2009| DB requested| 
+2021-12-15 02:38:07.567 +02:00 [INF] Return: 2009;2021-12-30;Mint;Furniture;3f265873-b20d-4c10-8105-f86605452701;9,11,12;6;JMHEW AFCGR7I;xdf,gnherj| 
+2021-12-15 02:38:07.567 +02:00 [INF] Calling "GetUser" method
+2021-12-15 02:38:07.567 +02:00 [INF] Arguments: 2009;2021-12-30;Mint;Furniture;3f265873-b20d-4c10-8105-f86605452701;9,11,12;6;JMHEW AFCGR7I;xdf,gnherj| DB requested| 
+2021-12-15 02:38:07.571 +02:00 [INF] Return: b@b.lt| 
+2021-12-15 02:38:07.571 +02:00 [INF] Calling "RemoveAllLiked" method
+2021-12-15 02:38:07.571 +02:00 [INF] Arguments: 2009;2021-12-30;Mint;Furniture;3f265873-b20d-4c10-8105-f86605452701;9,11,12;6;JMHEW AFCGR7I;xdf,gnherj| DB requested| 
+2021-12-15 02:38:07.571 +02:00 [INF] Calling "GetLiked" method
+2021-12-15 02:38:07.571 +02:00 [INF] Arguments: 2009;2021-12-30;Mint;Furniture;3f265873-b20d-4c10-8105-f86605452701;9,11,12;6;JMHEW AFCGR7I;xdf,gnherj| DB requested| 
+2021-12-15 02:38:07.579 +02:00 [INF] Return: 2009,62805664-c834-47a2-a016-ea7a52440a56| 
+2021-12-15 02:38:07.579 +02:00 [INF] Calling "GetLiked" method
+2021-12-15 02:38:07.579 +02:00 [INF] Arguments: 2009;2021-12-30;Mint;Furniture;3f265873-b20d-4c10-8105-f86605452701;9,11,12;6;JMHEW AFCGR7I;xdf,gnherj| DB requested| 
+2021-12-15 02:38:07.581 +02:00 [INF] Return: 2009,62805664-c834-47a2-a016-ea7a52440a56| 
+2021-12-15 02:38:07.581 +02:00 [INF] Calling "RemoveLiked" method
+2021-12-15 02:38:07.581 +02:00 [INF] Arguments: 2009,62805664-c834-47a2-a016-ea7a52440a56| DB requested| 
+2021-12-15 02:38:07.675 +02:00 [INF] Return: void return| 
+2021-12-15 02:38:07.675 +02:00 [INF] Calling "GetLiked" method
+2021-12-15 02:38:07.675 +02:00 [INF] Arguments: 2009;2021-12-30;Mint;Furniture;3f265873-b20d-4c10-8105-f86605452701;9,11,12;6;JMHEW AFCGR7I;xdf,gnherj| DB requested| 
+2021-12-15 02:38:07.676 +02:00 [INF] Return: 2009,f3588f1b-1656-442c-a059-96eac2fc70d4| 
+2021-12-15 02:38:07.676 +02:00 [INF] Calling "GetLiked" method
+2021-12-15 02:38:07.676 +02:00 [INF] Arguments: 2009;2021-12-30;Mint;Furniture;3f265873-b20d-4c10-8105-f86605452701;9,11,12;6;JMHEW AFCGR7I;xdf,gnherj| DB requested| 
+2021-12-15 02:38:07.676 +02:00 [INF] Return: 2009,f3588f1b-1656-442c-a059-96eac2fc70d4| 
+2021-12-15 02:38:07.676 +02:00 [INF] Calling "RemoveLiked" method
+2021-12-15 02:38:07.676 +02:00 [INF] Arguments: 2009,f3588f1b-1656-442c-a059-96eac2fc70d4| DB requested| 
+2021-12-15 02:38:07.678 +02:00 [INF] Return: void return| 
+2021-12-15 02:38:07.678 +02:00 [INF] Calling "GetLiked" method
+2021-12-15 02:38:07.678 +02:00 [INF] Arguments: 2009;2021-12-30;Mint;Furniture;3f265873-b20d-4c10-8105-f86605452701;9,11,12;6;JMHEW AFCGR7I;xdf,gnherj| DB requested| 
+2021-12-15 02:41:25.080 +02:00 [INF] User null requested / (status: 200)
+2021-12-15 02:41:25.524 +02:00 [INF] User null requested /js/site.js (status: 200)
+2021-12-15 02:41:25.524 +02:00 [INF] User null requested /lib/bootstrap/dist/css/bootstrap.min.css (status: 200)
+2021-12-15 02:41:25.524 +02:00 [INF] User null requested /css/site.css (status: 200)
+2021-12-15 02:41:25.736 +02:00 [INF] User null requested /favicon.ico (status: 200)
+2021-12-15 02:41:28.813 +02:00 [INF] User null requested /Identity/Account/Login (status: 200)
+2021-12-15 02:41:33.154 +02:00 [INF] User null requested /Identity/Account/Login (status: 302)
+2021-12-15 02:41:33.227 +02:00 [INF] User a requested / (status: 200)
+2021-12-15 02:41:34.657 +02:00 [INF] Calling "AggregateSuming" method
+2021-12-15 02:41:34.664 +02:00 [INF] Arguments: 2008;2021-12-15;Good;Furniture;10,10,12;17;sertvgsrbyser;ar gfjh fgbyaerbn6tuywbyean ;  2010;2021-12-08;Mint;Furniture;22,20,22;18;hfnjcislodefh;;dsofvimsakln hkui hrguihev  WRVAEW;  | 
+2021-12-15 02:41:34.665 +02:00 [INF] Return: 35| 
+2021-12-15 02:41:34.688 +02:00 [INF] User a requested /Items (status: 200)
+2021-12-15 02:41:49.582 +02:00 [INF] User a requested /Identity/Account/Logout (status: 302)
+2021-12-15 02:41:49.606 +02:00 [INF] User null requested / (status: 200)
+2021-12-15 02:41:50.381 +02:00 [INF] User null requested /Identity/Account/Login (status: 200)
+2021-12-15 02:41:53.201 +02:00 [INF] User null requested /Identity/Account/Login (status: 302)
+2021-12-15 02:41:53.228 +02:00 [INF] User c requested / (status: 200)
+2021-12-15 02:41:54.261 +02:00 [INF] Calling "GetGivenItems" method
+2021-12-15 02:41:54.261 +02:00 [INF] Arguments: 62805664-c834-47a2-a016-ea7a52440a56| DB requested| 
+2021-12-15 02:41:54.294 +02:00 [INF] Return: 2009;2021-12-30;Mint;Furniture;3f265873-b20d-4c10-8105-f86605452701;9,11,12;6;JMHEW AFCGR7I;xdf,gnherj;  | 
+2021-12-15 02:41:54.305 +02:00 [INF] User c requested /TakeItems (status: 200)
+2021-12-15 02:41:55.847 +02:00 [INF] User c requested /TakeItems/Details/2009 (status: 200)
+2021-12-15 02:41:56.628 +02:00 [INF] Calling "GetGivenItems" method
+2021-12-15 02:41:56.628 +02:00 [INF] Arguments: 62805664-c834-47a2-a016-ea7a52440a56| DB requested| 
+2021-12-15 02:41:56.629 +02:00 [INF] Return: 2009;2021-12-30;Mint;Furniture;3f265873-b20d-4c10-8105-f86605452701;9,11,12;6;JMHEW AFCGR7I;xdf,gnherj;  | 
+2021-12-15 02:41:56.631 +02:00 [INF] User c requested /TakeItems (status: 200)
+2021-12-15 02:42:32.375 +02:00 [INF] Calling "TakeItem" method
+2021-12-15 02:42:32.375 +02:00 [INF] Arguments: 2009| DB requested| 
+2021-12-15 02:42:32.376 +02:00 [INF] Calling "GetItem" method
+2021-12-15 02:42:32.376 +02:00 [INF] Arguments: 2009| DB requested| 
+2021-12-15 02:42:32.389 +02:00 [INF] Return: 2009;2021-12-30;Mint;Furniture;3f265873-b20d-4c10-8105-f86605452701;9,11,12;6;JMHEW AFCGR7I;xdf,gnherj| 
+2021-12-15 02:42:32.390 +02:00 [INF] Calling "GetUser" method
+2021-12-15 02:42:32.390 +02:00 [INF] Arguments: 2009;2021-12-30;Mint;Furniture;3f265873-b20d-4c10-8105-f86605452701;9,11,12;6;JMHEW AFCGR7I;xdf,gnherj| DB requested| 
+2021-12-15 02:42:32.395 +02:00 [INF] Return: b@b.lt| 
+2021-12-15 02:42:32.395 +02:00 [INF] Calling "RemoveAllLiked" method
+2021-12-15 02:42:32.395 +02:00 [INF] Arguments: 2009;2021-12-30;Mint;Furniture;3f265873-b20d-4c10-8105-f86605452701;9,11,12;6;JMHEW AFCGR7I;xdf,gnherj| DB requested| 
+2021-12-15 02:42:32.395 +02:00 [INF] Calling "GetLiked" method
+2021-12-15 02:42:32.395 +02:00 [INF] Arguments: 2009;2021-12-30;Mint;Furniture;3f265873-b20d-4c10-8105-f86605452701;9,11,12;6;JMHEW AFCGR7I;xdf,gnherj| DB requested| 
+2021-12-15 02:45:27.408 +02:00 [INF] User null requested / (status: 200)
+2021-12-15 02:45:27.701 +02:00 [INF] User null requested /lib/bootstrap/dist/js/bootstrap.bundle.min.js (status: 304)
+2021-12-15 02:45:27.701 +02:00 [INF] User null requested /lib/jquery/dist/jquery.min.js (status: 304)
+2021-12-15 02:45:27.717 +02:00 [INF] User null requested /js/site.js (status: 200)
+2021-12-15 02:45:27.717 +02:00 [INF] User null requested /css/site.css (status: 200)
+2021-12-15 02:45:27.730 +02:00 [INF] User null requested /lib/bootstrap/dist/css/bootstrap.min.css (status: 200)
+2021-12-15 02:45:27.869 +02:00 [INF] User null requested /favicon.ico (status: 200)
+2021-12-15 02:45:28.990 +02:00 [INF] User null requested /Identity/Account/Login (status: 200)
+2021-12-15 02:45:34.578 +02:00 [INF] User null requested /Identity/Account/Login (status: 302)
+2021-12-15 02:45:34.647 +02:00 [INF] User b@b.lt requested / (status: 200)
+2021-12-15 02:45:36.417 +02:00 [INF] Calling "LikedModelList" method
+2021-12-15 02:45:36.422 +02:00 [INF] Arguments: 3f265873-b20d-4c10-8105-f86605452701| 2008;2021-12-15;Good;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;10,10,12;17;sertvgsrbyser;ar gfjh fgbyaerbn6tuywbyean ;  2009;2021-12-30;Mint;Furniture;3f265873-b20d-4c10-8105-f86605452701;9,11,12;6;JMHEW AFCGR7I;xdf,gnherj;  2010;2021-12-08;Mint;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;22,20,22;18;hfnjcislodefh;;dsofvimsakln hkui hrguihev  WRVAEW;  | System.Collections.Generic.List`1[kinder_app.Models.LikedItems]| b@b.lt;  pp;  qq;  c;  qqq;  zz;  a;  | 
+2021-12-15 02:45:36.427 +02:00 [INF] Return: | 
+2021-12-15 02:45:36.437 +02:00 [INF] User b@b.lt requested /LikedItems (status: 200)
+2021-12-15 02:45:37.361 +02:00 [INF] Calling "AggregateSuming" method
+2021-12-15 02:45:37.362 +02:00 [INF] Arguments: 2009;2021-12-30;Mint;Furniture;9,11,12;6;JMHEW AFCGR7I;xdf,gnherj;  | 
+2021-12-15 02:45:37.362 +02:00 [INF] Return: 6| 
+2021-12-15 02:45:37.382 +02:00 [INF] User b@b.lt requested /Items (status: 200)
+2021-12-15 02:45:41.025 +02:00 [INF] User b@b.lt requested /Identity/Account/Logout (status: 302)
+2021-12-15 02:45:41.047 +02:00 [INF] User null requested / (status: 200)
+2021-12-15 02:45:42.087 +02:00 [INF] User null requested /Identity/Account/Login (status: 200)
+2021-12-15 02:45:43.628 +02:00 [INF] User null requested /Identity/Account/Login (status: 302)
+2021-12-15 02:45:43.653 +02:00 [INF] User a requested / (status: 200)
+2021-12-15 02:45:44.546 +02:00 [INF] Calling "LikedModelList" method
+2021-12-15 02:45:44.546 +02:00 [INF] Arguments: f3588f1b-1656-442c-a059-96eac2fc70d4| 2008;2021-12-15;Good;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;10,10,12;17;sertvgsrbyser;ar gfjh fgbyaerbn6tuywbyean ;  2009;2021-12-30;Mint;Furniture;3f265873-b20d-4c10-8105-f86605452701;9,11,12;6;JMHEW AFCGR7I;xdf,gnherj;  2010;2021-12-08;Mint;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;22,20,22;18;hfnjcislodefh;;dsofvimsakln hkui hrguihev  WRVAEW;  | System.Collections.Generic.List`1[kinder_app.Models.LikedItems]| b@b.lt;  pp;  qq;  c;  qqq;  zz;  a;  | 
+2021-12-15 02:45:44.547 +02:00 [INF] Return: | 
+2021-12-15 02:45:44.548 +02:00 [INF] User a requested /LikedItems (status: 200)
+2021-12-15 02:45:45.653 +02:00 [INF] User a requested /Identity/Account/Logout (status: 302)
+2021-12-15 02:45:45.676 +02:00 [INF] User null requested / (status: 200)
+2021-12-15 02:45:46.667 +02:00 [INF] User null requested /Identity/Account/Login (status: 200)
+2021-12-15 02:45:48.556 +02:00 [INF] User null requested /Identity/Account/Login (status: 302)
+2021-12-15 02:45:48.582 +02:00 [INF] User c requested / (status: 200)
+2021-12-15 02:45:50.080 +02:00 [INF] Calling "LikedModelList" method
+2021-12-15 02:45:50.080 +02:00 [INF] Arguments: 62805664-c834-47a2-a016-ea7a52440a56| 2008;2021-12-15;Good;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;10,10,12;17;sertvgsrbyser;ar gfjh fgbyaerbn6tuywbyean ;  2009;2021-12-30;Mint;Furniture;3f265873-b20d-4c10-8105-f86605452701;9,11,12;6;JMHEW AFCGR7I;xdf,gnherj;  2010;2021-12-08;Mint;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;22,20,22;18;hfnjcislodefh;;dsofvimsakln hkui hrguihev  WRVAEW;  | System.Collections.Generic.List`1[kinder_app.Models.LikedItems]| b@b.lt;  pp;  qq;  c;  qqq;  zz;  a;  | 
+2021-12-15 02:45:50.080 +02:00 [INF] Return: | 
+2021-12-15 02:45:50.081 +02:00 [INF] User c requested /LikedItems (status: 200)
+2021-12-15 02:45:50.988 +02:00 [INF] Calling "GetGivenItems" method
+2021-12-15 02:45:50.988 +02:00 [INF] Arguments: 62805664-c834-47a2-a016-ea7a52440a56| DB requested| 
+2021-12-15 02:45:50.991 +02:00 [INF] Return: 2009;2021-12-30;Mint;Furniture;3f265873-b20d-4c10-8105-f86605452701;9,11,12;6;JMHEW AFCGR7I;xdf,gnherj;  | 
+2021-12-15 02:45:51.001 +02:00 [INF] User c requested /TakeItems (status: 200)
+2021-12-15 02:46:07.741 +02:00 [INF] User c requested /Identity/Account/Logout (status: 302)
+2021-12-15 02:46:07.765 +02:00 [INF] User null requested / (status: 200)
+2021-12-15 02:46:08.572 +02:00 [INF] User null requested /Identity/Account/Login (status: 200)
+2021-12-15 02:46:10.190 +02:00 [INF] User null requested /Identity/Account/Login (status: 302)
+2021-12-15 02:46:10.226 +02:00 [INF] User a requested / (status: 200)
+2021-12-15 02:46:11.049 +02:00 [INF] Calling "AggregateSuming" method
+2021-12-15 02:46:11.049 +02:00 [INF] Arguments: 2008;2021-12-15;Good;Furniture;10,10,12;17;sertvgsrbyser;ar gfjh fgbyaerbn6tuywbyean ;  2010;2021-12-08;Mint;Furniture;22,20,22;18;hfnjcislodefh;;dsofvimsakln hkui hrguihev  WRVAEW;  | 
+2021-12-15 02:46:11.049 +02:00 [INF] Return: 35| 
+2021-12-15 02:46:11.053 +02:00 [INF] User a requested /Items (status: 200)
+2021-12-15 02:46:13.065 +02:00 [INF] Calling "LikedModelList" method
+2021-12-15 02:46:13.065 +02:00 [INF] Arguments: f3588f1b-1656-442c-a059-96eac2fc70d4| 2008;2021-12-15;Good;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;10,10,12;17;sertvgsrbyser;ar gfjh fgbyaerbn6tuywbyean ;  2009;2021-12-30;Mint;Furniture;3f265873-b20d-4c10-8105-f86605452701;9,11,12;6;JMHEW AFCGR7I;xdf,gnherj;  2010;2021-12-08;Mint;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;22,20,22;18;hfnjcislodefh;;dsofvimsakln hkui hrguihev  WRVAEW;  | System.Collections.Generic.List`1[kinder_app.Models.LikedItems]| b@b.lt;  pp;  qq;  c;  qqq;  zz;  a;  | 
+2021-12-15 02:46:13.065 +02:00 [INF] Return: | 
+2021-12-15 02:46:13.067 +02:00 [INF] User a requested /LikedItems (status: 200)
+2021-12-15 02:46:17.137 +02:00 [INF] User a requested /Identity/Account/Logout (status: 302)
+2021-12-15 02:46:17.162 +02:00 [INF] User null requested / (status: 200)
+2021-12-15 02:46:18.156 +02:00 [INF] User null requested /Identity/Account/Login (status: 200)
+2021-12-15 02:46:22.593 +02:00 [INF] User null requested /Identity/Account/Login (status: 302)
+2021-12-15 02:46:22.618 +02:00 [INF] User c requested / (status: 200)
+2021-12-15 02:46:24.492 +02:00 [INF] Calling "AggregateSuming" method
+2021-12-15 02:46:24.493 +02:00 [INF] Arguments: | 
+2021-12-15 02:46:24.493 +02:00 [INF] Return: 0| 
+2021-12-15 02:46:24.495 +02:00 [INF] User c requested /Items (status: 200)
+2021-12-15 02:46:25.179 +02:00 [INF] Calling "GetGivenItems" method
+2021-12-15 02:46:25.179 +02:00 [INF] Arguments: 62805664-c834-47a2-a016-ea7a52440a56| DB requested| 
+2021-12-15 02:46:25.180 +02:00 [INF] Return: 2009;2021-12-30;Mint;Furniture;3f265873-b20d-4c10-8105-f86605452701;9,11,12;6;JMHEW AFCGR7I;xdf,gnherj;  | 
+2021-12-15 02:46:25.183 +02:00 [INF] User c requested /TakeItems (status: 200)
+2021-12-15 02:46:26.482 +02:00 [INF] Calling "TakeItem" method
+2021-12-15 02:46:26.482 +02:00 [INF] Arguments: 2009| DB requested| 
+2021-12-15 02:46:26.482 +02:00 [INF] Calling "GetItem" method
+2021-12-15 02:46:26.482 +02:00 [INF] Arguments: 2009| DB requested| 
+2021-12-15 02:46:26.492 +02:00 [INF] Return: 2009;2021-12-30;Mint;Furniture;3f265873-b20d-4c10-8105-f86605452701;9,11,12;6;JMHEW AFCGR7I;xdf,gnherj| 
+2021-12-15 02:46:26.492 +02:00 [INF] Calling "GetUser" method
+2021-12-15 02:46:26.492 +02:00 [INF] Arguments: 2009;2021-12-30;Mint;Furniture;3f265873-b20d-4c10-8105-f86605452701;9,11,12;6;JMHEW AFCGR7I;xdf,gnherj| DB requested| 
+2021-12-15 02:46:26.496 +02:00 [INF] Return: b@b.lt| 
+2021-12-15 02:46:26.496 +02:00 [INF] Calling "RemoveAllLiked" method
+2021-12-15 02:46:26.497 +02:00 [INF] Arguments: 2009;2021-12-30;Mint;Furniture;3f265873-b20d-4c10-8105-f86605452701;9,11,12;6;JMHEW AFCGR7I;xdf,gnherj| DB requested| 
+2021-12-15 02:46:26.497 +02:00 [INF] Calling "GetLiked" method
+2021-12-15 02:46:26.497 +02:00 [INF] Arguments: 2009;2021-12-30;Mint;Furniture;3f265873-b20d-4c10-8105-f86605452701;9,11,12;6;JMHEW AFCGR7I;xdf,gnherj| DB requested| 
+2021-12-15 02:46:26.499 +02:00 [INF] Return: null |
+2021-12-15 02:46:26.499 +02:00 [INF] Return: void return| 
+2021-12-15 02:46:26.597 +02:00 [INF] Return: void return| 
+2021-12-15 02:46:26.597 +02:00 [INF] User c requested /TakeItems/Take/2009 (status: 302)
+2021-12-15 02:46:26.630 +02:00 [INF] Calling "GetGivenItems" method
+2021-12-15 02:46:26.630 +02:00 [INF] Arguments: 62805664-c834-47a2-a016-ea7a52440a56| DB requested| 
+2021-12-15 02:46:26.631 +02:00 [INF] Return: | 
+2021-12-15 02:46:26.633 +02:00 [INF] User c requested /TakeItems (status: 200)
+2021-12-15 02:46:46.155 +02:00 [INF] Calling "LikedModelList" method
+2021-12-15 02:46:46.155 +02:00 [INF] Arguments: 62805664-c834-47a2-a016-ea7a52440a56| 2008;2021-12-15;Good;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;10,10,12;17;sertvgsrbyser;ar gfjh fgbyaerbn6tuywbyean ;  2010;2021-12-08;Mint;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;22,20,22;18;hfnjcislodefh;;dsofvimsakln hkui hrguihev  WRVAEW;  | System.Collections.Generic.List`1[kinder_app.Models.LikedItems]| b@b.lt;  pp;  qq;  c;  qqq;  zz;  a;  | 
+2021-12-15 02:46:46.155 +02:00 [INF] Return: | 
+2021-12-15 02:46:46.156 +02:00 [INF] User c requested /LikedItems (status: 200)
+2021-12-15 02:49:53.133 +02:00 [INF] User null requested / (status: 200)
+2021-12-15 02:49:53.522 +02:00 [INF] User null requested /lib/bootstrap/dist/css/bootstrap.min.css (status: 200)
+2021-12-15 02:49:53.522 +02:00 [INF] User null requested /js/site.js (status: 200)
+2021-12-15 02:49:53.522 +02:00 [INF] User null requested /css/site.css (status: 200)
+2021-12-15 02:49:53.727 +02:00 [INF] User null requested /favicon.ico (status: 200)
+2021-12-15 02:49:54.522 +02:00 [INF] User null requested /Identity/Account/Login (status: 200)
+2021-12-15 02:49:58.792 +02:00 [INF] User null requested /Identity/Account/Login (status: 302)
+2021-12-15 02:49:58.864 +02:00 [INF] User a requested / (status: 200)
+2021-12-15 02:50:02.546 +02:00 [INF] Calling "GetUsersForLeaderboard" method
+2021-12-15 02:50:02.546 +02:00 [INF] Arguments: DB requested| 
+2021-12-15 02:50:02.564 +02:00 [INF] Return: b@b.lt;  qqq;  zz;  a;  pp;  qq;  c;  | 
+2021-12-15 02:50:02.571 +02:00 [INF] User a requested /Leaderboard (status: 200)
+2021-12-15 02:50:04.716 +02:00 [INF] Calling "LikedModelList" method
+2021-12-15 02:50:04.722 +02:00 [INF] Arguments: f3588f1b-1656-442c-a059-96eac2fc70d4| 2008;2021-12-15;Good;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;10,10,12;17;sertvgsrbyser;ar gfjh fgbyaerbn6tuywbyean ;  2010;2021-12-08;Mint;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;22,20,22;18;hfnjcislodefh;;dsofvimsakln hkui hrguihev  WRVAEW;  | System.Collections.Generic.List`1[kinder_app.Models.LikedItems]| b@b.lt;  pp;  qq;  c;  qqq;  zz;  a;  | 
+2021-12-15 02:50:04.727 +02:00 [INF] Return: | 
+2021-12-15 02:50:04.735 +02:00 [INF] User a requested /LikedItems (status: 200)
+2021-12-15 02:50:05.738 +02:00 [INF] Calling "AggregateSuming" method
+2021-12-15 02:50:05.739 +02:00 [INF] Arguments: 2008;2021-12-15;Good;Furniture;10,10,12;17;sertvgsrbyser;ar gfjh fgbyaerbn6tuywbyean ;  2010;2021-12-08;Mint;Furniture;22,20,22;18;hfnjcislodefh;;dsofvimsakln hkui hrguihev  WRVAEW;  | 
+2021-12-15 02:50:05.740 +02:00 [INF] Return: 35| 
+2021-12-15 02:50:05.762 +02:00 [INF] User a requested /Items (status: 200)
+2021-12-15 02:50:06.738 +02:00 [INF] Calling "GetGivenItems" method
+2021-12-15 02:50:06.738 +02:00 [INF] Arguments: f3588f1b-1656-442c-a059-96eac2fc70d4| DB requested| 
+2021-12-15 02:50:06.741 +02:00 [INF] Return: | 
+2021-12-15 02:50:06.749 +02:00 [INF] User a requested /TakeItems (status: 200)
+2021-12-15 02:50:07.871 +02:00 [INF] Calling "AggregateSuming" method
+2021-12-15 02:50:07.871 +02:00 [INF] Arguments: 2008;2021-12-15;Good;Furniture;10,10,12;17;sertvgsrbyser;ar gfjh fgbyaerbn6tuywbyean ;  2010;2021-12-08;Mint;Furniture;22,20,22;18;hfnjcislodefh;;dsofvimsakln hkui hrguihev  WRVAEW;  | 
+2021-12-15 02:50:07.871 +02:00 [INF] Return: 35| 
+2021-12-15 02:50:07.876 +02:00 [INF] User a requested /Items (status: 200)
+2021-12-15 02:50:10.412 +02:00 [INF] User a requested / (status: 200)
+2021-12-15 02:50:11.130 +02:00 [INF] Calling "GetItemsSwiping" method
+2021-12-15 02:50:11.131 +02:00 [INF] Arguments: DB requested| f3588f1b-1656-442c-a059-96eac2fc70d4| 
+2021-12-15 02:50:11.134 +02:00 [INF] Return: | 
+2021-12-15 02:50:11.142 +02:00 [INF] User a requested /Home/Swiping (status: 200)
+2021-12-15 02:50:13.203 +02:00 [INF] Calling "LikedModelList" method
+2021-12-15 02:50:13.203 +02:00 [INF] Arguments: f3588f1b-1656-442c-a059-96eac2fc70d4| 2008;2021-12-15;Good;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;10,10,12;17;sertvgsrbyser;ar gfjh fgbyaerbn6tuywbyean ;  2010;2021-12-08;Mint;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;22,20,22;18;hfnjcislodefh;;dsofvimsakln hkui hrguihev  WRVAEW;  | System.Collections.Generic.List`1[kinder_app.Models.LikedItems]| b@b.lt;  pp;  qq;  c;  qqq;  zz;  a;  | 
+2021-12-15 02:50:13.203 +02:00 [INF] Return: | 
+2021-12-15 02:50:13.205 +02:00 [INF] User a requested /LikedItems (status: 200)
+2021-12-15 02:50:14.431 +02:00 [INF] Calling "AggregateSuming" method
+2021-12-15 02:50:14.431 +02:00 [INF] Arguments: 2008;2021-12-15;Good;Furniture;10,10,12;17;sertvgsrbyser;ar gfjh fgbyaerbn6tuywbyean ;  2010;2021-12-08;Mint;Furniture;22,20,22;18;hfnjcislodefh;;dsofvimsakln hkui hrguihev  WRVAEW;  | 
+2021-12-15 02:50:14.431 +02:00 [INF] Return: 35| 
+2021-12-15 02:50:14.436 +02:00 [INF] User a requested /Items (status: 200)
+2021-12-15 02:50:21.955 +02:00 [INF] User a requested /Identity/Account/Logout (status: 302)
+2021-12-15 02:50:21.981 +02:00 [INF] User null requested / (status: 200)
+2021-12-15 02:50:22.801 +02:00 [INF] User null requested /Identity/Account/Login (status: 200)
+2021-12-15 02:50:24.965 +02:00 [INF] User null requested /Identity/Account/Login (status: 302)
+2021-12-15 02:50:24.989 +02:00 [INF] User b@b.lt requested / (status: 200)
+2021-12-15 02:50:25.803 +02:00 [INF] Calling "GetItemsSwiping" method
+2021-12-15 02:50:25.803 +02:00 [INF] Arguments: DB requested| 3f265873-b20d-4c10-8105-f86605452701| 
+2021-12-15 02:50:25.804 +02:00 [INF] Return: 2008;2021-12-15;Good;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;10,10,12;17;sertvgsrbyser;ar gfjh fgbyaerbn6tuywbyean ;  2010;2021-12-08;Mint;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;22,20,22;18;hfnjcislodefh;;dsofvimsakln hkui hrguihev  WRVAEW;  | 
+2021-12-15 02:50:25.805 +02:00 [INF] User b@b.lt requested /Home/Swiping (status: 200)
+2021-12-15 02:50:27.699 +02:00 [INF] Calling "LikeItem" method
+2021-12-15 02:50:27.699 +02:00 [INF] Arguments: DB requested| 2008| 3f265873-b20d-4c10-8105-f86605452701| System.Collections.Generic.List`1[System.Int32]| 
+2021-12-15 02:50:27.808 +02:00 [INF] Return: 2008;  | 
+2021-12-15 02:50:27.808 +02:00 [INF] User b@b.lt requested /Home/LikeThis (status: 302)
+2021-12-15 02:50:27.840 +02:00 [INF] User b@b.lt requested / (status: 200)
+2021-12-15 02:50:29.137 +02:00 [INF] User b@b.lt requested /Identity/Account/Logout (status: 302)
+2021-12-15 02:50:29.166 +02:00 [INF] User null requested / (status: 200)
+2021-12-15 02:50:30.378 +02:00 [INF] User null requested /Identity/Account/Login (status: 200)
+2021-12-15 02:50:32.251 +02:00 [INF] User null requested /Identity/Account/Login (status: 302)
+2021-12-15 02:50:32.278 +02:00 [INF] User a requested / (status: 200)
+2021-12-15 02:50:33.729 +02:00 [INF] Calling "LikedModelList" method
+2021-12-15 02:50:33.729 +02:00 [INF] Arguments: f3588f1b-1656-442c-a059-96eac2fc70d4| 2008;2021-12-15;Good;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;10,10,12;17;sertvgsrbyser;ar gfjh fgbyaerbn6tuywbyean ;  2010;2021-12-08;Mint;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;22,20,22;18;hfnjcislodefh;;dsofvimsakln hkui hrguihev  WRVAEW;  | System.Collections.Generic.List`1[kinder_app.Models.LikedItems]| b@b.lt;  pp;  qq;  c;  qqq;  zz;  a;  | 
+2021-12-15 02:50:33.731 +02:00 [INF] Return: 0,2008,sertvgsrbyser,ar gfjh fgbyaerbn6tuywbyean ,b@b.lt;  | 
+2021-12-15 02:50:33.735 +02:00 [INF] User a requested /LikedItems (status: 200)
+2021-12-15 02:50:35.848 +02:00 [INF] Calling "GiveItem" method
+2021-12-15 02:50:35.848 +02:00 [INF] Arguments: DB requested| f3588f1b-1656-442c-a059-96eac2fc70d4| 0| 
+2021-12-15 02:50:35.849 +02:00 [INF] Calling "LikedModelList" method
+2021-12-15 02:50:35.849 +02:00 [INF] Arguments: f3588f1b-1656-442c-a059-96eac2fc70d4| 2008;2021-12-15;Good;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;10,10,12;17;sertvgsrbyser;ar gfjh fgbyaerbn6tuywbyean ;  2010;2021-12-08;Mint;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;22,20,22;18;hfnjcislodefh;;dsofvimsakln hkui hrguihev  WRVAEW;  | System.Collections.Generic.List`1[kinder_app.Models.LikedItems]| b@b.lt;  pp;  qq;  c;  qqq;  zz;  a;  | 
+2021-12-15 02:50:35.849 +02:00 [INF] Return: 0,2008,sertvgsrbyser,ar gfjh fgbyaerbn6tuywbyean ,b@b.lt;  | 
+2021-12-15 02:50:35.882 +02:00 [INF] Return: void return| 
+2021-12-15 02:50:35.883 +02:00 [INF] User a requested /LikedItems/Give/0 (status: 302)
+2021-12-15 02:50:35.916 +02:00 [INF] Calling "LikedModelList" method
+2021-12-15 02:50:35.916 +02:00 [INF] Arguments: f3588f1b-1656-442c-a059-96eac2fc70d4| 2008;2021-12-15;Good;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;10,10,12;17;sertvgsrbyser;ar gfjh fgbyaerbn6tuywbyean ;  2010;2021-12-08;Mint;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;22,20,22;18;hfnjcislodefh;;dsofvimsakln hkui hrguihev  WRVAEW;  | System.Collections.Generic.List`1[kinder_app.Models.LikedItems]| b@b.lt;  pp;  qq;  c;  qqq;  zz;  a;  | 
+2021-12-15 02:50:35.916 +02:00 [INF] Return: 0,2008,sertvgsrbyser,ar gfjh fgbyaerbn6tuywbyean ,b@b.lt;  | 
+2021-12-15 02:50:35.918 +02:00 [INF] User a requested /LikedItems (status: 200)
+2021-12-15 02:50:36.956 +02:00 [INF] User a requested /Identity/Account/Logout (status: 302)
+2021-12-15 02:50:36.980 +02:00 [INF] User null requested / (status: 200)
+2021-12-15 02:50:37.834 +02:00 [INF] User null requested /Identity/Account/Login (status: 200)
+2021-12-15 02:50:40.470 +02:00 [INF] User null requested /Identity/Account/Login (status: 302)
+2021-12-15 02:50:40.497 +02:00 [INF] User b@b.lt requested / (status: 200)
+2021-12-15 02:50:41.321 +02:00 [INF] Calling "GetGivenItems" method
+2021-12-15 02:50:41.321 +02:00 [INF] Arguments: 3f265873-b20d-4c10-8105-f86605452701| DB requested| 
+2021-12-15 02:50:41.321 +02:00 [INF] Return: 2008;2021-12-15;Good;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;10,10,12;17;sertvgsrbyser;ar gfjh fgbyaerbn6tuywbyean ;  | 
+2021-12-15 02:50:41.325 +02:00 [INF] User b@b.lt requested /TakeItems (status: 200)
+2021-12-15 02:50:42.362 +02:00 [INF] Calling "TakeItem" method
+2021-12-15 02:50:42.362 +02:00 [INF] Arguments: 2008| DB requested| 
+2021-12-15 02:50:42.362 +02:00 [INF] Calling "GetItem" method
+2021-12-15 02:50:42.362 +02:00 [INF] Arguments: 2008| DB requested| 
+2021-12-15 02:50:42.371 +02:00 [INF] Return: 2008;2021-12-15;Good;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;10,10,12;17;sertvgsrbyser;ar gfjh fgbyaerbn6tuywbyean | 
+2021-12-15 02:50:42.371 +02:00 [INF] Calling "GetUser" method
+2021-12-15 02:50:42.371 +02:00 [INF] Arguments: 2008;2021-12-15;Good;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;10,10,12;17;sertvgsrbyser;ar gfjh fgbyaerbn6tuywbyean | DB requested| 
+2021-12-15 02:50:42.375 +02:00 [INF] Return: a| 
+2021-12-15 02:50:42.375 +02:00 [INF] Calling "RemoveAllLiked" method
+2021-12-15 02:50:42.375 +02:00 [INF] Arguments: 2008;2021-12-15;Good;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;10,10,12;17;sertvgsrbyser;ar gfjh fgbyaerbn6tuywbyean | DB requested| 
+2021-12-15 02:50:42.375 +02:00 [INF] Calling "GetLiked" method
+2021-12-15 02:50:42.375 +02:00 [INF] Arguments: 2008;2021-12-15;Good;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;10,10,12;17;sertvgsrbyser;ar gfjh fgbyaerbn6tuywbyean | DB requested| 
+2021-12-15 02:50:42.379 +02:00 [INF] Return: 2008,| 
+2021-12-15 02:50:42.379 +02:00 [INF] Calling "GetLiked" method
+2021-12-15 02:50:42.379 +02:00 [INF] Arguments: 2008;2021-12-15;Good;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;10,10,12;17;sertvgsrbyser;ar gfjh fgbyaerbn6tuywbyean | DB requested| 
+2021-12-15 02:50:42.379 +02:00 [INF] Return: 2008,| 
+2021-12-15 02:50:42.379 +02:00 [INF] Calling "RemoveLiked" method
+2021-12-15 02:50:42.379 +02:00 [INF] Arguments: 2008,| DB requested| 
+2021-12-15 02:50:42.386 +02:00 [INF] Return: void return| 
+2021-12-15 02:50:42.386 +02:00 [INF] Calling "GetLiked" method
+2021-12-15 02:50:42.386 +02:00 [INF] Arguments: 2008;2021-12-15;Good;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;10,10,12;17;sertvgsrbyser;ar gfjh fgbyaerbn6tuywbyean | DB requested| 
+2021-12-15 02:50:42.387 +02:00 [INF] Return: 2008,3f265873-b20d-4c10-8105-f86605452701| 
+2021-12-15 02:50:42.387 +02:00 [INF] Calling "GetLiked" method
+2021-12-15 02:50:42.387 +02:00 [INF] Arguments: 2008;2021-12-15;Good;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;10,10,12;17;sertvgsrbyser;ar gfjh fgbyaerbn6tuywbyean | DB requested| 
+2021-12-15 02:50:42.387 +02:00 [INF] Return: 2008,3f265873-b20d-4c10-8105-f86605452701| 
+2021-12-15 02:50:42.387 +02:00 [INF] Calling "RemoveLiked" method
+2021-12-15 02:50:42.387 +02:00 [INF] Arguments: 2008,3f265873-b20d-4c10-8105-f86605452701| DB requested| 
+2021-12-15 02:50:42.388 +02:00 [INF] Return: void return| 
+2021-12-15 02:50:42.388 +02:00 [INF] Calling "GetLiked" method
+2021-12-15 02:50:42.388 +02:00 [INF] Arguments: 2008;2021-12-15;Good;Furniture;f3588f1b-1656-442c-a059-96eac2fc70d4;10,10,12;17;sertvgsrbyser;ar gfjh fgbyaerbn6tuywbyean | DB requested| 
+2021-12-15 02:50:42.389 +02:00 [INF] Return: null |
+2021-12-15 02:50:42.389 +02:00 [INF] Return: void return| 
+2021-12-15 02:50:42.395 +02:00 [INF] Return: void return| 
+2021-12-15 02:50:42.395 +02:00 [INF] User b@b.lt requested /TakeItems/Take/2008 (status: 302)
+2021-12-15 02:50:42.430 +02:00 [INF] Calling "GetGivenItems" method
+2021-12-15 02:50:42.430 +02:00 [INF] Arguments: 3f265873-b20d-4c10-8105-f86605452701| DB requested| 
+2021-12-15 02:50:42.431 +02:00 [INF] Return: | 
+2021-12-15 02:50:42.433 +02:00 [INF] User b@b.lt requested /TakeItems (status: 200)
+2021-12-15 02:50:44.989 +02:00 [INF] Calling "GetUsersForLeaderboard" method
+2021-12-15 02:50:44.989 +02:00 [INF] Arguments: DB requested| 
+2021-12-15 02:50:44.990 +02:00 [INF] Return: b@b.lt;  qqq;  zz;  a;  pp;  qq;  c;  | 
+2021-12-15 02:50:44.991 +02:00 [INF] User b@b.lt requested /Leaderboard (status: 200)

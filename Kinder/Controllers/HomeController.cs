@@ -66,8 +66,6 @@ namespace kinder_app.Controllers
             alreadyLiked=
             ControllerMethods.LikeItem(_db, currentID, CurrentUserExtention.GetUserID(this.User), alreadyLiked);
             
-            return RedirectToAction("index");
-
             return RedirectToAction("swiping");
         }
 
