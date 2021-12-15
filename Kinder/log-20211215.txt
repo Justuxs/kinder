@@ -1,0 +1,8 @@
+2021-12-15 03:00:03.681 +02:00 [INF] User null requested / (status: 200)
+2021-12-15 03:00:04.133 +02:00 [INF] User null requested /Rectangle 1.png (status: 304)
+2021-12-15 03:00:04.135 +02:00 [INF] User null requested /css/mainStyle.css (status: 304)
+2021-12-15 03:00:04.136 +02:00 [INF] User null requested /Rectangle 3.png (status: 304)
+2021-12-15 03:00:04.137 +02:00 [INF] User null requested /Rectangle 4.png (status: 304)
+2021-12-15 03:00:08.436 +02:00 [INF] User null requested /Identity/Account/Register (status: 200)
+2021-12-15 03:00:09.736 +02:00 [INF] User null requested /Home/Swiping (status: 302)
+2021-12-15 03:00:09.939 +02:00 [INF] User null requested /Identity/Account/Login (status: 200)

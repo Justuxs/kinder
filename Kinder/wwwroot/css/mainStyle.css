@@ -1,0 +1,309 @@
+﻿body {
+    
+}
+
+h1 {
+    text-align: center;
+    font-size: 72px;
+}
+
+.mainBackground {
+    background-color: white;
+}
+
+p.description {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+    position: center;
+}
+
+h3 {
+    text-align: center;
+    position: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.textBoxDesign1 {
+    background-color: lightgray;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: black;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: gray 5px 5px 5px;
+}
+
+.textBoxDesign1 {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: gray 5px 5px 5px;
+}
+
+.infoContainer1 {
+    padding: 10px;
+    width: 100%;
+    height: max-content;
+    border-radius: 15px;
+    background-color: aliceblue;
+    align-content: baseline;
+    overflow: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.shortDesc {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.textBoxDesign2 {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.imgRound {
+    border-radius: 10px;
+}
+
+.description2 {
+    text-indent: 25px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.top-margin {
+    margin-top: 10px;
+}
+
+.textBoxDesign3 {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.infoContainer2 {
+    padding: 10px;
+    width: 100%;
+    height: max-content;
+    border-radius: 15px;
+    background-color: aliceblue;
+    align-content: baseline;
+    overflow: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inherit;
+}
+
+/* Rectangle 3 */
+.rect {
+    position: absolute;
+    width: 368px;
+    height: 522px;
+    left: 814px;
+    top: 288px;
+    border-radius: 38px;
+}
+
+/* Rectangle 4 */
+.rect4 {
+    position: absolute;
+    width: 368px;
+    height: 522px;
+    left: 814px;
+    top: 2105px;
+    border-radius: 38px;
+}
+
+/* Rectangle 1 */
+.rect1 {
+    position: absolute;
+    width: 368px;
+    height: 522px;
+    left: 202px;
+    top: 1213px;
+    border-radius: 38px;
+}
+
+/* Welcome to Kinder! Give away. Get karma points. Compete with other people! */
+.welcome {
+    position: absolute;
+    width: 391px;
+    height: 317.52px;
+    left: 241px;
+    top: 453.24px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 33.8987px;
+    line-height: 40px;
+    color: #000000;
+}
+
+
+.par2 {
+    /* Some people just want to free some space from their variuos items, which are not being used by themselves , but can be useful for some people. */
+    position: absolute;
+    width: 396px;
+    height: 350px;
+    left: 202px;
+    top: 2261px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 33.9px;
+    line-height: 40px;
+    color: #000000;
+}
+
+.par3 {
+    /* Give it a try */
+    position: absolute;
+    width: 168px;
+    height: 40px;
+    left: 636px;
+    top: 3438px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 33.9px;
+    line-height: 40px;
+    /* identical to box height */
+    text-decoration-line: underline;
+    color: #000000;
+}
+
+.par4 {
+    /* Each year, a lot of variuos trash is being produced. And sometimes, items that appear in our trash container, are not actually a real trash! */
+    position: absolute;
+    width: 368px;
+    height: 350px;
+    left: 814px;
+    top: 1322px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 33.9px;
+    line-height: 40px;
+    color: #000000;
+}
+
+.men1 {
+    /* Menu */
+    position: absolute;
+    width: 78px;
+    height: 35.23px;
+    left: 44px;
+    top: 31px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30.1935px;
+    line-height: 35px;
+    /* identical to box height */
+    color: #000000;
+}
+
+.par5 {
+    /* How does this application work? */
+    position: absolute;
+    width: 782px;
+    height: 64px;
+    left: 339px;
+    top: 4029px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 54.3041px;
+    line-height: 64px;
+    /* identical to box height */
+    color: #000000;
+}
+
+.par1 {
+    /* How do I help out / get items? */
+    position: absolute;
+    width: 723px;
+    height: 64px;
+    left: 358px;
+    top: 4683px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 54.3041px;
+    line-height: 64px;
+    /* identical to box height */
+    color: #000000;
+}
+
+.par6 {
+    /* So in order to fight this problem, our team created an application which will help people to give away some items that they dont need anymore, and also to give them not for utilization, but for those ones who really need something. */
+    position: absolute;
+    width: 1127px;
+    height: 350px;
+    left: 167px;
+    top: 3218px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 33.9px;
+    line-height: 40px;
+    color: #000000;
+}
+
+.par7 {
+    /* This application works on the concept of "swiping" that is being used in some other applications like "Tinder", so thats why it is called Kinder Karma application is an unified charity system */
+    position: absolute;
+    width: 1127px;
+    height: 350px;
+    left: 167px;
+    top: 4175px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 37.3666px;
+    line-height: 44px;
+    text-align: center;
+    color: #000000;
+}
+
+.par8 {
+    /* It is easy! Only 3 steps to become a member! Step 1: Login or create a new account! Step 2 Create an item description and publish it, or swipe other people items in order to find the one thet you need! Step 3 Get or give away items that You want! */
+    position: absolute;
+    width: 1127px;
+    height: 350px;
+    left: 166px;
+    top: 4829px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 37.3666px;
+    line-height: 44px;
+    text-align: center;
+    color: #000000;
+}
+
+.rect2 {
+    /* Rectangle 2 */
+    position: absolute;
+    width: 1440px;
+    height: 98px;
+    left: 0px;
+    top: 0px;
+    background: #C4C4C4;
+}
