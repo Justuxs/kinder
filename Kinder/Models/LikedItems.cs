@@ -18,5 +18,10 @@ namespace kinder_app.Models
 
         //User that likes item
         public string UserID { get; set; }
+
+        public override string ToString()
+        {
+            return ItemID.ToString() + ',' + UserID;
+        }
     }
 }
