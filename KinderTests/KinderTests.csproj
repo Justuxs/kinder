@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\kinder asp.net\kinder-app.csproj" />
+    <ProjectReference Include="..\kinder\kinder-app.csproj" />
   </ItemGroup>
 
 </Project>
