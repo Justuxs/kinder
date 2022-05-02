@@ -20,6 +20,7 @@ using Autofac.Extensions.DependencyInjection;
 using Autofac;
 using kinder_app.Controllers;
 using kinder_app.Aspects;
+using Chat.Hubs;
 
 namespace kinder_app
 {
@@ -52,7 +53,7 @@ namespace kinder_app
 
             services.AddControllersWithViews();
             services.AddSingleton(x => Log.Logger);
-
+            services.AddSignalR();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
         }
 
@@ -91,6 +92,7 @@ namespace kinder_app
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
+                endpoints.MapHub<ChatHub>("/chatHub");
             });
         }
     }

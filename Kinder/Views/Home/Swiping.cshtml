@@ -15,10 +15,12 @@
     <p><b>Date of purchase:</b> @TempData["date"]</p>
 
     <p><b>Karma Points:</b> @TempData["karma"]</p>
+    <p><b>User id:</b> @TempData["UserID"]</p>
 
     <form>
         <button type="submit" name="button" value="Next" asp-action="LoadNext" class="btn btn-primary">Next</button>
         <button type="submit" name="button" value="Like" asp-action="LikeThis" class="btn btn-primary">Like</button>
+        <button type="submit" name="button" value="@TempData["UserID"]" asp-action="Chat" class="btn btn-primary">Chat</button>
     </form>
 
     <p></p>

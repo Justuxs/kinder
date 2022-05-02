@@ -9,12 +9,20 @@ using kinder_app.Models;
 using kinder_app.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authorization;
+using System.Collections.Specialized;
+using System.Runtime.Serialization.Json;
+using Newtonsoft.Json;
+using System.Net.Http;
+using System.Text;
 
 namespace kinder_app.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ApplicationDbContext _db;
+        private static readonly HttpClient client = new HttpClient();
+
+
 
         public HomeController(ApplicationDbContext db)
         {
@@ -22,6 +30,7 @@ namespace kinder_app.Controllers
         }
 
         private static int current, currentID;
+        private static string userID;
         private static List<int> alreadyLiked = new();
 
         [Authorize]
@@ -44,8 +53,8 @@ namespace kinder_app.Controllers
                 TempData["size"] = itemList.ToList()[current].Size.ToString();
                 TempData["date"] = itemList.ToList()[current].DateOfPurchase.ToString("yyyy-MM-dd");
                 TempData["karma"] = itemList.ToList()[current].KarmaPoints;
-
-                currentID = itemList.ToList()[current].ID; 
+                userID = itemList.ToList()[current].UserID as string;
+                
             }
             else
             {
@@ -54,8 +63,33 @@ namespace kinder_app.Controllers
 
             return View();
         }
+        public IActionResult Chat()
+        {
+            Console.WriteLine("Gavejas yra () "+ userID);
+
+            TempData["Receiver"] = userID;
+            return RedirectToAction("ChatRoom", "Messages");
+
+
+            var data = new NameValueCollection();
+            data["sender"] = "username";
+            data["text"] = "message";
+            data["receiver"] = "Gavejas";
+            Console.WriteLine("Gavau zinute");
+            var mess = new Message((data["sender"]), (data["receiver"]), data["text"]);
+            _db.Add(mess);
+
+
+            //await Clients.All.SendAsync("ReceiveMessage", username, ats);
+            return View();
+        }
 
         public IActionResult LoadNext()
+        {
+            current++;
+            return RedirectToAction("swiping");
+        }
+        public IActionResult ChatWithGiver()
         {
             current++;
             return RedirectToAction("swiping");

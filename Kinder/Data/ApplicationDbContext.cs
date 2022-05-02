@@ -33,7 +33,17 @@ namespace kinder_app.Data
                 .HasMaxLength(250);
             modelBuilder.Entity<ApplicationUser>()
                 .Property(e => e.Karma_points);
-                
+            
+            modelBuilder.Entity<Message>(entity =>
+            {
+                entity.HasKey(e => e.ID);
+                entity.Property(e => e.ID).ValueGeneratedOnAdd();
+
+
+            });
+
         }
+        
+        public DbSet<kinder_app.Models.Message> Message { get; set; }
     }
 }

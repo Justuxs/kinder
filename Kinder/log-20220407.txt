@@ -1,0 +1,74 @@
+2022-04-07 16:22:52.746 +03:00 [INF] Calling "GetItemsSwiping" method
+2022-04-07 16:22:52.780 +03:00 [INF] Arguments: DB requested| e520f93f-5024-4bba-abda-8c85bd0c2fff| 
+2022-04-07 16:22:52.868 +03:00 [INF] Return: 1;2022-04-18;Good;Technology;482f31e3-b273-4555-a242-63e578f8ff0c;4,200,1000;10;Ratas;Nuajas Ratas;  | 
+2022-04-07 16:22:53.143 +03:00 [INF] User jonas requested /Home/Swiping (status: 200)
+2022-04-07 16:22:53.143 +03:00 [INF] User jonas requested / (status: 200)
+2022-04-07 16:23:08.705 +03:00 [INF] Calling "GetItemsSwiping" method
+2022-04-07 16:23:08.705 +03:00 [INF] Arguments: DB requested| e520f93f-5024-4bba-abda-8c85bd0c2fff| 
+2022-04-07 16:23:08.754 +03:00 [INF] Return: 1;2022-04-18;Good;Technology;482f31e3-b273-4555-a242-63e578f8ff0c;4,200,1000;10;Ratas;Nuajas Ratas;  | 
+2022-04-07 16:23:08.769 +03:00 [INF] User jonas requested /Home/Swiping (status: 200)
+2022-04-07 16:23:10.615 +03:00 [INF] User jonas requested /Home/Chat (status: 302)
+2022-04-07 16:27:02.152 +03:00 [INF] Calling "GetItemsSwiping" method
+2022-04-07 16:27:02.204 +03:00 [INF] Arguments: DB requested| e520f93f-5024-4bba-abda-8c85bd0c2fff| 
+2022-04-07 16:27:02.482 +03:00 [INF] User jonas requested / (status: 200)
+2022-04-07 16:27:04.785 +03:00 [INF] Return: 1;2022-04-18;Good;Technology;482f31e3-b273-4555-a242-63e578f8ff0c;4,200,1000;10;Ratas;Nuajas Ratas;  | 
+2022-04-07 16:27:04.838 +03:00 [INF] User jonas requested /Home/Swiping (status: 200)
+2022-04-07 16:27:04.864 +03:00 [INF] Calling "GetItemsSwiping" method
+2022-04-07 16:27:04.864 +03:00 [INF] Arguments: DB requested| e520f93f-5024-4bba-abda-8c85bd0c2fff| 
+2022-04-07 16:27:04.947 +03:00 [INF] Return: 1;2022-04-18;Good;Technology;482f31e3-b273-4555-a242-63e578f8ff0c;4,200,1000;10;Ratas;Nuajas Ratas;  | 
+2022-04-07 16:27:04.951 +03:00 [INF] User jonas requested /Home/Swiping (status: 200)
+2022-04-07 16:27:05.886 +03:00 [INF] Calling "GetItemsSwiping" method
+2022-04-07 16:27:05.886 +03:00 [INF] Arguments: DB requested| e520f93f-5024-4bba-abda-8c85bd0c2fff| 
+2022-04-07 16:27:05.927 +03:00 [INF] Return: 1;2022-04-18;Good;Technology;482f31e3-b273-4555-a242-63e578f8ff0c;4,200,1000;10;Ratas;Nuajas Ratas;  | 
+2022-04-07 16:27:05.935 +03:00 [INF] User jonas requested /Home/Swiping (status: 200)
+2022-04-07 16:27:07.849 +03:00 [INF] User jonas requested /Home/Chat (status: 302)
+2022-04-07 16:30:16.930 +03:00 [INF] Calling "GetItemsSwiping" method
+2022-04-07 16:30:17.002 +03:00 [INF] Arguments: DB requested| e520f93f-5024-4bba-abda-8c85bd0c2fff| 
+2022-04-07 16:30:17.242 +03:00 [INF] User jonas requested / (status: 200)
+2022-04-07 16:30:19.411 +03:00 [INF] Return: 1;2022-04-18;Good;Technology;482f31e3-b273-4555-a242-63e578f8ff0c;4,200,1000;10;Ratas;Nuajas Ratas;  | 
+2022-04-07 16:30:19.456 +03:00 [INF] User jonas requested /Home/Swiping (status: 200)
+2022-04-07 16:30:19.539 +03:00 [INF] Calling "GetItemsSwiping" method
+2022-04-07 16:30:19.539 +03:00 [INF] Arguments: DB requested| e520f93f-5024-4bba-abda-8c85bd0c2fff| 
+2022-04-07 16:30:19.583 +03:00 [INF] Return: 1;2022-04-18;Good;Technology;482f31e3-b273-4555-a242-63e578f8ff0c;4,200,1000;10;Ratas;Nuajas Ratas;  | 
+2022-04-07 16:30:19.587 +03:00 [INF] User jonas requested /Home/Swiping (status: 200)
+2022-04-07 16:30:21.348 +03:00 [INF] Calling "GetItemsSwiping" method
+2022-04-07 16:30:21.349 +03:00 [INF] Arguments: DB requested| e520f93f-5024-4bba-abda-8c85bd0c2fff| 
+2022-04-07 16:30:21.378 +03:00 [INF] Return: 1;2022-04-18;Good;Technology;482f31e3-b273-4555-a242-63e578f8ff0c;4,200,1000;10;Ratas;Nuajas Ratas;  | 
+2022-04-07 16:30:21.382 +03:00 [INF] User jonas requested /Home/Swiping (status: 200)
+2022-04-07 16:30:24.151 +03:00 [INF] User jonas requested /Home/Chat (status: 302)
+2022-04-07 16:32:28.364 +03:00 [INF] Calling "GetItemsSwiping" method
+2022-04-07 16:32:28.405 +03:00 [INF] Arguments: DB requested| e520f93f-5024-4bba-abda-8c85bd0c2fff| 
+2022-04-07 16:32:28.649 +03:00 [INF] User jonas requested / (status: 200)
+2022-04-07 16:32:31.553 +03:00 [INF] Return: 1;2022-04-18;Good;Technology;482f31e3-b273-4555-a242-63e578f8ff0c;4,200,1000;10;Ratas;Nuajas Ratas;  | 
+2022-04-07 16:32:31.633 +03:00 [INF] User jonas requested /Home/Swiping (status: 200)
+2022-04-07 16:32:31.658 +03:00 [INF] Calling "GetItemsSwiping" method
+2022-04-07 16:32:31.658 +03:00 [INF] Arguments: DB requested| e520f93f-5024-4bba-abda-8c85bd0c2fff| 
+2022-04-07 16:32:31.749 +03:00 [INF] Return: 1;2022-04-18;Good;Technology;482f31e3-b273-4555-a242-63e578f8ff0c;4,200,1000;10;Ratas;Nuajas Ratas;  | 
+2022-04-07 16:32:31.753 +03:00 [INF] User jonas requested /Home/Swiping (status: 200)
+2022-04-07 16:32:31.758 +03:00 [INF] Calling "GetItemsSwiping" method
+2022-04-07 16:32:31.758 +03:00 [INF] Arguments: DB requested| e520f93f-5024-4bba-abda-8c85bd0c2fff| 
+2022-04-07 16:32:31.786 +03:00 [INF] Return: 1;2022-04-18;Good;Technology;482f31e3-b273-4555-a242-63e578f8ff0c;4,200,1000;10;Ratas;Nuajas Ratas;  | 
+2022-04-07 16:32:31.790 +03:00 [INF] User jonas requested /Home/Swiping (status: 200)
+2022-04-07 16:33:02.558 +03:00 [INF] Calling "GetItemsSwiping" method
+2022-04-07 16:33:02.599 +03:00 [INF] Arguments: DB requested| e520f93f-5024-4bba-abda-8c85bd0c2fff| 
+2022-04-07 16:33:02.775 +03:00 [INF] User jonas requested / (status: 200)
+2022-04-07 16:33:04.170 +03:00 [INF] User jonas requested / (status: 200)
+2022-04-07 16:33:05.107 +03:00 [INF] Return: 1;2022-04-18;Good;Technology;482f31e3-b273-4555-a242-63e578f8ff0c;4,200,1000;10;Ratas;Nuajas Ratas;  | 
+2022-04-07 16:33:05.145 +03:00 [INF] User jonas requested /Home/Swiping (status: 200)
+2022-04-07 16:33:05.155 +03:00 [INF] Calling "GetItemsSwiping" method
+2022-04-07 16:33:05.155 +03:00 [INF] Arguments: DB requested| e520f93f-5024-4bba-abda-8c85bd0c2fff| 
+2022-04-07 16:33:05.208 +03:00 [INF] Return: 1;2022-04-18;Good;Technology;482f31e3-b273-4555-a242-63e578f8ff0c;4,200,1000;10;Ratas;Nuajas Ratas;  | 
+2022-04-07 16:33:05.212 +03:00 [INF] User jonas requested /Home/Swiping (status: 200)
+2022-04-07 16:33:05.215 +03:00 [INF] Calling "GetItemsSwiping" method
+2022-04-07 16:33:05.215 +03:00 [INF] Arguments: DB requested| e520f93f-5024-4bba-abda-8c85bd0c2fff| 
+2022-04-07 16:33:05.230 +03:00 [INF] Return: 1;2022-04-18;Good;Technology;482f31e3-b273-4555-a242-63e578f8ff0c;4,200,1000;10;Ratas;Nuajas Ratas;  | 
+2022-04-07 16:33:05.234 +03:00 [INF] User jonas requested /Home/Swiping (status: 200)
+2022-04-07 16:33:06.379 +03:00 [INF] Calling "GetItemsSwiping" method
+2022-04-07 16:33:06.379 +03:00 [INF] Arguments: DB requested| e520f93f-5024-4bba-abda-8c85bd0c2fff| 
+2022-04-07 16:33:06.390 +03:00 [INF] Return: 1;2022-04-18;Good;Technology;482f31e3-b273-4555-a242-63e578f8ff0c;4,200,1000;10;Ratas;Nuajas Ratas;  | 
+2022-04-07 16:33:06.396 +03:00 [INF] User jonas requested /Home/Swiping (status: 200)
+2022-04-07 16:33:09.466 +03:00 [INF] User jonas requested /Home/Chat (status: 302)
+2022-04-07 16:33:09.957 +03:00 [INF] User jonas requested /Messages/ChatRoom (status: 200)
+2022-04-07 16:33:10.037 +03:00 [INF] User null requested /js/signalr/dist/browser/signalr.js (status: 304)
+2022-04-07 16:33:10.161 +03:00 [INF] User jonas requested /chatHub/negotiate (status: 200)
+2022-04-07 16:33:24.383 +03:00 [INF] User jonas requested /chatHub (status: 101)

@@ -1,0 +1,29 @@
+2022-04-04 12:24:50.328 +03:00 [INF] Calling "GetItemsSwiping" method
+2022-04-04 12:24:50.355 +03:00 [INF] Arguments: DB requested| e520f93f-5024-4bba-abda-8c85bd0c2fff| 
+2022-04-04 12:24:50.445 +03:00 [INF] Return: 1;2022-04-18;Good;Technology;482f31e3-b273-4555-a242-63e578f8ff0c;4,200,1000;10;Ratas;Nuajas Ratas;  | 
+2022-04-04 12:24:50.548 +03:00 [INF] User jonas requested /Home/Swiping (status: 200)
+2022-04-04 12:24:50.548 +03:00 [INF] User jonas requested / (status: 200)
+2022-04-04 12:24:50.632 +03:00 [INF] User null requested /css/mainStyle.css (status: 304)
+2022-04-04 12:24:50.632 +03:00 [INF] User null requested /lib/jquery/dist/jquery.min.js (status: 304)
+2022-04-04 12:24:50.632 +03:00 [INF] User null requested /lib/bootstrap/dist/css/bootstrap.min.css (status: 304)
+2022-04-04 12:24:50.632 +03:00 [INF] User null requested /css/site.css (status: 304)
+2022-04-04 12:24:50.700 +03:00 [INF] User null requested /lib/bootstrap/dist/js/bootstrap.bundle.min.js (status: 304)
+2022-04-04 12:24:50.700 +03:00 [INF] User null requested /js/site.js (status: 304)
+2022-04-04 12:24:50.751 +03:00 [INF] User null requested /Rectangle 3.png (status: 304)
+2022-04-04 12:24:50.760 +03:00 [INF] User null requested /Rectangle 4.png (status: 304)
+2022-04-04 12:24:50.760 +03:00 [INF] User null requested /Rectangle 1.png (status: 304)
+2022-04-04 12:30:05.707 +03:00 [INF] User jonas requested / (status: 200)
+2022-04-04 12:36:25.923 +03:00 [INF] User jonas requested / (status: 200)
+2022-04-04 12:36:26.766 +03:00 [INF] Calling "GetItemsSwiping" method
+2022-04-04 12:36:26.766 +03:00 [INF] Arguments: DB requested| e520f93f-5024-4bba-abda-8c85bd0c2fff| 
+2022-04-04 12:36:31.597 +03:00 [INF] Calling "GetItemsSwiping" method
+2022-04-04 12:36:31.597 +03:00 [INF] Arguments: DB requested| e520f93f-5024-4bba-abda-8c85bd0c2fff| 
+2022-04-04 12:36:31.786 +03:00 [INF] Calling "GetItemsSwiping" method
+2022-04-04 12:36:31.786 +03:00 [INF] Arguments: DB requested| e520f93f-5024-4bba-abda-8c85bd0c2fff| 
+2022-04-04 12:36:31.901 +03:00 [INF] Return: 1;2022-04-18;Good;Technology;482f31e3-b273-4555-a242-63e578f8ff0c;4,200,1000;10;Ratas;Nuajas Ratas;  | 
+2022-04-04 12:36:31.902 +03:00 [INF] Return: 1;2022-04-18;Good;Technology;482f31e3-b273-4555-a242-63e578f8ff0c;4,200,1000;10;Ratas;Nuajas Ratas;  | 
+2022-04-04 12:36:31.903 +03:00 [INF] User jonas requested /Home/Swiping (status: 200)
+2022-04-04 12:36:31.904 +03:00 [INF] User jonas requested /Home/Swiping (status: 200)
+2022-04-04 12:36:31.921 +03:00 [INF] Return: 1;2022-04-18;Good;Technology;482f31e3-b273-4555-a242-63e578f8ff0c;4,200,1000;10;Ratas;Nuajas Ratas;  | 
+2022-04-04 12:36:31.923 +03:00 [INF] User jonas requested /Home/Swiping (status: 200)
+2022-04-04 12:36:33.348 +03:00 [INF] User jonas requested /Home/Chat (status: 302)
