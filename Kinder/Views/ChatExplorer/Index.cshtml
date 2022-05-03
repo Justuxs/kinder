@@ -74,7 +74,7 @@
         <input type="button" id="delete" value="Delete" onclick="Delete()" display="none" />
 
     </table>
-    <script>
+<script>
         "use strict";
 
 
@@ -156,6 +156,7 @@
         var UndoPressed = 0;
         var timeleft = 10;
         function Delete() {
+            DeleteFR();
             var textfield = document.getElementById('message');
             var undoButt = document.getElementById('undo');
             textfield.innerHTML = "Soon your " + selected + " chatHubs will be deleted";
@@ -188,7 +189,51 @@
             timeleft = 0;
         }
 
+        function DeleteFR() {
+            let itemname = "Tomas";
+
+            $.ajax({
+                url: 'ChatExplorer/Delete',
+                type: 'POST',
+                dataType: 'json',
+                data: { id: itemname }
+            });
+            /*
+            $.ajax({
+                type: "POST",
+                url: "/ChatExplorer/AjaxMethod",
+                data: '{name: "' + $("#txtName").val() + '" }',
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (response) {
+                    alert("Hello: "  + " .\nCurrent Date and Time: " + response.DateTime);
+                },
+                failure: function (response) {
+                    alert(response.responseText);
+                },
+                error: function (response) {
+                    alert(response.responseText);
+                }
+            });
+
+            $.ajax({
+                type: "POST",
+                url: "/ChatExplorer/Delete",
+                data: '{name: Labas}',
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (response) {
+                    alert("Hello: " + response.Name + " .\nCurrent Date and Time: " + response.DateTime);
+                },
+                failure: function (response) {
+                    alert(response.responseText);
+                },
+                error: function (response) {
+                    alert(response.responseText);
+                }
+            });*/
+
+        }
 
 
-
-    </script>
+</script>

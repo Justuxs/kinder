@@ -21,6 +21,7 @@ using Autofac;
 using kinder_app.Controllers;
 using kinder_app.Aspects;
 using Chat.Hubs;
+using Newtonsoft.Json.Serialization;
 
 namespace kinder_app
 {
@@ -41,7 +42,7 @@ namespace kinder_app
             Log.Logger = new LoggerConfiguration()
                 .WriteTo.File("log-.txt", rollingInterval: RollingInterval.Day)
                 .CreateLogger();
-
+            services.AddControllers().AddNewtonsoftJson();
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
@@ -50,11 +51,17 @@ namespace kinder_app
 
             services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = false)
               .AddEntityFrameworkStores<ApplicationDbContext>();
-
+            services.AddControllers().AddNewtonsoftJson();
             services.AddControllersWithViews();
             services.AddSingleton(x => Log.Logger);
             services.AddSignalR();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
+            services.AddControllers().AddNewtonsoftJson(options =>
+    {
+        options.SerializerSettings.ContractResolver = new DefaultContractResolver();
+    });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
