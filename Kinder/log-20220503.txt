@@ -1688,3 +1688,22 @@ kinder_app.Controllers.ChatExplorer.Index (kinder-app)
 2022-05-03 17:59:44.443 +03:00 [INF] Arguments: jonukas| DB requested| 
 2022-05-03 17:59:44.445 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
 2022-05-03 17:59:44.450 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 18:32:35.775 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 18:32:35.801 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 18:32:35.839 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 18:32:35.957 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 18:32:35.957 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 18:32:36.039 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 18:32:36.039 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 18:32:36.042 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 18:32:36.044 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 18:32:36.056 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 18:32:37.911 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 18:32:38.847 +03:00 [INF] Calling "GetGivenItems" method
+2022-05-03 18:32:38.847 +03:00 [INF] Arguments: c54b1e6a-2f8d-405a-b1be-10f6c54d5d7d| DB requested| 
+2022-05-03 18:32:38.857 +03:00 [INF] Return: | 
+2022-05-03 18:32:38.871 +03:00 [INF] User jonukas requested /TakeItems (status: 200)
+2022-05-03 18:32:39.427 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 18:32:39.427 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 18:32:39.430 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 18:32:39.436 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
