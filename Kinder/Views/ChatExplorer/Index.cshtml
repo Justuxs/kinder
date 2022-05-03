@@ -3,6 +3,18 @@
 @{
     ViewData["Title"] = "Index";
 }
+<style type="text/css">
+    td {
+        border: 1px #DDD solid;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    .selected {
+        background-color: brown;
+        color: #FFF;
+    }
+</style>
 
 <h1>Your Chats:</h1>
 <br />
@@ -52,42 +64,92 @@
 
                 </td>
             </tr>
-            }
-        </tbody>
-    </table>
-    <script>
-        "use strict";
+        }
+    </tbody>
+ 
+    <input type="button" id="select" value="Select" onclick="Select()" />
+    <input type="button" id="delete" value="Delete" onclick="Delete()" display="none" />
+
+</table>
+<script>
+    "use strict";
 
 
-        function Filtrate() {
-            var input, filter, table, tr, td, i, txtValue;
-            input = document.getElementById("criterie");
+    function Filtrate() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("criterie");
 
-            filter = input.value.toUpperCase();
-            table = document.getElementById("chatHubs");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("chatHubs");
 
-            tr = table.getElementsByTagName("tr");
+        tr = table.getElementsByTagName("tr");
 
-            var LABAS="TTT"
-            for (i = 0; i < tr.length; i++) {
-                td = tr[i].getElementsByTagName("td")[0];
-                if (td) {
-                    txtValue = td.textContent || td.innerText;
-                 
-
-                    let result1 = txtValue.substring(21, txtValue.length).toUpperCase();
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+                txtValue = td.textContent || td.innerText;
 
 
-                    if (result1.startsWith(filter)) {
-                        tr[i].style.display = "";
-                    } else {
-                        tr[i].style.display = "none";
-                    }
+                let result1 = txtValue.substring(21, txtValue.length).toUpperCase();
+
+
+                if (result1.startsWith(filter)) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
                 }
+            }
+        }
+
+    }
+
+    document.getElementById('delete').style.visibility = 'hidden';
+    var status = 0;
+    var selected = 0;
+    var table = document.getElementById('chatHubs');
+    var selected = table.getElementsByClassName('selected');
+    table.onclick = highlight;
+
+    function highlight(e) {
+        if (status == 1) {
+            if (e.target.parentNode.style.backgroundColor == 'green') {
+                e.target.parentNode.style.backgroundColor = 'white';
+                selected -= 1;
+            }
+            else {
+                e.target.parentNode.style.backgroundColor = 'Green';
+                selected += 1;
+            }
+            ShowButton();
+        }
+    }
+
+    function Select() {
+        selected = 0;
+        var button = document.getElementById('select');
+        button.style.backgroundColor = 'Red';
+        if (status == 1) {
+            status = 0;
+            button.style.backgroundColor = 'White';
+            for (let row of table.rows) {
+                row.style.backgroundColor = 'White';
             }
 
         }
+        else status += 1;
+
+        ShowButton();
+    }
+
+    function ShowButton() {
+        var button = document.getElementById('delete');
+        if (selected > 0) {
+            button.style.visibility = 'visible';
+        }
+        else button.style.visibility = 'hidden';
+
+    }
 
 
 
-    </script>
+</script>
