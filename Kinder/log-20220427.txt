@@ -1,3 +1,0 @@
-2022-04-27 16:30:00.104 +03:00 [INF] User 12345 requested / (status: 200)
-2022-04-27 16:30:00.110 +03:00 [INF] User 12345 requested /Items/Create (status: 200)
-2022-04-27 16:30:00.110 +03:00 [INF] User 12345 requested /Items/Create (status: 200)

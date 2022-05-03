@@ -18,7 +18,12 @@ namespace kinder_app.Data
         public DbSet<kinder_app.Models.LikedItems> LikedItems { get; set; }
         
         public DbSet<kinder_app.Models.ApplicationUser> ApplicationUsers { get; set; }
-        
+
+        public DbSet<kinder_app.Models.Message> Messages { get; set; }
+
+        public DbSet<kinder_app.Models.ChatHub> ChatHubs { get; set; }
+
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
@@ -38,10 +43,15 @@ namespace kinder_app.Data
             {
                 entity.HasKey(e => e.ID);
                 entity.Property(e => e.ID).ValueGeneratedOnAdd();
-
-
             });
-
+            modelBuilder.Entity<ChatHub>(entity =>
+            {
+                entity.HasKey(e => e.Name);
+                entity.Property(e => e.SenderID).ValueGeneratedOnAdd();
+                entity.Property(e => e.ReceiverID).ValueGeneratedOnAdd();
+                entity.Property(e => e.Date).ValueGeneratedOnAdd();
+                entity.Property(e => e.Status).ValueGeneratedOnAdd();
+            });
         }
         
         public DbSet<kinder_app.Models.Message> Message { get; set; }

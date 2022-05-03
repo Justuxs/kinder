@@ -134,7 +134,7 @@ namespace kinder_app.Controllers
         public static void GiveItem(ApplicationDbContext context, string userID, int? id)
         {
             var uniqueItem = LikedModelList(userID,
-                context.Item.ToList(),context.LikedItems.ToList(), context.Users.ToList())
+                context.Item.ToList(), context.LikedItems.ToList(), context.Users.ToList())
                 .FirstOrDefault(m => m.UniqID == id);
 
             var item = context.Item
@@ -178,5 +178,24 @@ namespace kinder_app.Controllers
 
             return likeds;
         }
+        // [LogAspect]
+        /* public static List<ChatRoom> GetUserMessages(ApplicationDbContext context, int currentID)
+         {
+             string userID = currentID + "";
+
+             List<Message> users = context.Message.Where(x => x.UserID.Equals(userID)).ToList();
+             List<Message> users = context.Message.Where(x => x.UserID.Equals(userID)).ToList();
+
+             //context.Entry(liked).State = EntityState.Added;
+             context.SaveChanges();
+
+            // return likeds;
+         }*/
+        [LogAspect]
+        public static List<ChatHub> GetUsersChatHub(string userN, ApplicationDbContext context)
+        {
+            return context.ChatHubs.Where(x => x.ReceiverID.Equals(userN) || x.SenderID.Equals(userN)).ToList();
+        }
+
     }
 }

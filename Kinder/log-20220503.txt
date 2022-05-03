@@ -1,0 +1,126 @@
+2022-05-03 09:14:16.950 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 09:14:18.516 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 09:14:19.785 +03:00 [INF] User jonukas requested /Messages/ChatRoom (status: 200)
+2022-05-03 09:14:19.870 +03:00 [INF] User jonukas requested /chatHub/negotiate (status: 200)
+2022-05-03 09:14:29.447 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 09:14:40.858 +03:00 [INF] User jonukas requested /chatHub (status: 101)
+2022-05-03 09:15:42.249 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 09:15:42.260 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 09:15:43.937 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 09:15:44.132 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 09:15:45.504 +03:00 [INF] User jonukas requested /Messages/ChatRoom (status: 200)
+2022-05-03 09:15:45.572 +03:00 [INF] User jonukas requested /chatHub/negotiate (status: 200)
+2022-05-03 09:15:49.204 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 09:15:50.504 +03:00 [INF] Calling "GetItemsSwiping" method
+2022-05-03 09:15:50.504 +03:00 [INF] Arguments: DB requested| c54b1e6a-2f8d-405a-b1be-10f6c54d5d7d| 
+2022-05-03 09:15:50.597 +03:00 [INF] Return: 1;2022-04-18;Good;Technology;482f31e3-b273-4555-a242-63e578f8ff0c;4,200,1000;10;Ratas;Nuajas Ratas;  | 
+2022-05-03 09:15:50.609 +03:00 [INF] User jonukas requested /Home/Swiping (status: 200)
+2022-05-03 09:15:51.298 +03:00 [INF] Calling "GetUsersForLeaderboard" method
+2022-05-03 09:15:51.298 +03:00 [INF] Arguments: DB requested| 
+2022-05-03 09:15:51.322 +03:00 [INF] Return: Justas;  12345;  Tomas;  jonukas;  jonas;  | 
+2022-05-03 09:15:51.327 +03:00 [INF] User jonukas requested /Leaderboard (status: 200)
+2022-05-03 09:15:51.851 +03:00 [INF] Calling "LikedModelList" method
+2022-05-03 09:15:51.851 +03:00 [INF] Arguments: c54b1e6a-2f8d-405a-b1be-10f6c54d5d7d| 1;2022-04-18;Good;Technology;482f31e3-b273-4555-a242-63e578f8ff0c;4,200,1000;10;Ratas;Nuajas Ratas;  | System.Collections.Generic.List`1[kinder_app.Models.LikedItems]| Justas;  12345;  Tomas;  jonukas;  jonas;  | 
+2022-05-03 09:15:51.854 +03:00 [INF] Return: | 
+2022-05-03 09:15:51.859 +03:00 [INF] User jonukas requested /LikedItems (status: 200)
+2022-05-03 09:15:52.303 +03:00 [INF] Calling "AggregateSuming" method
+2022-05-03 09:15:52.303 +03:00 [INF] Arguments: | 
+2022-05-03 09:15:52.303 +03:00 [INF] Return: 0| 
+2022-05-03 09:15:52.319 +03:00 [INF] User jonukas requested /Items (status: 200)
+2022-05-03 09:15:52.810 +03:00 [INF] Calling "GetGivenItems" method
+2022-05-03 09:15:52.810 +03:00 [INF] Arguments: c54b1e6a-2f8d-405a-b1be-10f6c54d5d7d| DB requested| 
+2022-05-03 09:15:52.814 +03:00 [INF] Return: | 
+2022-05-03 09:15:52.823 +03:00 [INF] User jonukas requested /TakeItems (status: 200)
+2022-05-03 09:15:55.178 +03:00 [INF] User jonukas requested /Identity/Account/Manage (status: 200)
+2022-05-03 09:15:56.500 +03:00 [INF] User jonukas requested /chatHub (status: 101)
+2022-05-03 09:16:28.222 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 09:16:29.689 +03:00 [INF] User jonukas requested /Identity/Account/Manage (status: 200)
+2022-05-03 09:16:30.006 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 09:16:30.158 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 09:16:31.285 +03:00 [INF] User jonukas requested /Messages/ChatRoom (status: 200)
+2022-05-03 09:16:31.359 +03:00 [INF] User jonukas requested /chatHub/negotiate (status: 200)
+2022-05-03 09:16:33.212 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 09:16:34.078 +03:00 [INF] Calling "GetItemsSwiping" method
+2022-05-03 09:16:34.078 +03:00 [INF] Arguments: DB requested| c54b1e6a-2f8d-405a-b1be-10f6c54d5d7d| 
+2022-05-03 09:16:34.129 +03:00 [INF] Return: 1;2022-04-18;Good;Technology;482f31e3-b273-4555-a242-63e578f8ff0c;4,200,1000;10;Ratas;Nuajas Ratas;  | 
+2022-05-03 09:16:34.138 +03:00 [INF] User jonukas requested /Home/Swiping (status: 200)
+2022-05-03 09:16:34.880 +03:00 [INF] Calling "GetItemsSwiping" method
+2022-05-03 09:16:34.880 +03:00 [INF] Arguments: DB requested| c54b1e6a-2f8d-405a-b1be-10f6c54d5d7d| 
+2022-05-03 09:16:34.883 +03:00 [INF] Return: 1;2022-04-18;Good;Technology;482f31e3-b273-4555-a242-63e578f8ff0c;4,200,1000;10;Ratas;Nuajas Ratas;  | 
+2022-05-03 09:16:34.884 +03:00 [INF] User jonukas requested /Home/Swiping (status: 200)
+2022-05-03 09:16:35.539 +03:00 [INF] Calling "GetUsersForLeaderboard" method
+2022-05-03 09:16:35.539 +03:00 [INF] Arguments: DB requested| 
+2022-05-03 09:16:35.552 +03:00 [INF] Return: Justas;  12345;  Tomas;  jonukas;  jonas;  | 
+2022-05-03 09:16:35.558 +03:00 [INF] User jonukas requested /Leaderboard (status: 200)
+2022-05-03 09:16:36.866 +03:00 [INF] Calling "GetUsersForLeaderboard" method
+2022-05-03 09:16:36.866 +03:00 [INF] Arguments: DB requested| 
+2022-05-03 09:16:36.868 +03:00 [INF] Return: Justas;  12345;  Tomas;  jonukas;  jonas;  | 
+2022-05-03 09:16:36.869 +03:00 [INF] User jonukas requested /Leaderboard (status: 200)
+2022-05-03 09:16:36.907 +03:00 [INF] User null requested /favicon.ico (status: 304)
+2022-05-03 09:16:37.975 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 09:16:39.053 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 09:16:42.251 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 09:16:46.847 +03:00 [INF] User jonukas requested /chatHub (status: 101)
+2022-05-03 09:16:50.909 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 09:17:05.470 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 09:17:06.857 +03:00 [INF] User jonukas requested /Identity/Account/Manage (status: 200)
+2022-05-03 09:17:11.115 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 09:17:23.987 +03:00 [INF] User null requested /Identity/Account/Manage (status: 302)
+2022-05-03 09:17:24.072 +03:00 [INF] User null requested /Identity/Account/Login (status: 200)
+2022-05-03 09:17:24.195 +03:00 [INF] User null requested /css/site.css (status: 200)
+2022-05-03 09:17:24.199 +03:00 [INF] User null requested /Identity/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js (status: 200)
+2022-05-03 09:17:24.206 +03:00 [INF] User null requested /Identity/lib/jquery-validation/dist/jquery.validate.js (status: 200)
+2022-05-03 09:17:24.208 +03:00 [INF] User null requested /lib/bootstrap/dist/css/bootstrap.min.css (status: 200)
+2022-05-03 09:17:25.548 +03:00 [INF] User null requested / (status: 200)
+2022-05-03 09:17:25.612 +03:00 [INF] User null requested /css/mainStyle.css (status: 200)
+2022-05-03 09:17:25.747 +03:00 [INF] User null requested /Rectangle 3.png (status: 200)
+2022-05-03 09:17:25.754 +03:00 [INF] User null requested /Rectangle 1.png (status: 200)
+2022-05-03 09:17:25.766 +03:00 [INF] User null requested /Rectangle 4.png (status: 200)
+2022-05-03 09:17:26.476 +03:00 [INF] User null requested / (status: 200)
+2022-05-03 09:17:27.584 +03:00 [INF] User null requested /Identity/Account/Login (status: 200)
+2022-05-03 09:17:29.267 +03:00 [INF] User null requested /Identity/Account/Login (status: 302)
+2022-05-03 09:17:29.278 +03:00 [INF] User Tomas requested / (status: 200)
+2022-05-03 09:19:25.838 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 09:19:27.155 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 09:19:27.645 +03:00 [INF] User jonukas requested /Identity/Account/Manage (status: 200)
+2022-05-03 09:20:20.604 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 09:20:20.615 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 09:20:22.920 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 09:20:24.105 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 09:20:24.235 +03:00 [INF] User jonukas requested /Identity/Account/Manage (status: 200)
+2022-05-03 09:20:26.560 +03:00 [INF] Calling "GetGivenItems" method
+2022-05-03 09:20:26.560 +03:00 [INF] Arguments: c54b1e6a-2f8d-405a-b1be-10f6c54d5d7d| DB requested| 
+2022-05-03 09:20:26.656 +03:00 [INF] Return: | 
+2022-05-03 09:20:26.668 +03:00 [INF] User jonukas requested /TakeItems (status: 200)
+2022-05-03 09:20:27.462 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 10:13:59.680 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 10:13:59.706 +03:00 [INF] Arguments: c54b1e6a-2f8d-405a-b1be-10f6c54d5d7d| DB requested| 
+2022-05-03 10:13:59.726 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 10:13:59.819 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 10:13:59.819 +03:00 [INF] User jonukas requested /Identity/Account/Manage (status: 200)
+2022-05-03 10:13:59.819 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 10:13:59.836 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 10:14:10.299 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 10:14:10.299 +03:00 [INF] Arguments: c54b1e6a-2f8d-405a-b1be-10f6c54d5d7d| DB requested| 
+2022-05-03 10:14:10.301 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 10:14:10.303 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 10:14:57.799 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 10:14:57.809 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 10:14:59.380 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 10:14:59.380 +03:00 [INF] Arguments: c54b1e6a-2f8d-405a-b1be-10f6c54d5d7d| DB requested| 
+2022-05-03 10:14:59.539 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 10:15:00.783 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 10:15:00.795 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 10:15:00.960 +03:00 [INF] User jonukas requested /Identity/Account/Manage (status: 200)
+2022-05-03 10:19:10.398 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 10:19:10.409 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 10:19:11.976 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 10:19:12.530 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 10:19:12.532 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 10:19:12.532 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 10:19:13.844 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 10:19:13.864 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 10:19:14.430 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 10:19:14.430 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 10:19:14.461 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 10:19:14.464 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)

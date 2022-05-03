@@ -92,7 +92,7 @@ namespace kinder_app
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
-                endpoints.MapHub<ChatHub>("/chatHub");
+                endpoints.MapHub<Chat.Hubs.ChatHub>("/chatHub");
             });
         }
     }
