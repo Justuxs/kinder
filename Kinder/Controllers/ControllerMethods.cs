@@ -196,6 +196,23 @@ namespace kinder_app.Controllers
         {
             return context.ChatHubs.Where(x => x.ReceiverID.Equals(userN) || x.SenderID.Equals(userN)).ToList();
         }
+        [LogAspect]
+        public static void CreateChatHub(string userN,string ownerN, string itemN, ApplicationDbContext context)
+        {
+            string ChatName = ownerN + "-" + itemN;
+            Console.WriteLine("Chat hub creating 1");
+            ChatHub Exist = context.ChatHubs.Where(x => x.Name.Equals(ChatName)).ToList().FirstOrDefault();
+            Console.WriteLine("Chat hub creating 2");
+
+            if (Exist == null)
+            {
+                context.Add(new ChatHub(ownerN, userN, ChatName));
+                Console.WriteLine("Chat hub crated");
+                context.SaveChanges();
+            }
+            Console.WriteLine("Chat hub creating 3");
+
+        }
 
     }
 }

@@ -9,7 +9,7 @@ namespace kinder_app.Models
     public class ChatHub
     {
         public string SenderID { get; set; }
-        
+
         public string ReceiverID { get; set; }
         [Key]
         public string Name { get; set; }
@@ -17,5 +17,14 @@ namespace kinder_app.Models
         public DateTime Date;
 
         public int Status;
+        public ChatHub() { }
+        public ChatHub(string IownerN, string writerN, string chatN)
+        {
+            SenderID = IownerN;
+            ReceiverID = writerN;
+            Name = chatN;
+            Status = 0;
+            Date = DateTime.Now;
+        }
     }
 }

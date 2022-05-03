@@ -24,6 +24,7 @@ namespace kinder_app.Controllers
 
 
 
+
         public HomeController(ApplicationDbContext db)
         {
             _db = db;
@@ -32,6 +33,7 @@ namespace kinder_app.Controllers
         private static int current, currentID;
         private static string userID;
         private static List<int> alreadyLiked = new();
+        private static string OwnerID, ItemN;
 
         [Authorize]
         public IActionResult Swiping()
@@ -54,7 +56,11 @@ namespace kinder_app.Controllers
                 TempData["date"] = itemList.ToList()[current].DateOfPurchase.ToString("yyyy-MM-dd");
                 TempData["karma"] = itemList.ToList()[current].KarmaPoints;
                 userID = itemList.ToList()[current].UserID as string;
-                
+                OwnerID = itemList.ToList()[current].UserID;
+                ItemN = itemList.ToList()[current].Name; ;
+
+
+
             }
             else
             {
@@ -99,7 +105,18 @@ namespace kinder_app.Controllers
         {
             alreadyLiked=
             ControllerMethods.LikeItem(_db, currentID, CurrentUserExtention.GetUserID(this.User), alreadyLiked);
-            
+            var ownerN = _db.Users.Where(x => x.Id == OwnerID).ToList().FirstOrDefault();
+            if(ownerN != null)
+            {
+                Console.WriteLine("Creating chathub ...");
+                ControllerMethods.CreateChatHub(User.GetUserName(), ownerN.UserName, ItemN, _db);
+            }
+            else
+            {
+                Console.WriteLine("Error- owner IS NULLLLLLLL");
+            }
+
+
             return RedirectToAction("swiping");
         }
 
