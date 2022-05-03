@@ -124,3 +124,1021 @@
 2022-05-03 10:19:14.430 +03:00 [INF] Arguments: jonukas| DB requested| 
 2022-05-03 10:19:14.461 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
 2022-05-03 10:19:14.464 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 10:29:53.543 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 10:29:53.555 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 10:29:53.579 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 10:29:53.579 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 10:29:54.802 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 10:29:54.802 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 10:29:54.957 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 10:29:54.957 +03:00 [INF] User jonukas requested /ChatExplorer/Index (status: 200)
+2022-05-03 10:29:55.703 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 10:29:56.534 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 10:30:58.629 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 10:31:05.515 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 10:31:07.821 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 10:31:07.822 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 10:31:09.113 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 10:31:09.128 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 10:31:41.041 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 10:31:42.282 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 10:31:42.286 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 10:31:43.479 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 10:31:43.494 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 10:32:01.790 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 10:32:03.227 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 10:32:03.227 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 10:32:04.462 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 10:32:04.477 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 10:33:27.712 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 10:33:29.340 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 10:33:29.340 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 10:33:30.585 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 10:33:30.601 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 10:35:34.166 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 10:35:35.782 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 10:35:35.785 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 10:35:37.050 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 10:35:37.067 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 10:37:39.467 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 10:37:40.962 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 10:37:40.966 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 10:37:42.161 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 10:37:42.177 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 10:37:45.103 +03:00 [INF] User jonukas requested /TakeItemsController (status: 404)
+2022-05-03 10:38:42.841 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 10:38:45.779 +03:00 [INF] Calling "GetGivenItems" method
+2022-05-03 10:38:45.779 +03:00 [INF] Arguments: c54b1e6a-2f8d-405a-b1be-10f6c54d5d7d| DB requested| 
+2022-05-03 10:38:46.951 +03:00 [INF] Return: | 
+2022-05-03 10:38:46.968 +03:00 [INF] User jonukas requested /TakeItems (status: 200)
+2022-05-03 10:38:48.834 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 10:38:48.834 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 10:38:48.940 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 10:38:48.952 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 10:38:51.107 +03:00 [INF] User jonukas requested /TakeItemsController (status: 404)
+2022-05-03 10:38:53.048 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 10:38:53.048 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 10:38:53.060 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 10:38:53.063 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 10:38:54.895 +03:00 [INF] Calling "AggregateSuming" method
+2022-05-03 10:38:54.895 +03:00 [INF] Arguments: | 
+2022-05-03 10:38:54.896 +03:00 [INF] Return: 0| 
+2022-05-03 10:38:54.915 +03:00 [INF] User jonukas requested /Items (status: 200)
+2022-05-03 10:38:57.843 +03:00 [INF] Calling "GetGivenItems" method
+2022-05-03 10:38:57.843 +03:00 [INF] Arguments: c54b1e6a-2f8d-405a-b1be-10f6c54d5d7d| DB requested| 
+2022-05-03 10:38:57.845 +03:00 [INF] Return: | 
+2022-05-03 10:38:57.846 +03:00 [INF] User jonukas requested /TakeItems (status: 200)
+2022-05-03 10:38:59.100 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 10:38:59.100 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 10:38:59.102 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 10:38:59.105 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 10:40:27.598 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 10:40:28.984 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 10:40:28.985 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 10:40:30.229 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 10:40:30.244 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 10:42:30.893 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 10:42:32.579 +03:00 [ERR] Encountered error: The request matched multiple endpoints. Matches: 
+
+kinder_app.Controllers.ChatExplorer.Index (kinder-app)
+kinder_app.Controllers.ChatExplorer.Index (kinder-app) 
+ Stack trace:    at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at kinder_app.Middleware.LogUrlMiddleware.InvokeAsync(HttpContext context) in C:\Users\JUSTA\source\repos\kinderis\Kinder\Middleware\LogUrlMiddleware.cs:line 31
+2022-05-03 10:42:32.595 +03:00 [INF] User null requested /ChatExplorer (status: 200)
+2022-05-03 10:43:30.399 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 10:43:32.179 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 10:43:32.179 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 10:43:33.401 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 10:43:33.417 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 10:51:04.121 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 10:51:04.170 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 10:51:04.195 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 10:51:04.195 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 10:51:04.223 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 10:51:04.223 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 10:51:04.354 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 10:51:04.354 +03:00 [INF] User jonukas requested /ChatExplorer/Index (status: 200)
+2022-05-03 10:51:04.354 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 10:51:04.386 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 10:51:05.689 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 10:51:05.689 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 10:51:05.693 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 10:51:05.697 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 10:51:07.089 +03:00 [INF] User jonukas requested /Account/CheckPassword (status: 404)
+2022-05-03 10:51:10.930 +03:00 [INF] User jonukas requested /Account/CheckPassword (status: 404)
+2022-05-03 10:54:44.111 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 10:54:44.144 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 10:54:44.283 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 10:54:45.677 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 10:54:45.693 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 10:54:46.252 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 10:54:46.252 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 10:54:46.255 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 10:54:46.255 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 10:54:46.299 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 10:54:46.299 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 10:54:46.303 +03:00 [INF] User jonukas requested /ChatExplorer/Index (status: 200)
+2022-05-03 10:54:46.303 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 10:54:47.871 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 10:54:47.871 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 10:54:47.883 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 10:54:47.887 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 10:54:50.243 +03:00 [INF] User jonukas requested /ChatExplorer/Filtrate (status: 200)
+2022-05-03 10:54:53.446 +03:00 [INF] User jonukas requested /ChatExplorer/Filtrate (status: 200)
+2022-05-03 10:54:53.966 +03:00 [INF] User jonukas requested /ChatExplorer/Filtrate (status: 200)
+2022-05-03 10:54:54.201 +03:00 [INF] User jonukas requested /ChatExplorer/Filtrate (status: 200)
+2022-05-03 10:54:54.407 +03:00 [INF] User jonukas requested /ChatExplorer/Filtrate (status: 200)
+2022-05-03 10:55:46.270 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 10:55:46.301 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 10:55:46.503 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 10:55:47.963 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 10:55:47.990 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 10:55:48.216 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 10:55:48.216 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 10:55:48.261 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 10:55:48.265 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 10:55:49.540 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 10:55:49.540 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 10:55:49.548 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 10:55:49.552 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 10:55:51.336 +03:00 [INF] User jonukas requested /ChatExplorer/Filtrate (status: 200)
+2022-05-03 10:55:51.912 +03:00 [INF] User jonukas requested /ChatExplorer/Filtrate (status: 200)
+2022-05-03 10:55:52.370 +03:00 [INF] User jonukas requested /ChatExplorer/Filtrate (status: 200)
+2022-05-03 10:55:52.676 +03:00 [INF] User jonukas requested /ChatExplorer/Filtrate (status: 200)
+2022-05-03 10:55:52.918 +03:00 [INF] User jonukas requested /ChatExplorer/Filtrate (status: 200)
+2022-05-03 10:55:53.113 +03:00 [INF] User jonukas requested /ChatExplorer/Filtrate (status: 200)
+2022-05-03 10:55:53.336 +03:00 [INF] User jonukas requested /ChatExplorer/Filtrate (status: 200)
+2022-05-03 10:57:15.223 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 10:57:15.252 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 10:57:15.377 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 10:57:16.736 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 10:57:16.752 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 10:57:17.108 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 10:57:17.108 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 10:57:17.145 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 10:57:17.149 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 10:57:17.327 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 10:57:17.327 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 10:57:17.345 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 10:57:17.351 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 10:57:18.304 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 10:57:18.305 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 10:57:18.307 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 10:57:18.330 +03:00 [INF] User jonukas requested /ChatExplorer/Index (status: 200)
+2022-05-03 10:57:19.165 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 10:57:19.165 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 10:57:19.167 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 10:57:19.169 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 10:57:20.765 +03:00 [INF] User jonukas requested /ChatExplorer/Filtrate (status: 200)
+2022-05-03 10:57:30.329 +03:00 [INF] User jonukas requested /ChatExplorer/Filtrate (status: 200)
+2022-05-03 11:08:22.058 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:08:22.080 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:08:22.277 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:08:23.605 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:08:23.622 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:08:24.236 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:08:24.236 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:08:24.263 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:08:24.267 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:08:24.298 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:08:24.298 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:08:24.308 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:08:24.313 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:08:25.188 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:08:25.188 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:08:25.190 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:08:25.196 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:08:25.486 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:08:25.486 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:08:25.487 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:08:25.506 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:11:54.569 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:11:54.609 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:11:54.795 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:11:56.131 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:11:56.150 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:11:56.448 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:11:56.449 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:11:56.489 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:11:56.495 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:11:56.645 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:11:56.645 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:11:56.652 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:11:56.655 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:11:57.689 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:11:57.690 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:11:57.691 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:11:57.694 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:11:58.268 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:11:58.268 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:11:58.269 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:11:58.272 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:13:27.478 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:13:27.508 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:13:27.718 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:13:29.680 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:13:29.699 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:13:29.710 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:13:29.710 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:13:29.747 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:13:29.751 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:13:29.946 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:13:29.946 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:13:29.955 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:13:29.958 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:13:30.137 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:13:30.137 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:13:30.139 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:13:30.143 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:15:45.716 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:15:45.746 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:15:45.910 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:15:47.366 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:15:47.396 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:15:47.640 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:15:47.640 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:15:47.683 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:15:47.689 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:15:48.189 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:15:48.189 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:15:48.205 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:15:48.214 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:15:50.902 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:15:50.902 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:15:50.904 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:15:50.907 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:16:16.652 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:16:16.697 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:16:16.874 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:16:18.217 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:16:18.259 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:16:18.502 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:16:18.502 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:16:18.546 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:16:18.553 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:16:18.992 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:16:18.992 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:16:19.004 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:16:19.007 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:16:19.384 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:16:19.384 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:16:19.386 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:16:19.389 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:16:58.189 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:16:58.215 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:16:58.398 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:16:59.847 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:16:59.882 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:17:00.275 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:17:00.275 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:17:00.306 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:17:00.311 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:17:00.368 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:17:00.368 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:17:00.378 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:17:00.382 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:17:00.449 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:17:00.449 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:17:00.450 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:17:00.453 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:17:23.031 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:17:23.066 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:17:23.238 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:17:24.700 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:17:24.737 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:17:24.748 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:17:24.748 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:17:24.799 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:17:24.806 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:17:24.827 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:17:24.827 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:17:24.847 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:17:24.853 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:18:55.899 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:18:55.931 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:18:56.060 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:18:57.642 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:18:57.670 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:18:58.093 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:18:58.094 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:18:58.122 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:18:58.126 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:18:58.128 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:18:58.128 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:18:58.137 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:18:58.141 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:18:58.143 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:18:58.144 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:18:58.145 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:18:58.149 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:19:26.987 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:19:27.038 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:19:27.280 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:19:29.015 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:19:29.038 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:19:29.049 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:19:29.050 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:19:29.091 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:19:29.097 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:19:29.100 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:19:29.100 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:19:29.112 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:19:29.122 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:19:29.202 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:19:29.202 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:19:29.205 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:19:29.210 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:19:30.264 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:19:30.264 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:19:30.266 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:19:30.269 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:19:56.405 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:19:56.455 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:19:56.588 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:19:58.106 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:19:58.141 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:19:58.518 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:19:58.518 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:19:58.557 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:19:58.561 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:19:58.602 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:19:58.602 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:19:58.614 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:19:58.618 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:19:58.753 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:19:58.753 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:19:58.756 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:19:58.759 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:20:19.537 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:20:19.583 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:20:19.754 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:20:21.343 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:20:21.370 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:20:21.384 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:20:21.384 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:20:21.426 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:20:21.431 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:20:21.516 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:20:21.516 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:20:21.528 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:20:21.534 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:20:48.603 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:20:48.651 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:20:48.859 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:20:50.402 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:20:50.424 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:20:50.480 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:20:50.480 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:20:50.524 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:20:50.530 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:20:50.860 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:20:50.860 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:20:50.869 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:20:50.873 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:21:11.986 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:21:12.013 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:21:12.064 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:21:12.168 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:21:12.168 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:21:12.236 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:21:12.236 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:21:12.239 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:21:12.248 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:21:12.262 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:21:12.262 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:21:12.263 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:21:12.269 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:21:13.433 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:21:13.434 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:21:13.436 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:21:13.439 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:21:52.560 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:21:52.591 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:21:52.723 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:21:54.301 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:21:54.332 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:21:54.347 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:21:54.347 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:21:54.393 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:21:54.401 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:21:54.739 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:21:54.740 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:21:54.749 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:21:54.752 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:23:58.916 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:23:58.945 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:23:59.078 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:24:00.396 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:24:00.427 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:24:00.639 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:24:00.640 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:24:00.690 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:24:00.697 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:24:01.035 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:24:01.035 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:24:01.046 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:24:01.050 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:25:14.450 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:25:14.487 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:25:14.666 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:25:16.140 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:25:16.253 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:25:16.282 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:25:16.518 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:25:16.519 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:25:16.572 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:25:16.578 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:25:17.175 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:25:17.175 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:25:17.183 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:25:17.186 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:25:58.384 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:25:58.423 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:25:58.619 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:26:00.272 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:26:00.293 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:26:00.484 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:26:00.484 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:26:00.529 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:26:00.534 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:26:00.702 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:26:01.019 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:26:01.019 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:26:01.028 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:26:01.032 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:26:46.558 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:26:46.594 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:26:46.855 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:26:48.798 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:26:48.824 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:26:48.836 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:26:48.836 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:26:48.876 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:26:48.886 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:26:48.888 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:26:48.888 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:26:48.888 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:26:48.951 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:26:48.956 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:26:51.709 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:26:51.709 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:26:51.712 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:26:51.715 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:27:24.192 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:27:24.236 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:27:24.399 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:27:25.991 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:27:26.025 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:27:26.368 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:27:26.368 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:27:26.404 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:27:26.408 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:27:26.462 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:27:26.462 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:27:26.473 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:27:26.479 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:27:46.872 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:27:46.903 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:27:47.097 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:27:48.646 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:27:48.674 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:27:48.686 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:27:48.686 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:27:48.730 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:27:48.735 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:27:48.874 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:27:48.875 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:27:48.884 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:27:48.888 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:27:49.262 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:27:49.262 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:27:49.268 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:27:49.273 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:29:11.162 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:29:11.196 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:29:11.397 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:29:12.089 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:29:12.970 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:29:12.999 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:29:13.592 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:29:13.592 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:29:13.632 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:29:13.638 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:29:13.640 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:29:13.640 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:29:13.650 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:29:13.656 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:29:13.923 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:29:13.923 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:29:13.925 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:29:13.929 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:29:51.963 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:29:51.972 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:29:53.684 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:29:54.009 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:29:54.009 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:29:55.446 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:29:55.462 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:29:55.468 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:29:55.468 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:29:55.500 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:29:55.503 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:30:26.643 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:30:26.676 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:30:26.874 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:30:28.248 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:30:28.460 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:30:28.486 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:30:31.377 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:30:31.377 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:30:31.403 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:30:31.406 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:31:05.646 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:31:05.680 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:31:05.836 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:31:07.206 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:31:07.421 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:31:07.440 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:31:07.896 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:31:08.211 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:31:08.211 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:31:08.239 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:31:08.243 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:32:04.273 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:32:04.303 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:32:04.498 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:32:06.095 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:32:06.116 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:32:06.126 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:32:06.126 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:32:06.168 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:32:06.174 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:32:06.335 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:33:56.736 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:33:56.782 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:33:57.115 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:33:58.650 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:33:58.654 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:33:58.689 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:33:58.939 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:33:58.940 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:33:58.997 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:33:59.003 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:33:59.018 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:33:59.224 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:33:59.224 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:33:59.236 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:33:59.240 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:34:33.660 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:34:33.692 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:34:33.869 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:34:35.497 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:34:35.523 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:34:35.542 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:34:35.542 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:34:35.594 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:34:35.600 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:34:35.611 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:34:36.684 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:34:36.684 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:34:36.694 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:34:36.699 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:35:25.826 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:35:25.861 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:35:26.210 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:35:27.999 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:35:28.023 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:35:28.033 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:35:28.033 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:35:28.074 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:35:28.078 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:35:28.081 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:35:28.081 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:35:28.090 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:35:28.094 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:35:28.235 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:35:28.235 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:35:28.237 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:35:28.242 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:35:59.556 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:35:59.589 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:35:59.765 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:36:01.436 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:36:01.463 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:36:01.477 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:36:01.477 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:36:01.524 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:36:01.530 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:36:01.587 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:36:01.587 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:36:01.602 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:36:01.611 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:36:01.620 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:36:01.620 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:36:01.623 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:36:01.631 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:36:34.235 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:36:34.277 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:36:34.440 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:36:35.732 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:36:35.766 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:36:35.779 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:36:35.779 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:36:35.830 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:36:35.838 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:36:40.435 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:36:40.435 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:36:40.443 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:36:40.446 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:37:24.111 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:37:24.147 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:37:24.313 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:37:25.835 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:37:25.875 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:37:25.888 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:37:25.888 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:37:25.937 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:37:25.944 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:37:33.687 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:37:33.687 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:37:33.695 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:37:33.699 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:37:56.453 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:37:56.485 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:37:56.637 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:37:57.931 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:37:57.959 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:37:58.282 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:37:58.283 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:37:58.322 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:37:58.326 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:37:58.329 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:37:58.329 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:37:58.341 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:37:58.347 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:38:00.505 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:38:00.505 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:38:00.507 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:38:00.510 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:38:30.900 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:38:30.936 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:38:31.136 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:38:32.818 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:38:32.843 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:38:32.853 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:38:32.853 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:38:32.893 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:38:32.898 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:38:33.286 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:38:33.286 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:38:33.296 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:38:33.299 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:39:40.485 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:39:40.527 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:39:40.700 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:39:42.286 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:39:42.308 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:39:42.322 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:39:42.322 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:39:42.370 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:39:42.377 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:40:18.983 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:40:19.004 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:40:19.153 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:40:20.576 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:40:20.798 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:40:20.825 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:40:20.892 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:40:20.892 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:40:20.934 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:40:20.940 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:40:21.750 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:40:21.750 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:40:21.758 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:40:21.762 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:40:53.010 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:40:53.040 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:40:53.237 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:40:54.907 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:40:54.938 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:40:54.950 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:40:54.950 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:40:55.009 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:40:55.020 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:41:23.001 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:41:23.040 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:41:23.233 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:41:24.578 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:41:24.820 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:41:24.861 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:41:25.652 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:41:25.652 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:41:25.682 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:41:25.688 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:42:38.683 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:42:38.717 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:42:38.882 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:42:40.394 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:42:40.415 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:42:40.425 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:42:40.425 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:42:40.470 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:42:40.477 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:42:41.634 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:42:41.634 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:42:41.643 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:42:41.648 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:43:12.061 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:43:12.100 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:43:12.252 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 11:43:13.645 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:43:13.672 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:43:13.683 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:43:13.683 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:43:13.728 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:43:13.734 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 11:43:19.710 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 11:43:19.710 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 11:43:19.718 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 11:43:19.721 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:33:28.073 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:33:28.106 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:33:28.221 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:33:28.265 +03:00 [INF] User jonukas requested /Identity/Account/Manage (status: 200)
+2022-05-03 14:33:28.265 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 14:33:28.265 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:33:28.284 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 14:33:28.882 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 14:33:29.255 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:33:29.255 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:33:29.259 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:33:29.265 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:33:29.612 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 14:33:29.995 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 14:33:30.384 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:33:30.384 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:33:30.389 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:33:30.393 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:33:30.755 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:33:30.755 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:33:30.758 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:33:30.763 +03:00 [INF] User jonukas requested /ChatExplorer/Index (status: 200)
+2022-05-03 14:33:31.160 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:33:31.160 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:33:31.163 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:33:31.168 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:33:31.543 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:33:31.543 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:33:31.547 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:33:31.552 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:33:32.439 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:33:32.439 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:33:32.442 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:33:32.445 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:33:34.415 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:33:34.415 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:33:34.417 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:33:34.419 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:34:20.344 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:34:20.385 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:34:20.605 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 14:34:23.290 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:34:23.311 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:34:23.322 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:34:23.322 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:34:23.374 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:34:23.380 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:34:24.578 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:34:24.579 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:34:24.588 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:34:24.592 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:35:12.084 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:35:12.113 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:35:12.267 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 14:35:14.369 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:35:14.390 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:35:14.401 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:35:14.401 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:35:14.458 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:35:14.464 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:35:19.248 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:35:19.249 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:35:19.260 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:35:19.263 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:36:43.302 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:36:43.339 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:36:43.515 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 14:36:44.987 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:36:45.018 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:36:45.032 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:36:45.032 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:36:45.070 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:36:45.075 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:36:45.756 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:36:45.756 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:36:45.767 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:36:45.771 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:36:46.341 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:36:46.341 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:36:46.343 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:36:46.346 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:36:46.548 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:36:46.548 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:36:46.549 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:36:46.553 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:37:19.499 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:37:19.532 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:37:19.749 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 14:37:21.390 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:37:21.390 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:37:21.413 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:37:21.424 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:37:21.435 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:37:21.435 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:37:21.764 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:37:21.765 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:37:21.774 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:37:21.778 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:37:22.081 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 14:37:22.443 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:37:22.443 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:37:22.446 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:37:22.453 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:38:29.107 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:38:29.137 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:38:29.315 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 14:38:31.276 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:38:31.294 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:38:31.307 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:38:31.307 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:38:31.346 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:38:31.350 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:38:37.279 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:38:37.279 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:38:37.287 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:38:37.290 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:39:08.937 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:39:08.976 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:39:09.152 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 14:39:11.431 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:39:11.461 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:39:11.472 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:39:11.472 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:39:11.515 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:39:11.520 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:39:11.816 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:39:11.816 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:39:11.826 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:39:11.829 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:39:43.958 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:39:44.003 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:39:44.181 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 14:39:46.577 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:39:46.596 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:39:46.604 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:39:46.604 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:39:46.640 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:39:46.645 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:39:46.647 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:39:46.647 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:39:46.660 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:39:46.666 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:39:46.669 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:39:46.669 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:39:46.672 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:39:46.677 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:40:04.600 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:40:04.641 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:40:04.808 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 14:40:06.352 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:40:06.370 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:40:06.380 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:40:06.380 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:40:06.413 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:40:06.417 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:40:06.420 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:40:06.420 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:40:06.430 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:40:06.435 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:41:12.376 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:41:12.432 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:41:12.737 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 14:41:14.338 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 14:41:14.471 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:41:14.508 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:41:14.513 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:41:14.513 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:41:14.558 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:41:14.563 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:41:49.316 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:41:49.347 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:41:49.552 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 14:41:51.245 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:41:51.265 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:41:51.276 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:41:51.276 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:41:51.323 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:41:51.330 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:41:51.337 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:41:51.337 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:41:51.353 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:41:51.363 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:42:30.431 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:42:30.463 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:42:30.608 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 14:42:32.885 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:42:32.915 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:42:32.925 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:42:32.925 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:42:32.970 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:42:32.975 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:42:32.980 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:42:32.981 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:42:32.994 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:42:33.002 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:42:33.625 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:42:33.625 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:42:33.629 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:42:33.633 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:43:10.038 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:43:10.069 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:43:10.226 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 14:43:12.232 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:43:12.256 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:43:12.266 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:43:12.266 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:43:12.307 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:43:12.310 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:43:12.312 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:43:12.312 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:43:12.324 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:43:12.329 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:43:39.252 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:43:39.302 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:43:39.439 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 14:43:41.768 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:43:41.786 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:43:41.797 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:43:41.797 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:43:41.839 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:43:41.843 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:44:13.016 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:44:13.052 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:44:13.305 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 14:44:14.732 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 14:44:15.194 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:44:15.210 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:44:45.594 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:44:45.620 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:44:45.791 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 14:44:47.163 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 14:44:47.490 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:44:47.512 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:45:03.156 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:45:03.157 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:45:03.184 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:45:03.188 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:45:27.283 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:45:27.319 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:45:27.512 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 14:45:29.656 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:45:29.679 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:45:29.690 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:45:29.690 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:45:29.734 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:45:29.739 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:45:50.177 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:45:50.212 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:45:50.393 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 14:45:52.054 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:45:52.076 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:45:52.240 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 14:45:52.704 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:45:52.704 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:45:52.744 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:45:52.749 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:46:22.504 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:46:22.533 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:46:22.709 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 14:46:24.245 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:46:24.279 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:46:24.293 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:46:24.293 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:46:24.334 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:46:24.339 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:46:24.932 +03:00 [INF] User jonukas requested / (status: 200)
+2022-05-03 14:46:25.284 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:46:25.284 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:46:25.292 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:46:25.296 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)
+2022-05-03 14:46:25.816 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-03 14:46:25.816 +03:00 [INF] Arguments: jonukas| DB requested| 
+2022-05-03 14:46:25.817 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-03 14:46:25.822 +03:00 [INF] User jonukas requested /ChatExplorer (status: 200)

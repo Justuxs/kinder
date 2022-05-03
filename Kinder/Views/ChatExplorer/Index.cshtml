@@ -6,7 +6,12 @@
 
 <h1>Your Chats:</h1>
 <br />
-<table class="table">
+<input type="text" id="criterie" name="fname">
+<input type="button" name="search" value="search" onclick="Filtrate();" />
+
+
+<br>
+<table class="table" id="chatHubs">
     <thead>
         <tr>
             <th>
@@ -27,25 +32,62 @@
     <tbody>
         @foreach (var item in Model)
         {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SenderID)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ReceiverID)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Date)
-            </td>
+            <tr id="tr">
+                <td id="ChatName">
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SenderID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ReceiverID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date)
+                </td>
 
-            <td>
-                <!--   <a asp-action="Take" asp-route-id="@item">Take</a> |
-               <a asp-action="Details" asp-route-id="@item">Details</a> |-->
-            </td>
-        </tr>
-                        }
-                    </tbody>
-                </table>
+                <td>
+                    <!--   <a asp-action="Take" asp-route-id="@item">Take</a> |
+                    <a asp-action="Details" asp-route-id="@item">Details</a> |-->
+
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+    <script>
+        "use strict";
+
+
+        function Filtrate() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("criterie");
+
+            filter = input.value.toUpperCase();
+            table = document.getElementById("chatHubs");
+
+            tr = table.getElementsByTagName("tr");
+
+            var LABAS="TTT"
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                 
+
+                    let result1 = txtValue.substring(21, txtValue.length).toUpperCase();
+
+
+                    if (result1.startsWith(filter)) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+
+        }
+
+
+
+    </script>

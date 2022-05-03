@@ -19,8 +19,8 @@ namespace kinder_app.Controllers
 
         public IActionResult Index()
         {
-            Console.WriteLine(User.GetUserName());
             return View(ControllerMethods.GetUsersChatHub(User.GetUserName(), _context));
         }
+
     }
 }
