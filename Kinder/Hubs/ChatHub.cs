@@ -21,8 +21,8 @@ namespace Chat.Hubs
 
         public async Task SendMessage(string username, string message)
         {
-           
 
+            Console.WriteLine("gAVAU ZINUTE "+ username+" "+ message+" "+Clients.Caller.SendAsync("ReceiveMessage", username, message));
             await Clients.All.SendAsync("ReceiveMessage", username, message);
             
         }
