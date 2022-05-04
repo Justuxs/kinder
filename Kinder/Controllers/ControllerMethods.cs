@@ -213,6 +213,19 @@ namespace kinder_app.Controllers
             Console.WriteLine("Chat hub creating 3");
 
         }
+        [LogAspect]
+        public static ChatRoom GetChatRoom(string UserName, string ChatHubName, ApplicationDbContext context)
+        {
+            List<Message> AllMessages = context.Messages.Where(x => x.ChatHub.Equals(ChatHubName)).ToList();
+            List<Message> CurrentUserMes = AllMessages.Where(x => x.UserID.Equals(UserName)).ToList();
+            List<Message> NextMes = AllMessages.Where(x => (!x.UserID.Equals(UserName))).ToList();
+            ChatHub chat= context.ChatHubs.Where(x => x.Name.Equals(ChatHubName)).FirstOrDefault();
+            if (chat == null) return null;
+            string nextName;
+            if (!chat.ReceiverID.Equals(UserName)) nextName = chat.ReceiverID;
+            else nextName = chat.SenderID;
+            return new ChatRoom(UserName, nextName, AllMessages);
+        }
 
     }
 }

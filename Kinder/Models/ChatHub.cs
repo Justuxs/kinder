@@ -16,14 +16,14 @@ namespace kinder_app.Models
 
         public DateTime Date;
 
-        public int Status;
+        public string Status;
         public ChatHub() { }
         public ChatHub(string IownerN, string writerN, string chatN)
         {
             SenderID = IownerN;
             ReceiverID = writerN;
             Name = chatN;
-            Status = 0;
+            Status = "Pending";
             Date = DateTime.Now;
         }
     }

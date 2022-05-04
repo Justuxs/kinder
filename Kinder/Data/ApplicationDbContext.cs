@@ -43,6 +43,7 @@ namespace kinder_app.Data
             {
                 entity.HasKey(e => e.ID);
                 entity.Property(e => e.ID).ValueGeneratedOnAdd();
+                entity.Property(e => e.ChatHub).ValueGeneratedOnAdd();
             });
             modelBuilder.Entity<ChatHub>(entity =>
             {

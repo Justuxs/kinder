@@ -16,12 +16,13 @@
     }
 </style>
 
-<h1>Your Chats:</h1>
+<h1>Your ChatHubs:</h1>
 <br />
+<p id="demo"></p>
 <input type="text" id="criterie" name="fname">
-<input type="button" name="search" value="search" onclick="Filtrate();" />
+<input type="button" name="search" value="Enter" onclick="Filtrate();" />
 <b id="message"></b>
-<input type="button" id="undo" value="Undo" onclick="Undo()" />
+<input type="button" id="undo" value="Undo" onclick="Undo();" />
 <div id="countdown"></div>
 
 
@@ -32,9 +33,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.Name)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SenderID)
-            </th>
+
             <th>
                 @Html.DisplayNameFor(model => model.ReceiverID)
             </th>
@@ -42,31 +41,29 @@
                 @Html.DisplayNameFor(model => model.Date)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th>
         </tr>
     </thead>
     <tbody>
         @foreach (var item in Model)
         {
-            <tr id="tr">
-                <td id="ChatName">
-                    @Html.DisplayFor(modelItem => item.Name)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.SenderID)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.ReceiverID)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Date)
-                </td>
+        <tr id="tr">
+            <td id="ChatName">
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
 
-                <td>
-                    <!--   <a asp-action="Take" asp-route-id="@item">Take</a> |
-                    <a asp-action="Details" asp-route-id="@item">Details</a> |-->
-
-                </td>
-            </tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReceiverID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <th>
+                @Html.DisplayFor(modelItem => item.Status)
+            </th>
+        </tr>
             }
         </tbody>
 
@@ -77,7 +74,7 @@
 <script>
         "use strict";
 
-
+        document.getElementById("undo").style = "display: none;";
         function Filtrate() {
             var input, filter, table, tr, td, i, txtValue;
             input = document.getElementById("criterie");
@@ -93,7 +90,8 @@
                     txtValue = td.textContent || td.innerText;
 
 
-                    let result1 = txtValue.substring(21, txtValue.length).toUpperCase();
+                    let result1 = txtValue.substring(17,txtValue.length).toUpperCase();
+                   // document.getElementById("demo").innerHTML = result1;
 
 
                     if (result1.startsWith(filter)) {
@@ -113,18 +111,22 @@
         var selected = table.getElementsByClassName('selected');
         table.onclick = highlight;
 
-        function highlight(e) {
-            if (status == 1) {
-                if (e.target.parentNode.style.backgroundColor == 'green') {
-                    e.target.parentNode.style.backgroundColor = 'white';
-                    selected -= 1;
-                }
-                else {
-                    e.target.parentNode.style.backgroundColor = 'Green';
-                    selected += 1;
-                }
-                ShowButton();
+    function highlight(e) {
+        if (status == 1) {
+            if (e.target.parentNode.style.backgroundColor == 'green') {
+                e.target.parentNode.style.backgroundColor = 'white';
+                selected -= 1;
             }
+            else {
+                e.target.parentNode.style.backgroundColor = 'Green';
+                selected += 1;
+            }
+            ShowButton();
+        }
+        else {
+
+            ToChat(e.target.parentNode.firstElementChild.innerText);
+        }
         }
 
         function Select() {
@@ -161,7 +163,7 @@
             var undoButt = document.getElementById('undo');
             textfield.innerHTML = "Soon your " + selected + " chatHubs will be deleted";
             textfield.style.visibility = 'visible';
-            undoButt.style.visibility = 'visible';
+            undoButt.style= "display: block;"
             undoButt.disabled = false;
             timeleft = 10;
             UndoPressed = 0;
@@ -187,8 +189,18 @@
         function Undo() {
             UndoPressed = 1;
             timeleft = 0;
+           
         }
-
+    function ToChat(id) {
+        document.getElementById("demo").innerHTML = id;
+        $.ajax({
+            url: 'Home/ChatSetRoom',
+            data: { id: id }
+        }).done(function () {
+            alert('Added');
+            window.location = "Home/ChatRoom"
+        });
+        }
         function DeleteFR() {
             let itemname = "Tomas";
 

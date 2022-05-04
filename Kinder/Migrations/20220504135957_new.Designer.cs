@@ -7,18 +7,18 @@ using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using kinder_app.Data;
 
-namespace kinder_app.Data.Migrations
+namespace kinder_app.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20211207134526_AddUserFields")]
-    partial class AddUserFields
+    [Migration("20220504135957_new")]
+    partial class @new
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
-                .HasAnnotation("ProductVersion", "5.0.12")
+                .HasAnnotation("ProductVersion", "5.0.15")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -227,6 +227,32 @@ namespace kinder_app.Data.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
+            modelBuilder.Entity("kinder_app.Models.ChatHub", b =>
+                {
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime>("Date")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("ReceiverID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SenderID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Status")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Name");
+
+                    b.ToTable("ChatHubs");
+                });
+
             modelBuilder.Entity("kinder_app.Models.Item", b =>
                 {
                     b.Property<int>("ID")
@@ -234,7 +260,7 @@ namespace kinder_app.Data.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("Cathegory")
+                    b.Property<int>("Category")
                         .HasColumnType("int");
 
                     b.Property<int>("Condition")
@@ -244,6 +270,9 @@ namespace kinder_app.Data.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("GivenTo")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Height")
@@ -258,8 +287,8 @@ namespace kinder_app.Data.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("UserID")
-                        .HasColumnType("int");
+                    b.Property<string>("UserID")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Width")
                         .HasColumnType("int");
@@ -269,7 +298,55 @@ namespace kinder_app.Data.Migrations
                     b.ToTable("Item");
                 });
 
-            modelBuilder.Entity("kinder_app.Data.ApplicationUser", b =>
+            modelBuilder.Entity("kinder_app.Models.LikedItems", b =>
+                {
+                    b.Property<int>("Key")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("ItemID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserID")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Key");
+
+                    b.ToTable("LikedItems");
+                });
+
+            modelBuilder.Entity("kinder_app.Models.Message", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("ChatHub")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("ReceiverID")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Text")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserID")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("Message");
+                });
+
+            modelBuilder.Entity("kinder_app.Models.ApplicationUser", b =>
                 {
                     b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
 
@@ -281,10 +358,6 @@ namespace kinder_app.Data.Migrations
                         .HasColumnType("nvarchar(250)");
 
                     b.Property<string>("Surname")
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
-
-                    b.Property<string>("UserUsername")
                         .HasMaxLength(250)
                         .HasColumnType("nvarchar(250)");
 

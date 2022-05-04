@@ -21,6 +21,9 @@ namespace kinder_app.Models
 
         public DateTime Date { get; set; }
 
+        public string ChatHub { get; set; }
+
+
         //  public virtual AppUser Sender { get; set; }
         //  public virtual AppUser Receiver { get; set; }
 

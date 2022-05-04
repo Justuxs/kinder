@@ -34,6 +34,7 @@ namespace kinder_app.Controllers
         private static string userID;
         private static List<int> alreadyLiked = new();
         private static string OwnerID, ItemN;
+        private static string ChatHub;
 
         [Authorize]
         public IActionResult Swiping()
@@ -69,6 +70,7 @@ namespace kinder_app.Controllers
 
             return View();
         }
+        /*
         public IActionResult Chat()
         {
             Console.WriteLine("Gavejas yra () "+ userID);
@@ -88,8 +90,25 @@ namespace kinder_app.Controllers
 
             //await Clients.All.SendAsync("ReceiveMessage", username, ats);
             return View();
-        }
+        }*/
+        public IActionResult ChatRoom()
+        {
+            Console.WriteLine("Atidarau ChatHubName " + ChatHub);
 
+            ChatRoom rez = ControllerMethods.GetChatRoom(User.GetUserName(), ChatHub, _db);
+            if (rez == null) return Error();
+
+            Console.WriteLine("Atidarau ChatHubName su" + rez.Talker1Name+ rez.AllMessages.Count+ rez.AllMessages.ElementAt(0).Text);
+
+            return View(rez);
+        }
+        public IActionResult ChatSetRoom(string id)
+        {
+            Console.WriteLine("ChatHubName " + id);
+            ChatHub = id;
+
+            return Ok();
+        }
         public IActionResult LoadNext()
         {
             current++;

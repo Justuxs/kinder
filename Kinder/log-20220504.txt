@@ -1,0 +1,41 @@
+2022-05-04 19:41:15.391 +03:00 [INF] Calling "GetChatRoom" method
+2022-05-04 19:41:51.223 +03:00 [INF] Calling "GetChatRoom" method
+2022-05-04 19:42:04.241 +03:00 [INF] User jonass requested / (status: 200)
+2022-05-04 19:42:09.572 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-04 19:42:09.573 +03:00 [INF] Arguments: jonass| DB requested| 
+2022-05-04 19:42:11.207 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-04 19:42:11.223 +03:00 [INF] User jonass requested /ChatExplorer (status: 200)
+2022-05-04 19:42:14.236 +03:00 [INF] User jonass requested /Home/ChatSetRoom (status: 200)
+2022-05-04 19:42:15.867 +03:00 [INF] Calling "GetChatRoom" method
+2022-05-04 19:42:15.867 +03:00 [INF] Arguments: jonass| jonas-Gele| DB requested| 
+2022-05-04 19:42:16.261 +03:00 [INF] Return: kinder_app.Models.ChatRoom| 
+2022-05-04 19:42:16.268 +03:00 [INF] User jonass requested /Home/ChatRoom (status: 200)
+2022-05-04 19:42:20.045 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-04 19:42:20.045 +03:00 [INF] Arguments: jonass| DB requested| 
+2022-05-04 19:42:20.082 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-04 19:42:20.087 +03:00 [INF] User jonass requested /ChatExplorer (status: 200)
+2022-05-04 19:42:21.250 +03:00 [INF] User jonass requested /Home/ChatSetRoom (status: 200)
+2022-05-04 19:42:22.490 +03:00 [INF] Calling "GetChatRoom" method
+2022-05-04 19:42:22.490 +03:00 [INF] Arguments: jonass| jonas-Gele| DB requested| 
+2022-05-04 19:42:22.504 +03:00 [INF] Return: kinder_app.Models.ChatRoom| 
+2022-05-04 19:42:22.506 +03:00 [INF] User jonass requested /Home/ChatRoom (status: 200)
+2022-05-04 19:42:23.232 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-04 19:42:23.232 +03:00 [INF] Arguments: jonass| DB requested| 
+2022-05-04 19:42:23.235 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-04 19:42:23.238 +03:00 [INF] User jonass requested /ChatExplorer (status: 200)
+2022-05-04 19:42:24.138 +03:00 [INF] User jonass requested /Home/ChatSetRoom (status: 200)
+2022-05-04 19:42:25.217 +03:00 [INF] Calling "GetChatRoom" method
+2022-05-04 19:42:25.217 +03:00 [INF] Arguments: jonass| jonas-Ratas| DB requested| 
+2022-05-04 19:42:25.537 +03:00 [INF] Return: kinder_app.Models.ChatRoom| 
+2022-05-04 19:42:25.539 +03:00 [INF] User jonass requested /Home/ChatRoom (status: 200)
+2022-05-04 19:45:00.830 +03:00 [INF] Calling "GetChatRoom" method
+2022-05-04 19:45:16.459 +03:00 [INF] User jonass requested / (status: 200)
+2022-05-04 19:45:18.235 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-04 19:45:18.235 +03:00 [INF] Arguments: jonass| DB requested| 
+2022-05-04 19:45:19.878 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-04 19:45:19.896 +03:00 [INF] User jonass requested /ChatExplorer (status: 200)
+2022-05-04 19:45:21.341 +03:00 [INF] User jonass requested /Home/ChatSetRoom (status: 200)
+2022-05-04 19:45:22.494 +03:00 [INF] Calling "GetChatRoom" method
+2022-05-04 19:45:22.494 +03:00 [INF] Arguments: jonass| jonas-Gele| DB requested| 
+2022-05-04 19:45:22.731 +03:00 [INF] Return: kinder_app.Models.ChatRoom| 
+2022-05-04 19:45:22.736 +03:00 [INF] User jonass requested /Home/ChatRoom (status: 200)

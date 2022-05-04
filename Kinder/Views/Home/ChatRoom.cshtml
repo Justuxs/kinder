@@ -1,0 +1,97 @@
+﻿@model ChatRoom
+
+@{
+    ViewData["Title"] = "ChatRoom";
+}
+
+<div>
+    <h1>Welcome</h1>
+
+</div>
+
+<p id="demo"></p>
+<hr />
+<div class="row">
+    <div class="col-6">
+        <ul id="messagesList"></ul>
+    </div>
+</div>
+<hr />
+
+
+
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script>
+
+    "use strict";
+
+    var Writer = '@Html.Raw(Model.Talker1Name)';
+    var Reader = '@Html.Raw(Model.Talker2Name)';
+    var allMessages = '@Html.Raw(Model.AllMessages)';
+      
+    document.getElementById("demo").innerHTML = allMessages.length;
+    
+   
+
+    
+    allMessages.forEach(AddMessage);
+    function AddMessage(message) {
+        var enc = name + "says: " + "Labas";
+        var li = document.createElement("li");
+        li.textContent = enc;
+        document.getElementById("messagesList").appendChild(li);
+
+    }
+         
+
+
+
+
+    var connection = new signalR.HubConnectionBuilder().withUrl("/chatHub").build();
+    var username = document.getElementById("username").value;
+    //document.getElementById("sendButton").disabled = true;
+
+    connection.on("ReceiveMessage", function (name, text) {
+        document.getElementById("test2").style.display = 'block';
+
+        var msg = text;
+
+        var enc = name + "says: " + msg;
+        var li = document.createElement("li");
+        li.textContent = enc;
+        document.getElementById("messagesList").appendChild(li);
+    });
+
+    connection.start().then(function () {
+        document.getElementById("sendButton").disabled = false;
+    }).catch(function (err) {
+        return console.error(err.toString());
+    });
+
+    /*
+    document.getElementById("sendButton").addEventListener("click", function (event) {
+        var message = document.getElementById("message").value;
+        document.getElementById("message").value = "aaaa";
+        connection.invoke("SendMessage", username, message).then(function () {
+            document.getElementById("message").value = "";
+        }).catch(function (err) {
+            return console.error(err.toString());
+        });
+        event.preventDefault();
+    });*/
+
+
+
+    function SendMessage() {
+        var message = document.getElementById("message").value;
+        document.getElementById("test").style.display = 'block';
+        connection.invoke("SendMessage", username, message).catch(function (err) {
+            return console.error(err.toString());
+        });
+
+        document.getElementById("message").value = "123";
+    }
+
+
+
+</script>
