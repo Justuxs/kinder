@@ -97,8 +97,8 @@ namespace kinder_app.Controllers
 
             ChatRoom rez = ControllerMethods.GetChatRoom(User.GetUserName(), ChatHub, _db);
             if (rez == null) return Error();
-
-            Console.WriteLine("Atidarau ChatHubName su" + rez.Talker1Name+ rez.AllMessages.Count+ rez.AllMessages.ElementAt(0).Text);
+            rez.ChatRoomName = ChatHub;
+            Console.WriteLine("Atidarau ChatHubName su" + rez.Talker1Name+ rez.AllMessages.Count);
 
             return View(rez);
         }
@@ -135,7 +135,7 @@ namespace kinder_app.Controllers
                 Console.WriteLine("Error- owner IS NULLLLLLLL");
             }
 
-
+            current++;
             return RedirectToAction("swiping");
         }
 

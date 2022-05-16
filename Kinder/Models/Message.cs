@@ -27,6 +27,14 @@ namespace kinder_app.Models
         //  public virtual AppUser Sender { get; set; }
         //  public virtual AppUser Receiver { get; set; }
 
+        public Message(string user, string receiver, string text,string chatname)
+        {
+            UserID = user;
+            ReceiverID = receiver;
+            Text = text;
+            Date = DateTime.Now;
+            ChatHub = chatname;
+        }
         public Message(string user, string receiver, string text)
         {
             UserID = user;

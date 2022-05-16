@@ -1,0 +1,62 @@
+2022-05-05 16:08:59.810 +03:00 [INF] Calling "GetChatRoom" method
+2022-05-05 16:08:59.892 +03:00 [INF] Arguments: jonass| DB requested| 
+2022-05-05 16:08:59.947 +03:00 [INF] Return: null |
+2022-05-05 16:09:00.482 +03:00 [INF] User jonass requested / (status: 200)
+2022-05-05 16:09:00.555 +03:00 [ERR] Encountered error: The model item passed into the ViewDataDictionary is of type 'kinder_app.Models.ErrorViewModel', but this ViewDataDictionary instance requires a model item of type 'kinder_app.Models.ChatRoom'. 
+ Stack trace:    at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method931(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at kinder_app.Middleware.LogUrlMiddleware.InvokeAsync(HttpContext context) in C:\Users\JUSTA\source\repos\kinderis\Kinder\Middleware\LogUrlMiddleware.cs:line 31
+2022-05-05 16:09:00.653 +03:00 [INF] User jonass requested /Home/ChatRoom (status: 200)
+2022-05-05 16:09:07.121 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-05 16:09:07.121 +03:00 [INF] Arguments: jonass| DB requested| 
+2022-05-05 16:09:07.391 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-05 16:09:07.464 +03:00 [INF] User jonass requested /ChatExplorer (status: 200)
+2022-05-05 16:09:17.847 +03:00 [INF] User jonass requested / (status: 200)
+2022-05-05 16:09:19.671 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-05 16:09:19.671 +03:00 [INF] Arguments: jonass| DB requested| 
+2022-05-05 16:09:19.677 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-05 16:09:19.689 +03:00 [INF] User jonass requested /ChatExplorer (status: 200)
+2022-05-05 16:09:21.351 +03:00 [INF] User jonass requested /Home/ChatSetRoom (status: 200)
+2022-05-05 16:09:22.782 +03:00 [INF] Calling "GetChatRoom" method
+2022-05-05 16:09:22.783 +03:00 [INF] Arguments: jonass| jonas-Gele| DB requested| 
+2022-05-05 16:09:22.859 +03:00 [INF] Return: kinder_app.Models.ChatRoom| 
+2022-05-05 16:09:22.894 +03:00 [INF] User jonass requested /Home/ChatRoom (status: 200)
+2022-05-05 16:09:23.031 +03:00 [INF] User null requested /css/Chat.css (status: 304)
+2022-05-05 16:09:23.207 +03:00 [INF] User jonass requested /chatHub/negotiate (status: 200)
+2022-05-05 16:09:26.102 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-05 16:09:26.102 +03:00 [INF] Arguments: jonass| DB requested| 
+2022-05-05 16:09:26.110 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-05 16:09:26.126 +03:00 [INF] User jonass requested /ChatExplorer (status: 200)
+2022-05-05 16:09:26.205 +03:00 [INF] User jonass requested /chatHub (status: 101)
+2022-05-05 16:09:37.287 +03:00 [INF] User jonass requested /ChatExplorer/Delete (status: 200)
+2022-05-05 16:09:45.229 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-05 16:09:45.229 +03:00 [INF] Arguments: jonass| DB requested| 
+2022-05-05 16:09:45.241 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-05 16:09:45.256 +03:00 [INF] User jonass requested /ChatExplorer (status: 200)
+2022-05-05 16:10:20.670 +03:00 [INF] User jonass requested / (status: 200)

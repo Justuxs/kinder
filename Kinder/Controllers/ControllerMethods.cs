@@ -199,7 +199,7 @@ namespace kinder_app.Controllers
         [LogAspect]
         public static void CreateChatHub(string userN,string ownerN, string itemN, ApplicationDbContext context)
         {
-            string ChatName = ownerN + "-" + itemN;
+            string ChatName = ownerN + "-" + itemN+"-"+ userN;
             Console.WriteLine("Chat hub creating 1");
             ChatHub Exist = context.ChatHubs.Where(x => x.Name.Equals(ChatName)).ToList().FirstOrDefault();
             Console.WriteLine("Chat hub creating 2");
@@ -225,6 +225,15 @@ namespace kinder_app.Controllers
             if (!chat.ReceiverID.Equals(UserName)) nextName = chat.ReceiverID;
             else nextName = chat.SenderID;
             return new ChatRoom(UserName, nextName, AllMessages);
+        }
+        [LogAspect]
+        public static void SaveMessage(Message message, ApplicationDbContext context)
+        {
+            if (message.ReceiverID.Length != 0 && message.UserID.Length != 0)
+            {
+                context.Messages.Add(message);
+                context.SaveChanges();
+            }
         }
 
     }

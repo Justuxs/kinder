@@ -8,58 +8,59 @@
 </head>
 <body>
     <p id="demo"></p>
+    <p id="demo2"></p>
     <h1>"Chat Room"</h1>
-<section class="chatbox">
-    <section class="chat-window">
-        @foreach (var message in Model.AllMessages)
-        {
-
-
-            @if (Model.Talker1Name == message.UserID)
+    <section class="chatbox">
+        <section class="chat-window" id="chat-window">
+            @foreach (var message in Model.AllMessages)
             {
-                <article class="msg-container msg-remote" id="msg-0">
-                    <div class="msg-box">
-                        <div class="flr">
-                            <div class="messages">
-                                <ul id="zinut"></ul>
-                                <p class="msg" id="msg-0">
-                                    @message.Text
-                                </p>
+
+
+                @if (Model.Talker1Name == message.ReceiverID)
+                {
+                    <article class="msg-container msg-remote" id="msg-0">
+                        <div class="msg-box">
+                            <div class="flr">
+                                <div class="messages">
+                                    <ul id="zinut"></ul>
+                                    <p class="msg" id="msg-0">
+                                        @message.Text
+                                    </p>
+                                </div>
+                                <span class="timestamp"><span class="username">@message.ReceiverID</span>&bull;<span class="posttime">@message.Date</span></span>
                             </div>
-                            <span class="timestamp"><span class="username">@message.ReceiverID</span>&bull;<span class="posttime">@message.Date</span></span>
                         </div>
-                    </div>
-                </article>
-            } 
-       else
-           {
-            <article class="msg-container msg-self" id="msg-0">
-                <div class="msg-box">
-                    <div class="flr">
-                        <div class="messages">
-                            <p class="msg" id="msg-1">
-                                @message.Text
-                            </p>
+                    </article>
+                }
+                else
+                {
+                    <article class="msg-container msg-self" id="msg-0">
+                        <div class="msg-box">
+                            <div class="flr">
+                                <div class="messages">
+                                    <p class="msg" id="msg-1">
+                                        @message.Text
+                                    </p>
 
+                                </div>
+                                <span class="timestamp"><span class="username">@message.ReceiverID</span>&bull;<span class="posttime">@message.Date</span></span>
+                            </div>
                         </div>
-                        <span class="timestamp"><span class="username">@message.ReceiverID</span>&bull;<span class="posttime">@message.Date</span></span>
-                    </div>
-                </div>
-            </article>
-        }
-    }
+                    </article>
+                }
+            }
 
 
 
 
+        </section>
+        <form class="chat-input" onsubmit="return false;">
+            <input type="text" id="textas" autocomplete="on" placeholder="Type a message" />
+            <button id="but" onclick="SendMessage();">
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24"><path fill="rgba(0,0,0,.38)" d="M17,12L12,17V14H8V10H12V7L17,12M21,16.5C21,16.88 20.79,17.21 20.47,17.38L12.57,21.82C12.41,21.94 12.21,22 12,22C11.79,22 11.59,21.94 11.43,21.82L3.53,17.38C3.21,17.21 3,16.88 3,16.5V7.5C3,7.12 3.21,6.79 3.53,6.62L11.43,2.18C11.59,2.06 11.79,2 12,2C12.21,2 12.41,2.06 12.57,2.18L20.47,6.62C20.79,6.79 21,7.12 21,7.5V16.5M12,4.15L5,8.09V15.91L12,19.85L19,15.91V8.09L12,4.15Z" /></svg>
+            </button>
+        </form>
     </section>
-    <form class="chat-input" onsubmit="return false;">
-        <input type="text" id="textas" autocomplete="on" placeholder="Type a message" />
-        <button id="but" onclick="SendMessage();">
-            <svg style="width:24px;height:24px" viewBox="0 0 24 24"><path fill="rgba(0,0,0,.38)" d="M17,12L12,17V14H8V10H12V7L17,12M21,16.5C21,16.88 20.79,17.21 20.47,17.38L12.57,21.82C12.41,21.94 12.21,22 12,22C11.79,22 11.59,21.94 11.43,21.82L3.53,17.38C3.21,17.21 3,16.88 3,16.5V7.5C3,7.12 3.21,6.79 3.53,6.62L11.43,2.18C11.59,2.06 11.79,2 12,2C12.21,2 12.41,2.06 12.57,2.18L20.47,6.62C20.79,6.79 21,7.12 21,7.5V16.5M12,4.15L5,8.09V15.91L12,19.85L19,15.91V8.09L12,4.15Z" /></svg>
-        </button>
-    </form>
-</section>
 </body>
 
 
@@ -72,55 +73,121 @@
     var Writer = '@Html.Raw(Model.Talker1Name)';
     var Reader = '@Html.Raw(Model.Talker2Name)';
     var allMessages = '@Html.Raw(Model.AllMessages)';
+    var ChatName = '@Html.Raw(Model.ChatRoomName)';
 
-    document.getElementById("demo").innerHTML = 0;
+
 
 
 
     var connection = new signalR.HubConnectionBuilder().withUrl("/chatHub").build();
+    start();
+    async function start() {
+        try {
+            await connection.start();
+            console.log("SignalR Connected.");
+        } catch (err) {
+            console.log(err);
+            setTimeout(start, 5000);
+        }
+    };
+    connection.on("ReceiveMessage", function (name,rname,chatname, text,date) {
 
-    connection.start();
+        if (chatname.localeCompare(ChatName) == 0 ) {
+            var msg = name;
+            if (name.localeCompare(Writer) == 0 && rname.localeCompare(Reader) == 0) {
+                var contentText = document.createTextNode(text);
+                var p = document.createElement("p");
+                p.className = "msg";
+                p.appendChild(contentText);
+                var divMess = document.createElement("div");
+                divMess.className = "messages";
+                divMess.appendChild(p);
+                var mainspan = document.createElement("span");
+                mainspan.className = "timestamp";
+                var span = document.createElement("span");
+                span.className = "username";
+                var contentspan = document.createTextNode(date);
+                span.appendChild(contentspan);
+                var span2 = document.createElement("span");
+                span2.className = "posttime";
+                var contentspan2 = document.createTextNode(name+" ");
+                span2.appendChild(contentspan2);
+                var divflr = document.createElement("div");
+                divflr.className = "flr";
+                divflr.appendChild(divMess);
+                mainspan.appendChild(span2);
+                mainspan.appendChild(span);
+                divflr.appendChild(mainspan);
+                var divmsgbox = document.createElement("div");
+                divmsgbox.className = "msg-box";
+                divmsgbox.appendChild(divflr);
+                var article = document.createElement("article");
+                article.className = "msg-container msg-self";
+                article.appendChild(divmsgbox);
 
-    var username = document.getElementById("username").value;
-    //document.getElementById("sendButton").disabled = true;
+                document.getElementById("chat-window").appendChild(article);
 
-    connection.on("ReceiveMessage", function (name, text) {
-       
-        var msg = text;
 
-        var enc = name + "says: " + msg;
-        var li = document.createElement("li");
-        li.textContent = enc;
-        document.getElementById("zinut").appendChild(li);
+            }
+            if (name.localeCompare(Reader) == 0 && rname.localeCompare(Writer) == 0) {
+                var contentText = document.createTextNode(text);
+                var p = document.createElement("p");
+                p.className = "msg";
+                p.appendChild(contentText);
+                var divMess = document.createElement("div");
+                divMess.className = "messages";
+                divMess.appendChild(p);
+                var mainspan = document.createElement("span");
+                mainspan.className = "timestamp";
+                var span = document.createElement("span");
+                span.className = "username";
+                var contentspan = document.createTextNode(date);
+                span.appendChild(contentspan);
+                var span2 = document.createElement("span");
+                span2.className = "posttime";
+                var contentspan2 = document.createTextNode(name);
+                span2.appendChild(contentspan2);
+                var divflr = document.createElement("div");
+                divflr.className = "flr";
+                divflr.appendChild(divMess);
+                mainspan.appendChild(span2);
+                mainspan.appendChild(span);
+                divflr.appendChild(mainspan);
+                var divmsgbox = document.createElement("div");
+                divmsgbox.className = "msg-box";
+                divmsgbox.appendChild(divflr);
+                var article = document.createElement("article");
+                article.className = "msg-container msg-remote";
+                article.appendChild(divmsgbox);
+                document.getElementById("chat-window").appendChild(article);
+
+
+            }
+        }
     });
 
+    //var username = document.getElementById("username").value;
+    //document.getElementById("sendButton").disabled = true;
 
-    /*
-    document.getElementById("sendButton").addEventListener("click", function (event) {
-        var message = document.getElementById("message").value;
-        document.getElementById("message").value = "aaaa";
-        connection.invoke("SendMessage", username, message).then(function () {
-            document.getElementById("message").value = "";
-        }).catch(function (err) {
-            return console.error(err.toString());
-        });
-        event.preventDefault();
-    });*/
+
+
+
 
 
 
     function SendMessage() {
         document.getElementById("demo").innerHTML = document.getElementById("textas").value;
         var message = document.getElementById("textas").value;
-        
-        connection.invoke("SendMessage", "Jonas:", "labas").catch(function (err) {
-            document.getElementById("demo").innerHTML = err.toString();
-            return console.error(err.toString());
-        });
+        if (message.length > 0) {
 
-        document.getElementById("demo").innerHTML = "issiustas";
+            connection.invoke("SendMessage", Writer, Reader, ChatName, message).catch(function (err) {
+                document.getElementById("demo").innerHTML = err.toString();
+                return console.error(err.toString());
+            });
 
-        
+            document.getElementById("demo").innerHTML = "issiustas";
+            document.getElementById("textas").value = "";
+        }
     }
 
 

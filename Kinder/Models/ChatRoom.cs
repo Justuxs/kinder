@@ -14,6 +14,7 @@ namespace kinder_app.Models
         public virtual List<Message> MessagesS { get; set; }
         public virtual List<Message> MessagesR { get; set; }
         public virtual List<Message> AllMessages { get; set; }
+        public string ChatRoomName;
 
 
         public ChatRoom(string talker1, string talker1Name, string talker2, string talker2Name, List<Message> messages1, List<Message> messages2)
