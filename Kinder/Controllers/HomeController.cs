@@ -96,7 +96,7 @@ namespace kinder_app.Controllers
             Console.WriteLine("Atidarau ChatHubName " + ChatHub);
 
             ChatRoom rez = ControllerMethods.GetChatRoom(User.GetUserName(), ChatHub, _db);
-            if (rez == null) return Error();
+            if (rez == null) return RedirectToAction("Index");
             rez.ChatRoomName = ChatHub;
             Console.WriteLine("Atidarau ChatHubName su" + rez.Talker1Name+ rez.AllMessages.Count);
 
@@ -107,6 +107,18 @@ namespace kinder_app.Controllers
             Console.WriteLine("ChatHubName " + id);
             ChatHub = id;
 
+            return Ok();
+        }
+        public IActionResult DeleteRoom(string id)
+        {
+            Console.WriteLine("Naikinu chathuba "+id);
+            ControllerMethods.ChangeChatStatus(id,"Blocked",_db);
+            return Ok();
+        }
+        public IActionResult AproveRoom(string id)
+        {
+            Console.WriteLine("Patvirtinu chathuba " + id);
+            ControllerMethods.ChangeChatStatus(id, "Active", _db);
             return Ok();
         }
         public IActionResult LoadNext()

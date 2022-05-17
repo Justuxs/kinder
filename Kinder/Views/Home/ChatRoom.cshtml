@@ -5,8 +5,19 @@
 }
 <head>
     <link rel="stylesheet" href="~/css/Chat.css" />
+    <link rel="stylesheet" href="~/css/Alert.css" />
 </head>
 <body>
+    <div id="dialog">
+        <div id="dialog-bg">
+            <div id="dialog-title">User @Model.Talker2Name liked your item</div>
+            <div id="dialog-description">Clicking -Chat you will be able to communicate with the user?</div>
+            <div id="dialog-buttons">
+                <button class="large green button" type="button" onclick="Aprove()">Chat</button>
+                <button class="large red button" type="button" onclick="Reject()">Reject</button>
+            </div>
+        </div>
+    </div>
     <p id="demo"></p>
     <p id="demo2"></p>
     <h1>"Chat Room"</h1>
@@ -74,8 +85,12 @@
     var Reader = '@Html.Raw(Model.Talker2Name)';
     var allMessages = '@Html.Raw(Model.AllMessages)';
     var ChatName = '@Html.Raw(Model.ChatRoomName)';
+    var ChatStatus = '@Html.Raw(Model.ChatRoomStatus)';
 
-
+    if (ChatStatus.localeCompare("Pending") == 0) {
+        var element = document.getElementById("dialog");
+        element.style.display = "block";
+    }
 
 
 
@@ -178,7 +193,7 @@
     function SendMessage() {
         document.getElementById("demo").innerHTML = document.getElementById("textas").value;
         var message = document.getElementById("textas").value;
-        if (message.length > 0) {
+        if (message.length > 0 && ChatStatus.localeCompare("Active") == 0) {
 
             connection.invoke("SendMessage", Writer, Reader, ChatName, message).catch(function (err) {
                 document.getElementById("demo").innerHTML = err.toString();
@@ -188,6 +203,30 @@
             document.getElementById("demo").innerHTML = "issiustas";
             document.getElementById("textas").value = "";
         }
+    }
+    function Aprove() {
+
+
+        $.ajax({
+            url: 'AproveRoom',
+            data: { id: ChatName }
+        }).done(function () {
+            var element = document.getElementById("dialog");
+            element.style.display = "none";
+
+        });
+    };
+
+    function Reject() {
+        var mes = "lanbas";
+        $.ajax({
+            url: 'DeleteRoom',
+            data: { id: ChatName}
+        }).done(function () {
+            window.location.href = "/ChatExplorer/index"
+
+        });
+
     }
 
 

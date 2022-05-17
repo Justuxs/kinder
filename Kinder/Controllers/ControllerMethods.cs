@@ -194,7 +194,7 @@ namespace kinder_app.Controllers
         [LogAspect]
         public static List<ChatHub> GetUsersChatHub(string userN, ApplicationDbContext context)
         {
-            return context.ChatHubs.Where(x => x.ReceiverID.Equals(userN) || x.SenderID.Equals(userN)).ToList();
+            return context.ChatHubs.Where(x => (x.ReceiverID.Equals(userN) || x.SenderID.Equals(userN)) && x.Status!="Blocked" && !(x.Status == "Pending" && x.SenderID.Equals(userN))).ToList();
         }
         [LogAspect]
         public static void CreateChatHub(string userN,string ownerN, string itemN, ApplicationDbContext context)
@@ -224,7 +224,7 @@ namespace kinder_app.Controllers
             string nextName;
             if (!chat.ReceiverID.Equals(UserName)) nextName = chat.ReceiverID;
             else nextName = chat.SenderID;
-            return new ChatRoom(UserName, nextName, AllMessages);
+            return new ChatRoom(UserName, nextName, AllMessages,chat.Status);
         }
         [LogAspect]
         public static void SaveMessage(Message message, ApplicationDbContext context)
@@ -234,6 +234,15 @@ namespace kinder_app.Controllers
                 context.Messages.Add(message);
                 context.SaveChanges();
             }
+        }
+        [LogAspect]
+        public static void ChangeChatStatus(string chatName, string status, ApplicationDbContext context)
+        {
+            ChatHub chathub = context.ChatHubs.Where(x => x.Name.Equals(chatName)).First();
+            if (chathub == null) return;
+            chathub.Status = status;
+            context.Update(chathub);
+            context.SaveChanges();
         }
 
     }
