@@ -26,13 +26,13 @@ namespace kinder_app.Controllers
 
         public IActionResult Index()
         {
+
             return View(ControllerMethods.GetUsersChatHub(User.GetUserName(), _context));
         }
 
         public ActionResult Delete(string id)
         {
             Console.WriteLine("Gautas signalas trinti " + id);
-           // ControllerMethods.DeleteChatHub();
             return Ok();
         }
 

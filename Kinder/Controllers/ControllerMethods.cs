@@ -194,7 +194,19 @@ namespace kinder_app.Controllers
         [LogAspect]
         public static List<ChatHub> GetUsersChatHub(string userN, ApplicationDbContext context)
         {
+            RemoveOldChatHubs(userN, context);
             return context.ChatHubs.Where(x => (x.ReceiverID.Equals(userN) || x.SenderID.Equals(userN)) && x.Status!="Blocked" && !(x.Status == "Pending" && x.SenderID.Equals(userN))).ToList();
+        }
+        public static void RemoveOldChatHubs(string userN, ApplicationDbContext context)
+        {
+            DateTime date = DateTime.Now;
+            List<ChatHub> Oldchats = context.ChatHubs.Where(x => (x.ReceiverID.Equals(userN) || x.SenderID.Equals(userN)) && x.Status != "Pending" && (date - x.Date).TotalDays>ApplicationDbContext.DaysPendingCHat).ToList();
+            if (Oldchats.Count == 0) return;
+            foreach(var chat in Oldchats)
+            {
+                context.Remove(chat);
+            }
+            context.SaveChanges();
         }
         [LogAspect]
         public static void CreateChatHub(string userN,string ownerN, string itemN, ApplicationDbContext context)

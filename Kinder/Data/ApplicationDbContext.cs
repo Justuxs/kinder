@@ -23,6 +23,8 @@ namespace kinder_app.Data
 
         public DbSet<kinder_app.Models.ChatHub> ChatHubs { get; set; }
 
+        public const int DaysPendingCHat = 7;
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
