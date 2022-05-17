@@ -58,3 +58,27 @@
 2022-05-17 20:11:10.512 +03:00 [INF] Arguments: 27;2022-05-04;Mint;Furniture;;  28;2022-05-04;Mint;Furniture;aaaaaaccccccccccc;  29;2022-05-04;Mint;Furniture;;  45;2022-05-17;Mint;Furniture;AEDVBS;  46;2022-05-17;Mint;Furniture;b;  | 
 2022-05-17 20:11:10.512 +03:00 [INF] Return: 900| 
 2022-05-17 20:11:10.519 +03:00 [INF] User xaxaxa requested /Items (status: 200)
+2022-05-17 20:42:16.758 +03:00 [INF] User xaxaxa requested / (status: 200)
+2022-05-17 20:42:18.659 +03:00 [INF] User xaxaxa requested /Items/UploadPhotos (status: 200)
+2022-05-17 20:42:19.513 +03:00 [INF] Calling "AggregateSuming" method
+2022-05-17 20:42:19.521 +03:00 [INF] Arguments: 27;2022-05-04;Mint;Furniture;;  28;2022-05-04;Mint;Furniture;aaaaaaccccccccccc;  29;2022-05-04;Mint;Furniture;;  45;2022-05-17;Mint;Furniture;AEDVBS;  46;2022-05-17;Mint;Furniture;b;  | 
+2022-05-17 20:42:19.523 +03:00 [INF] Return: 900| 
+2022-05-17 20:42:19.589 +03:00 [INF] User xaxaxa requested /Items (status: 200)
+2022-05-17 20:42:21.508 +03:00 [INF] User xaxaxa requested /Items/FurnitureEdit/27 (status: 200)
+2022-05-17 20:42:24.025 +03:00 [INF] Calling "AggregateSuming" method
+2022-05-17 20:42:24.025 +03:00 [INF] Arguments: 27;2022-05-04;Mint;Furniture;;  28;2022-05-04;Mint;Furniture;aaaaaaccccccccccc;  29;2022-05-04;Mint;Furniture;;  45;2022-05-17;Mint;Furniture;AEDVBS;  46;2022-05-17;Mint;Furniture;b;  | 
+2022-05-17 20:42:24.025 +03:00 [INF] Return: 900| 
+2022-05-17 20:42:24.035 +03:00 [INF] User xaxaxa requested /Items (status: 200)
+2022-05-17 20:42:25.751 +03:00 [INF] User xaxaxa requested /Items/UploadPhotos (status: 200)
+2022-05-17 20:42:26.931 +03:00 [INF] User xaxaxa requested /Items/SelectCategory (status: 200)
+2022-05-17 20:42:28.016 +03:00 [INF] User xaxaxa requested /Items/ElectronicsDesc (status: 200)
+2022-05-17 20:42:37.489 +03:00 [INF] User xaxaxa requested /Items/ElectronicsDesc (status: 302)
+2022-05-17 20:42:37.507 +03:00 [INF] Calling "AggregateSuming" method
+2022-05-17 20:42:37.507 +03:00 [INF] Arguments: 27;2022-05-04;Mint;Furniture;;  28;2022-05-04;Mint;Furniture;aaaaaaccccccccccc;  29;2022-05-04;Mint;Furniture;;  45;2022-05-17;Mint;Furniture;AEDVBS;  46;2022-05-17;Mint;Furniture;b;  47;2022-05-17;Mint;Furniture;a;  | 
+2022-05-17 20:42:37.507 +03:00 [INF] Return: 1200| 
+2022-05-17 20:42:37.518 +03:00 [INF] User xaxaxa requested /Items (status: 200)
+2022-05-17 20:42:39.386 +03:00 [INF] User xaxaxa requested /Items/ElectronicsEdit/47 (status: 200)
+2022-05-17 20:42:45.492 +03:00 [INF] Calling "AggregateSuming" method
+2022-05-17 20:42:45.492 +03:00 [INF] Arguments: 27;2022-05-04;Mint;Furniture;;  28;2022-05-04;Mint;Furniture;aaaaaaccccccccccc;  29;2022-05-04;Mint;Furniture;;  45;2022-05-17;Mint;Furniture;AEDVBS;  46;2022-05-17;Mint;Furniture;b;  47;2022-05-17;Mint;Furniture;a;  | 
+2022-05-17 20:42:45.492 +03:00 [INF] Return: 1200| 
+2022-05-17 20:42:45.503 +03:00 [INF] User xaxaxa requested /Items (status: 200)
