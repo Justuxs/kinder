@@ -1,0 +1,60 @@
+2022-05-17 19:59:27.239 +03:00 [INF] User null requested / (status: 200)
+2022-05-17 19:59:37.101 +03:00 [INF] User null requested /Identity/Account/Login (status: 200)
+2022-05-17 19:59:43.732 +03:00 [INF] User null requested /Identity/Account/Login (status: 302)
+2022-05-17 19:59:43.797 +03:00 [INF] User xaxaxa requested / (status: 200)
+2022-05-17 19:59:54.718 +03:00 [INF] Calling "AggregateSuming" method
+2022-05-17 19:59:54.727 +03:00 [INF] Arguments: 27;2022-05-04;Mint;Furniture;;  28;2022-05-04;Mint;Furniture;aaaaaaccccccccccc;  29;2022-05-04;Mint;Furniture;;  45;2022-05-17;Mint;Furniture;AEDVBS;  | 
+2022-05-17 19:59:54.729 +03:00 [INF] Return: 850| 
+2022-05-17 19:59:54.787 +03:00 [INF] User xaxaxa requested /Items (status: 200)
+2022-05-17 20:01:05.837 +03:00 [INF] User xaxaxa requested / (status: 200)
+2022-05-17 20:01:08.184 +03:00 [INF] User xaxaxa requested /Items/UploadPhotos (status: 200)
+2022-05-17 20:01:09.481 +03:00 [INF] User xaxaxa requested /Items/ SelectCategory (status: 404)
+2022-05-17 20:09:28.710 +03:00 [INF] User xaxaxa requested / (status: 200)
+2022-05-17 20:09:32.623 +03:00 [INF] User xaxaxa requested /Items/UploadPhotos (status: 200)
+2022-05-17 20:09:33.831 +03:00 [INF] User xaxaxa requested /Items/SelectCategory (status: 200)
+2022-05-17 20:09:35.571 +03:00 [INF] User xaxaxa requested /Items/ClothingDesc (status: 200)
+2022-05-17 20:10:06.313 +03:00 [INF] User xaxaxa requested /Items/ClothingDesc (status: 302)
+2022-05-17 20:10:06.406 +03:00 [INF] Calling "AggregateSuming" method
+2022-05-17 20:10:06.407 +03:00 [INF] Arguments: 27;2022-05-04;Mint;Furniture;;  28;2022-05-04;Mint;Furniture;aaaaaaccccccccccc;  29;2022-05-04;Mint;Furniture;;  45;2022-05-17;Mint;Furniture;AEDVBS;  46;2022-05-17;Mint;Furniture;b;  | 
+2022-05-17 20:10:06.409 +03:00 [INF] Return: 900| 
+2022-05-17 20:10:06.477 +03:00 [INF] User xaxaxa requested /Items (status: 200)
+2022-05-17 20:10:10.774 +03:00 [INF] User xaxaxa requested /Items/ClothingEdit/46 (status: 200)
+2022-05-17 20:10:13.696 +03:00 [INF] Calling "AggregateSuming" method
+2022-05-17 20:10:13.696 +03:00 [INF] Arguments: 27;2022-05-04;Mint;Furniture;;  28;2022-05-04;Mint;Furniture;aaaaaaccccccccccc;  29;2022-05-04;Mint;Furniture;;  45;2022-05-17;Mint;Furniture;AEDVBS;  46;2022-05-17;Mint;Furniture;b;  | 
+2022-05-17 20:10:13.697 +03:00 [INF] Return: 900| 
+2022-05-17 20:10:13.707 +03:00 [INF] User xaxaxa requested /Items (status: 200)
+2022-05-17 20:10:17.493 +03:00 [INF] Calling "AggregateSuming" method
+2022-05-17 20:10:17.493 +03:00 [INF] Arguments: 27;2022-05-04;Mint;Furniture;;  28;2022-05-04;Mint;Furniture;aaaaaaccccccccccc;  29;2022-05-04;Mint;Furniture;;  45;2022-05-17;Mint;Furniture;AEDVBS;  46;2022-05-17;Mint;Furniture;b;  | 
+2022-05-17 20:10:17.493 +03:00 [INF] Return: 900| 
+2022-05-17 20:10:17.501 +03:00 [INF] User xaxaxa requested /Items (status: 200)
+2022-05-17 20:10:19.933 +03:00 [INF] User xaxaxa requested /Items/Details/27 (status: 200)
+2022-05-17 20:10:23.705 +03:00 [INF] Calling "AggregateSuming" method
+2022-05-17 20:10:23.705 +03:00 [INF] Arguments: 27;2022-05-04;Mint;Furniture;;  28;2022-05-04;Mint;Furniture;aaaaaaccccccccccc;  29;2022-05-04;Mint;Furniture;;  45;2022-05-17;Mint;Furniture;AEDVBS;  46;2022-05-17;Mint;Furniture;b;  | 
+2022-05-17 20:10:23.705 +03:00 [INF] Return: 900| 
+2022-05-17 20:10:23.713 +03:00 [INF] User xaxaxa requested /Items (status: 200)
+2022-05-17 20:10:26.144 +03:00 [INF] User xaxaxa requested /Items/Details/46 (status: 200)
+2022-05-17 20:10:32.165 +03:00 [INF] User xaxaxa requested /Items/Edit/46 (status: 302)
+2022-05-17 20:10:32.175 +03:00 [INF] User xaxaxa requested /Items/ClothingEdit (status: 404)
+2022-05-17 20:10:36.483 +03:00 [INF] User xaxaxa requested /Items/Details/46 (status: 200)
+2022-05-17 20:10:39.397 +03:00 [INF] Calling "AggregateSuming" method
+2022-05-17 20:10:39.397 +03:00 [INF] Arguments: 27;2022-05-04;Mint;Furniture;;  28;2022-05-04;Mint;Furniture;aaaaaaccccccccccc;  29;2022-05-04;Mint;Furniture;;  45;2022-05-17;Mint;Furniture;AEDVBS;  46;2022-05-17;Mint;Furniture;b;  | 
+2022-05-17 20:10:39.397 +03:00 [INF] Return: 900| 
+2022-05-17 20:10:39.404 +03:00 [INF] User xaxaxa requested /Items (status: 200)
+2022-05-17 20:10:40.667 +03:00 [INF] User xaxaxa requested /Items/ClothingEdit/46 (status: 200)
+2022-05-17 20:10:43.068 +03:00 [INF] Calling "AggregateSuming" method
+2022-05-17 20:10:43.068 +03:00 [INF] Arguments: 27;2022-05-04;Mint;Furniture;;  28;2022-05-04;Mint;Furniture;aaaaaaccccccccccc;  29;2022-05-04;Mint;Furniture;;  45;2022-05-17;Mint;Furniture;AEDVBS;  46;2022-05-17;Mint;Furniture;b;  | 
+2022-05-17 20:10:43.068 +03:00 [INF] Return: 900| 
+2022-05-17 20:10:43.076 +03:00 [INF] User xaxaxa requested /Items (status: 200)
+2022-05-17 20:10:50.191 +03:00 [INF] User xaxaxa requested /Items/ClothingEdit/46 (status: 200)
+2022-05-17 20:10:53.931 +03:00 [INF] Calling "AggregateSuming" method
+2022-05-17 20:10:53.931 +03:00 [INF] Arguments: 27;2022-05-04;Mint;Furniture;;  28;2022-05-04;Mint;Furniture;aaaaaaccccccccccc;  29;2022-05-04;Mint;Furniture;;  45;2022-05-17;Mint;Furniture;AEDVBS;  46;2022-05-17;Mint;Furniture;b;  | 
+2022-05-17 20:10:53.932 +03:00 [INF] Return: 900| 
+2022-05-17 20:10:53.939 +03:00 [INF] User xaxaxa requested /Items (status: 200)
+2022-05-17 20:10:55.327 +03:00 [INF] User xaxaxa requested /Items/Details/46 (status: 200)
+2022-05-17 20:10:58.507 +03:00 [INF] User xaxaxa requested /Items/Edit/46 (status: 302)
+2022-05-17 20:10:58.515 +03:00 [INF] User xaxaxa requested /Items/ClothingEdit (status: 404)
+2022-05-17 20:11:05.281 +03:00 [INF] User xaxaxa requested /Items/Details/46 (status: 200)
+2022-05-17 20:11:10.512 +03:00 [INF] Calling "AggregateSuming" method
+2022-05-17 20:11:10.512 +03:00 [INF] Arguments: 27;2022-05-04;Mint;Furniture;;  28;2022-05-04;Mint;Furniture;aaaaaaccccccccccc;  29;2022-05-04;Mint;Furniture;;  45;2022-05-17;Mint;Furniture;AEDVBS;  46;2022-05-17;Mint;Furniture;b;  | 
+2022-05-17 20:11:10.512 +03:00 [INF] Return: 900| 
+2022-05-17 20:11:10.519 +03:00 [INF] User xaxaxa requested /Items (status: 200)

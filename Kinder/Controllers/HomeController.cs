@@ -29,7 +29,7 @@ namespace kinder_app.Controllers
         {
             var itemList = ControllerMethods.GetItemsSwiping(_db,
                 CurrentUserExtention.GetUserID(this.User));
-           
+
             if (current == itemList.Count())
             {
                 current = 0;
@@ -40,12 +40,11 @@ namespace kinder_app.Controllers
                 TempData["name"] = itemList.ToList()[current].Name;
                 TempData["cat"] = itemList.ToList()[current].Category;
                 TempData["cond"] = itemList.ToList()[current].Condition;
-                TempData["desc"] = itemList.ToList()[current].Description;
-                TempData["size"] = itemList.ToList()[current].Size.ToString();
+                //TempData["size"] = itemList.ToList()[current].Size.ToString();
                 TempData["date"] = itemList.ToList()[current].DateOfPurchase.ToString("yyyy-MM-dd");
-                TempData["karma"] = itemList.ToList()[current].KarmaPoints;
+                TempData["karma"] = itemList.ToList()[current].Points;
 
-                currentID = itemList.ToList()[current].ID; 
+                currentID = itemList.ToList()[current].ID;
             }
             else
             {
@@ -63,9 +62,9 @@ namespace kinder_app.Controllers
 
         public IActionResult LikeThis()
         {
-            alreadyLiked=
+            alreadyLiked =
             ControllerMethods.LikeItem(_db, currentID, CurrentUserExtention.GetUserID(this.User), alreadyLiked);
-            
+
             return RedirectToAction("swiping");
         }
 

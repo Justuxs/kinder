@@ -37,10 +37,10 @@ namespace kinder_app.Models
             str += Condition.ToString() + ';';
             str += Category.ToString() + ';';
             str += UserID.ToString() + ';';
-            str += Size.ToString() + ';';
-            str += KarmaPoints.ToString() + ';';
+            //str += Size.ToString() + ';';
+            //str += KarmaPoints.ToString() + ';';
             str += Name.ToString() + ';';
-            str += Description.ToString();
+            str += Description;
 
             return str;
         }
@@ -55,15 +55,17 @@ namespace kinder_app.Models
         public DateTime DateOfPurchase { get; set; }
         public ConditionEnum Condition { get; set; }
         public CategoryEnum Category { get; set; }
+
+        public String Cat { get; set; }
+        public Boolean NSFW { get; set; } // 0 SFW, 1 NSFW
+        public Boolean State { get; set; } = false;// 0 private, 1 public
+        public CategoryEnum Filter { get; set; }
+
+        //public String Tag { get; set; }
         public string UserID { get; set; }
 
-        [Range(0, int.MaxValue, ErrorMessage = "Only positive number allowed.")]
-        public int Length { get; set; }
-        [Range(0, int.MaxValue, ErrorMessage = "Only positive number allowed.")]
-        public int Height { get; set; }
-        [Range(0, int.MaxValue, ErrorMessage = "Only positive number allowed.")]
-        public int Width { get; set; }
 
+        /*
         [NotMapped]
         public Dimensions Size 
         { 
@@ -79,11 +81,22 @@ namespace kinder_app.Models
                 this.Height = value.Height;
             }
         }
+        */
 
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public int KarmaPoints { get; set; }
+        public String Name { get; set; }
+
+        public String Description { get; set; }
+        public int Points { get; set; } //!!!!!!!!!! turetu static but bet problemos kyla, pamirsau kaip sprest ir ntr laiko db aiskintis
+                                        // public int [] PhotoIDs{ get; set; }
         public String GivenTo { get; set; }
+    }
+
+    public enum State
+    {
+        [Display(Name = "Private")]
+        Tops,
+        [Display(Name = "Bottoms")]
+        Bottoms,
     }
 
 }

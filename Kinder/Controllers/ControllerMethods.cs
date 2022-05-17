@@ -75,7 +75,7 @@ namespace kinder_app.Controllers
 
             RemoveAllLiked(item, context);
 
-            user.Karma_points += item.KarmaPoints;
+            user.Karma_points += item.Points;
 
             context.Item.Remove(item);
             context.SaveChanges();
@@ -134,7 +134,7 @@ namespace kinder_app.Controllers
         public static void GiveItem(ApplicationDbContext context, string userID, int? id)
         {
             var uniqueItem = LikedModelList(userID,
-                context.Item.ToList(),context.LikedItems.ToList(), context.Users.ToList())
+                context.Item.ToList(), context.LikedItems.ToList(), context.Users.ToList())
                 .FirstOrDefault(m => m.UniqID == id);
 
             var item = context.Item

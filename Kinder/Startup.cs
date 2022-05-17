@@ -50,7 +50,16 @@ namespace kinder_app
             services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = false)
               .AddEntityFrameworkStores<ApplicationDbContext>();
 
-            services.AddControllersWithViews();
+            services.AddControllersWithViews()
+                .AddJsonOptions
+                    (
+                        o =>
+                        {
+                            o.JsonSerializerOptions.PropertyNameCaseInsensitive = true;
+                            o.JsonSerializerOptions.PropertyNamingPolicy = null;
+                        }
+                    );
+
             services.AddSingleton(x => Log.Logger);
 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
@@ -80,7 +89,7 @@ namespace kinder_app
             app.UseStaticFiles();
 
             app.UseRouting();
-            
+
 
             app.UseAuthentication();
             app.UseAuthorization();
