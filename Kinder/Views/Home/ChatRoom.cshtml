@@ -91,12 +91,18 @@
     var allMessages = '@Html.Raw(Model.AllMessages)';
     var ChatName = '@Html.Raw(Model.ChatRoomName)';
     var ChatStatus = '@Html.Raw(Model.ChatRoomStatus)';
+    var ChatAprove1 = '@Html.Raw(Model.Approved1)';
+    var ChatAprove2 = '@Html.Raw(Model.Approved2)';
 
     if (ChatStatus.localeCompare("Pending") == 0) {
         var element = document.getElementById("dialog");
         element.style.display = "block";
     }
-
+    if (ChatAprove1.toString().localeCompare('True') == 0) {
+        document.getElementById("cancelText").innerHTML = "waiting for another person to approve";
+        document.getElementById("Confirm").innerHTML = "Cancel";
+    }
+    /*document.getElementById("cancelText").innerHTML = ChatAprove1.toString();*/
 
 
     var connection = new signalR.HubConnectionBuilder().withUrl("/chatHub").build();
@@ -207,7 +213,7 @@
         }
     }
     function SendCommand(cmd) {
-        
+
         if (ChatStatus.localeCompare("Active") == 0) {
 
             connection.invoke("SendCommand", Writer, Reader, ChatName, cmd).catch(function (err) {

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
@@ -17,6 +18,10 @@ namespace kinder_app.Models
         public DateTime Date;
 
         public string Status;
+        [DefaultValue(false)]
+        public bool Approved1;
+        [DefaultValue(false)]
+        public bool Approved2;
         public ChatHub() { }
         public ChatHub(string IownerN, string writerN, string chatN)
         {
@@ -25,6 +30,9 @@ namespace kinder_app.Models
             Name = chatN;
             Status = "Pending";
             Date = DateTime.Now;
+            Approved1 = false;
+            Approved2 = false;
+
         }
     }
 }

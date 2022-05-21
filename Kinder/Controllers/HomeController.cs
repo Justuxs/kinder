@@ -93,12 +93,11 @@ namespace kinder_app.Controllers
         }*/
         public IActionResult ChatRoom()
         {
-            Console.WriteLine("Atidarau ChatHubName " + ChatHub);
 
             ChatRoom rez = ControllerMethods.GetChatRoom(User.GetUserName(), ChatHub, _db);
             if (rez == null) return RedirectToAction("Index");
             rez.ChatRoomName = ChatHub;
-            Console.WriteLine("Atidarau ChatHubName su" + rez.Talker1Name+ rez.AllMessages.Count);
+            Console.WriteLine("Atidarau ChatHubName su" +"1 "+ rez.Talker1Name + rez.Talker2Name+ rez.AllMessages.Count+"+"+ rez.Approved1.ToString()+ rez.Approved2);
 
             return View(rez);
         }

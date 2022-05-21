@@ -54,6 +54,9 @@ namespace kinder_app.Data
                 entity.Property(e => e.ReceiverID).ValueGeneratedOnAdd();
                 entity.Property(e => e.Date).ValueGeneratedOnAdd();
                 entity.Property(e => e.Status).ValueGeneratedOnAdd();
+                entity.Property(e => e.Approved1).HasDefaultValue(false);
+                entity.Property(e => e.Approved2).HasDefaultValue(false);
+
             });
         }
         

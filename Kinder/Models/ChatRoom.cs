@@ -16,6 +16,8 @@ namespace kinder_app.Models
         public virtual List<Message> AllMessages { get; set; }
         public string ChatRoomName;
         public string ChatRoomStatus;
+        public bool Approved1;
+        public bool Approved2;
 
 
 
@@ -32,13 +34,15 @@ namespace kinder_app.Models
             Sort();
         }
 
-        public ChatRoom( string talker1Name, string talker2Name, List<Message>  allMessages,string status)
+        public ChatRoom( string talker1Name, string talker2Name, List<Message>  allMessages,string status, bool bool1,bool bool2)
         {
 
             Talker1Name = talker1Name;
             Talker2Name = talker2Name;
             AllMessages = allMessages;
             ChatRoomStatus = status;
+            Approved1 = bool1;
+            Approved2 = bool2;
             Sort();
         }
 

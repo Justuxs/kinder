@@ -42,10 +42,12 @@ namespace Chat.Hubs
             if (text.Equals("Confirm"))
             {
                 text = "System: " + username + " confirms.";
+                ControllerMethods.ChangeChatAprove(chatname, true, username, _db);
             }
             else if (text.Equals("Cancel"))
             {
                 text = "System: " + username + " cancels.";
+                ControllerMethods.ChangeChatAprove(chatname,false, username, _db);
             }
             else if (text.Equals("Aprove"))
             {
