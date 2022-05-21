@@ -1,0 +1,264 @@
+﻿@model ChatRoom
+
+@{
+    ViewData["Title"] = "ChatRoom";
+}
+<head>
+    <link rel="stylesheet" href="~/css/Chat.css" />
+    <link rel="stylesheet" href="~/css/Alert.css" />
+    <link rel="stylesheet" href="~/css/EffectButton.css" />
+</head>
+<body>
+    <div id="dialog">
+        <div id="dialog-bg">
+            <div id="dialog-title">User @Model.Talker2Name liked your item</div>
+            <div id="dialog-description">Clicking -Chat you will be able to communicate with the user?</div>
+            <div id="dialog-buttons">
+                <button class="large green button" type="button" onclick="Aprove()">Chat</button>
+                <button class="large red button" type="button" onclick="Reject()">Reject</button>
+            </div>
+        </div>
+    </div>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <h1>"Chat Room"</h1>
+    <section class="chatbox">
+        <section class="chat-window" id="chat-window">
+            @foreach (var message in Model.AllMessages)
+            {
+
+
+                @if (Model.Talker1Name == message.ReceiverID)
+                {
+                    <article class="msg-container msg-remote" id="msg-0">
+                        <div class="msg-box">
+                            <div class="flr">
+                                <div class="messages">
+                                    <ul id="zinut"></ul>
+                                    <p class="msg" id="msg-0">
+                                        @message.Text
+                                    </p>
+                                </div>
+                                <span class="timestamp"><span class="username">@message.ReceiverID</span>&bull;<span class="posttime">@message.Date</span></span>
+                            </div>
+                        </div>
+                    </article>
+                }
+                else
+                {
+                    <article class="msg-container msg-self" id="msg-0">
+                        <div class="msg-box">
+                            <div class="flr">
+                                <div class="messages">
+                                    <p class="msg" id="msg-1">
+                                        @message.Text
+                                    </p>
+
+                                </div>
+                                <span class="timestamp"><span class="username">@message.ReceiverID</span>&bull;<span class="posttime">@message.Date</span></span>
+                            </div>
+                        </div>
+                    </article>
+                }
+            }
+
+
+
+
+        </section>
+        <form class="chat-input" onsubmit="return false;">
+            <input type="text" id="textas" autocomplete="on" placeholder="Type a message" />
+            <button id="but" onclick="SendMessage();">
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24"><path fill="rgba(0,0,0,.38)" d="M17,12L12,17V14H8V10H12V7L17,12M21,16.5C21,16.88 20.79,17.21 20.47,17.38L12.57,21.82C12.41,21.94 12.21,22 12,22C11.79,22 11.59,21.94 11.43,21.82L3.53,17.38C3.21,17.21 3,16.88 3,16.5V7.5C3,7.12 3.21,6.79 3.53,6.62L11.43,2.18C11.59,2.06 11.79,2 12,2C12.21,2 12.41,2.06 12.57,2.18L20.47,6.62C20.79,6.79 21,7.12 21,7.5V16.5M12,4.15L5,8.09V15.91L12,19.85L19,15.91V8.09L12,4.15Z" /></svg>
+            </button>
+        </form>
+    </section>
+    <div>
+        <button class="btn draw-border" id='Confirm' onclick="ConfirmClicked()">Confirm</button>
+        <p style="color: #58afd1" id="cancelText"></p>
+    </div>
+</body>
+
+
+
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script>
+
+    "use strict";
+
+    var Writer = '@Html.Raw(Model.Talker1Name)';
+    var Reader = '@Html.Raw(Model.Talker2Name)';
+    var allMessages = '@Html.Raw(Model.AllMessages)';
+    var ChatName = '@Html.Raw(Model.ChatRoomName)';
+    var ChatStatus = '@Html.Raw(Model.ChatRoomStatus)';
+    var ChatAprove1 = '@Html.Raw(Model.Approved1)';
+    var ChatAprove2 = '@Html.Raw(Model.Approved2)';
+
+    if (ChatStatus.localeCompare("Pending") == 0) {
+        var element = document.getElementById("dialog");
+        element.style.display = "block";
+    }
+    if (ChatAprove1.toString().localeCompare('True') == 0) {
+        document.getElementById("cancelText").innerHTML = "waiting for another person to approve";
+        document.getElementById("Confirm").innerHTML = "Cancel";
+    }
+    /*document.getElementById("cancelText").innerHTML = ChatAprove1.toString();*/
+
+
+    var connection = new signalR.HubConnectionBuilder().withUrl("/chatHub").build();
+    start();
+    async function start() {
+        try {
+            await connection.start();
+            console.log("SignalR Connected.");
+        } catch (err) {
+            console.log(err);
+            setTimeout(start, 5000);
+        }
+    };
+    connection.on("ReceiveMessage", function (name,rname,chatname, text,date) {
+
+        if (chatname.localeCompare(ChatName) == 0 ) {
+            var msg = name;
+            if (name.localeCompare(Writer) == 0 && rname.localeCompare(Reader) == 0) {
+                var contentText = document.createTextNode(text);
+                var p = document.createElement("p");
+                p.className = "msg";
+                p.appendChild(contentText);
+                var divMess = document.createElement("div");
+                divMess.className = "messages";
+                divMess.appendChild(p);
+                var mainspan = document.createElement("span");
+                mainspan.className = "timestamp";
+                var span = document.createElement("span");
+                span.className = "username";
+                var contentspan = document.createTextNode(date);
+                span.appendChild(contentspan);
+                var span2 = document.createElement("span");
+                span2.className = "posttime";
+                var contentspan2 = document.createTextNode(name+" ");
+                span2.appendChild(contentspan2);
+                var divflr = document.createElement("div");
+                divflr.className = "flr";
+                divflr.appendChild(divMess);
+                mainspan.appendChild(span2);
+                mainspan.appendChild(span);
+                divflr.appendChild(mainspan);
+                var divmsgbox = document.createElement("div");
+                divmsgbox.className = "msg-box";
+                divmsgbox.appendChild(divflr);
+                var article = document.createElement("article");
+                article.className = "msg-container msg-self";
+                article.appendChild(divmsgbox);
+
+                document.getElementById("chat-window").appendChild(article);
+
+
+            }
+            if (name.localeCompare(Reader) == 0 && rname.localeCompare(Writer) == 0) {
+                var contentText = document.createTextNode(text);
+                var p = document.createElement("p");
+                p.className = "msg";
+                p.appendChild(contentText);
+                var divMess = document.createElement("div");
+                divMess.className = "messages";
+                divMess.appendChild(p);
+                var mainspan = document.createElement("span");
+                mainspan.className = "timestamp";
+                var span = document.createElement("span");
+                span.className = "username";
+                var contentspan = document.createTextNode(date);
+                span.appendChild(contentspan);
+                var span2 = document.createElement("span");
+                span2.className = "posttime";
+                var contentspan2 = document.createTextNode(name);
+                span2.appendChild(contentspan2);
+                var divflr = document.createElement("div");
+                divflr.className = "flr";
+                divflr.appendChild(divMess);
+                mainspan.appendChild(span2);
+                mainspan.appendChild(span);
+                divflr.appendChild(mainspan);
+                var divmsgbox = document.createElement("div");
+                divmsgbox.className = "msg-box";
+                divmsgbox.appendChild(divflr);
+                var article = document.createElement("article");
+                article.className = "msg-container msg-remote";
+                article.appendChild(divmsgbox);
+                document.getElementById("chat-window").appendChild(article);
+
+
+            }
+        }
+    });
+
+    //var username = document.getElementById("username").value;
+    //document.getElementById("sendButton").disabled = true;
+
+
+
+
+
+
+
+    function SendMessage() {
+        var message = document.getElementById("textas").value;
+        if (message.length > 0 && ChatStatus.localeCompare("Active") == 0) {
+
+            connection.invoke("SendMessage", Writer, Reader, ChatName, message).catch(function (err) {
+                document.getElementById("demo").innerHTML = err.toString();
+                return console.error(err.toString());
+            });
+
+        }
+    }
+    function SendCommand(cmd) {
+
+        if (ChatStatus.localeCompare("Active") == 0) {
+
+            connection.invoke("SendCommand", Writer, Reader, ChatName, cmd).catch(function (err) {
+                document.getElementById("demo").innerHTML = err.toString();
+                return console.error(err.toString());
+            });
+
+        }
+    }
+    function Aprove() {
+        $.ajax({
+            url: 'AproveRoom',
+            data: { id: ChatName }
+        }).done(function () {
+            var element = document.getElementById("dialog");
+            element.style.display = "none";
+            SendCommand("Aprove");
+        });
+    };
+
+    function Reject() {
+        $.ajax({
+            url: 'DeleteRoom',
+            data: { id: ChatName}
+        }).done(function () {
+            window.location.href = "/ChatExplorer/index"
+
+        });
+
+    }
+    function ConfirmClicked() {
+        var elem = document.getElementById("Confirm");
+        if (elem.innerHTML == "Confirm") {
+            document.getElementById("cancelText").innerHTML = "waiting for another person to approve";
+            elem.innerHTML = "Cancel";
+            SendCommand("Confirm");
+        }
+        else {
+            elem.innerHTML = "Confirm";
+            document.getElementById("cancelText").innerHTML = "";
+            SendCommand("Cancel");
+
+        }
+    }
+
+
+
+</script>

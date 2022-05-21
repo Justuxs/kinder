@@ -10,13 +10,8 @@ using kinder_app.Data;
 namespace kinder_app.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-<<<<<<< HEAD:Kinder/Migrations/20220517174145_Fix_pls.Designer.cs
-    [Migration("20220517174145_Fix_pls")]
-    partial class Fix_pls
-=======
-    [Migration("20220504135957_new")]
-    partial class @new
->>>>>>> Apjungimas:Kinder/Migrations/20220504135957_new.Designer.cs
+    [Migration("20220521081257_Upadte_ChatHub")]
+    partial class Upadte_ChatHub
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -265,9 +260,6 @@ namespace kinder_app.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Cat")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<int>("Category")
                         .HasColumnType("int");
 
@@ -280,36 +272,30 @@ namespace kinder_app.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Discriminator")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Filter")
-                        .HasColumnType("int");
-
                     b.Property<string>("GivenTo")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("NSFW")
-                        .HasColumnType("bit");
+                    b.Property<int>("Height")
+                        .HasColumnType("int");
+
+                    b.Property<int>("KarmaPoints")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Length")
+                        .HasColumnType("int");
 
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Points")
-                        .HasColumnType("int");
-
-                    b.Property<bool>("State")
-                        .HasColumnType("bit");
-
                     b.Property<string>("UserID")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Width")
+                        .HasColumnType("int");
 
                     b.HasKey("ID");
 
                     b.ToTable("Item");
-
-                    b.HasDiscriminator<string>("Discriminator").HasValue("Item");
                 });
 
             modelBuilder.Entity("kinder_app.Models.LikedItems", b =>
@@ -376,36 +362,6 @@ namespace kinder_app.Migrations
                         .HasColumnType("nvarchar(250)");
 
                     b.HasDiscriminator().HasValue("ApplicationUser");
-                });
-
-            modelBuilder.Entity("kinder_app.Models.ClothingItem", b =>
-                {
-                    b.HasBaseType("kinder_app.Models.Item");
-
-                    b.HasDiscriminator().HasValue("ClothingItem");
-                });
-
-            modelBuilder.Entity("kinder_app.Models.ElectronicsItem", b =>
-                {
-                    b.HasBaseType("kinder_app.Models.Item");
-
-                    b.HasDiscriminator().HasValue("ElectronicsItem");
-                });
-
-            modelBuilder.Entity("kinder_app.Models.FurnitureItem", b =>
-                {
-                    b.HasBaseType("kinder_app.Models.Item");
-
-                    b.Property<int>("Height")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Length")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Width")
-                        .HasColumnType("int");
-
-                    b.HasDiscriminator().HasValue("FurnitureItem");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

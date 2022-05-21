@@ -7,7 +7,7 @@
 @functions{
     public int GetKarma()
     {
-        if (!User.Identity.IsAuthenticated)
+        if (User.Identity.IsAuthenticated)
             return 0;
         else
         {

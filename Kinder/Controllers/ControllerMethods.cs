@@ -178,5 +178,99 @@ namespace kinder_app.Controllers
 
             return likeds;
         }
+        // [LogAspect]
+        /* public static List<ChatRoom> GetUserMessages(ApplicationDbContext context, int currentID)
+         {
+             string userID = currentID + "";
+
+             List<Message> users = context.Message.Where(x => x.UserID.Equals(userID)).ToList();
+             List<Message> users = context.Message.Where(x => x.UserID.Equals(userID)).ToList();
+
+             //context.Entry(liked).State = EntityState.Added;
+             context.SaveChanges();
+
+            // return likeds;
+         }*/
+        [LogAspect]
+        public static List<ChatHub> GetUsersChatHub(string userN, ApplicationDbContext context)
+        {
+            RemoveOldChatHubs(userN, context);
+            return context.ChatHubs.Where(x => (x.ReceiverID.Equals(userN) || x.SenderID.Equals(userN)) && x.Status != "Blocked" && !(x.Status == "Pending" && x.ReceiverID.Equals(userN))).ToList();
+        }
+        public static void RemoveOldChatHubs(string userN, ApplicationDbContext context)
+        {
+            DateTime date = DateTime.Now;
+            List<ChatHub> Oldchats = context.ChatHubs.Where(x => (x.ReceiverID.Equals(userN) || x.SenderID.Equals(userN)) && x.Status != "Pending").ToList();
+            if (Oldchats.Count == 0) return;
+            foreach (var chat in Oldchats)
+            {
+                if ((date - chat.Date).TotalDays > ApplicationDbContext.DaysPendingCHat)
+                {
+                    context.Remove(chat);
+                }
+            }
+            context.SaveChanges();
+        }
+        [LogAspect]
+        public static void CreateChatHub(string userN, string ownerN, string itemN, ApplicationDbContext context)
+        {
+            string ChatName = ownerN + "-" + itemN + "-" + userN;
+            Console.WriteLine("Chat hub creating");
+            ChatHub Exist = context.ChatHubs.Where(x => x.Name.Equals(ChatName)).ToList().FirstOrDefault();
+
+            if (Exist == null)
+            {
+                context.Add(new ChatHub(ownerN, userN, ChatName));
+                context.SaveChanges();
+            }
+        }
+        [LogAspect]
+        public static ChatRoom GetChatRoom(string UserName, string ChatHubName, ApplicationDbContext context)
+        {
+            List<Message> AllMessages = context.Messages.Where(x => x.ChatHub.Equals(ChatHubName)).ToList();
+            List<Message> CurrentUserMes = AllMessages.Where(x => x.UserID.Equals(UserName)).ToList();
+            List<Message> NextMes = AllMessages.Where(x => (!x.UserID.Equals(UserName))).ToList();
+            ChatHub chat = context.ChatHubs.Where(x => x.Name.Equals(ChatHubName)).FirstOrDefault();
+            if (chat == null) return null;
+            string nextName;
+            if (!chat.ReceiverID.Equals(UserName)) nextName = chat.ReceiverID;
+            else
+            {
+                nextName = chat.SenderID;
+                var temp = chat.Approved1;
+                chat.Approved1 = chat.Approved2;
+                chat.Approved2 = temp;
+            }
+            return new ChatRoom(UserName, nextName, AllMessages, chat.Status, chat.Approved1, chat.Approved2);
+        }
+        [LogAspect]
+        public static void SaveMessage(Message message, ApplicationDbContext context)
+        {
+            if (message.ReceiverID.Length != 0 && message.UserID.Length != 0)
+            {
+                context.Messages.Add(message);
+                context.SaveChanges();
+            }
+        }
+        [LogAspect]
+        public static void ChangeChatStatus(string chatName, string status, ApplicationDbContext context)
+        {
+            ChatHub chathub = context.ChatHubs.Where(x => x.Name.Equals(chatName)).First();
+            if (chathub == null) return;
+            chathub.Status = status;
+            context.Update(chathub);
+            context.SaveChanges();
+        }
+        public static void ChangeChatAprove(string chatName, bool status, string who, ApplicationDbContext context)
+        {
+            ChatHub chathub = context.ChatHubs.Where(x => x.Name.Equals(chatName)).First();
+            if (chathub == null) return;
+            if (chathub.SenderID.Equals(who)) chathub.Approved1 = status;
+            else if (chathub.ReceiverID.Equals(who)) chathub.Approved2 = status;
+            else return;
+            context.Update(chathub);
+            context.SaveChanges();
+        }
+
     }
 }

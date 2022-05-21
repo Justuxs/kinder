@@ -1,0 +1,251 @@
+﻿@model IEnumerable<kinder_app.Models.ChatHub>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<style type="text/css">
+    td {
+        border: 1px #DDD solid;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    .selected {
+        background-color: brown;
+        color: #FFF;
+    }
+</style>
+
+<h1>Your ChatHubs:</h1>
+<br />
+<p id="demo"></p>
+<input type="text" id="criterie" name="fname">
+<input type="button" name="search" value="Enter" onclick="Filtrate();" />
+<b id="message"></b>
+<input type="button" id="undo" value="Undo" onclick="Undo();" />
+<div id="countdown"></div>
+
+
+<br>
+<table class="table" id="chatHubs">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.ReceiverID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr id="tr">
+            <td id="ChatName">
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.ReceiverID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <th>
+                @Html.DisplayFor(modelItem => item.Status)
+            </th>
+        </tr>
+            }
+        </tbody>
+
+        <input type="button" id="select" value="Select" onclick="Select()" />
+        <input type="button" id="delete" value="Delete" onclick="Delete()" display="none" />
+
+    </table>
+<script>
+        "use strict";
+
+        document.getElementById("undo").style = "display: none;";
+        function Filtrate() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("criterie");
+
+            filter = input.value.toUpperCase();
+            table = document.getElementById("chatHubs");
+
+            tr = table.getElementsByTagName("tr");
+
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+
+
+                    let result1 = txtValue.substring(17,txtValue.length).toUpperCase();
+                   // document.getElementById("demo").innerHTML = result1;
+
+
+                    if (result1.startsWith(filter)) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+
+        }
+
+        document.getElementById('delete').style.visibility = 'hidden';
+        var status = 0;
+        var selected = 0;
+        var table = document.getElementById('chatHubs');
+        var selected = table.getElementsByClassName('selected');
+        table.onclick = highlight;
+
+    function highlight(e) {
+        if (status == 1) {
+            if (e.target.parentNode.style.backgroundColor == 'green') {
+                e.target.parentNode.style.backgroundColor = 'white';
+                selected -= 1;
+            }
+            else {
+                e.target.parentNode.style.backgroundColor = 'Green';
+                selected += 1;
+            }
+            ShowButton();
+        }
+        else {
+
+            ToChat(e.target.parentNode.firstElementChild.innerText);
+        }
+        }
+
+        function Select() {
+            selected = 0;
+            var button = document.getElementById('select');
+            button.style.backgroundColor = 'Red';
+            if (status == 1) {
+                status = 0;
+                button.style.backgroundColor = 'White';
+                for (let row of table.rows) {
+                    row.style.backgroundColor = 'White';
+                }
+
+            }
+            else status += 1;
+
+            ShowButton();
+        }
+
+        function ShowButton() {
+            var button = document.getElementById('delete');
+            if (selected > 0) {
+                button.style.visibility = 'visible';
+            }
+            else button.style.visibility = 'hidden';
+
+        }
+
+        var UndoPressed = 0;
+        var timeleft = 10;
+        function Delete() {
+            DeleteFR();
+            var textfield = document.getElementById('message');
+            var undoButt = document.getElementById('undo');
+            textfield.innerHTML = "Soon your " + selected + " chatHubs will be deleted";
+            textfield.style.visibility = 'visible';
+            undoButt.style= "display: block;"
+            undoButt.disabled = false;
+            timeleft = 10;
+            UndoPressed = 0;
+
+            var downloadTimer = setInterval(function () {
+                if (timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("countdown").innerHTML = "";
+
+                    textfield.style.visibility = 'hidden';
+                    undoButt.style.visibility = 'hidden';
+                    undoButt.disabled = true
+
+                } else {
+                    document.getElementById("countdown").innerHTML = timeleft + " seconds remaining";
+                }
+                timeleft -= 1;
+            }, 1000);
+
+
+
+        }
+        function Undo() {
+            UndoPressed = 1;
+            timeleft = 0;
+           
+        }
+    function ToChat(id) {
+        document.getElementById("demo").innerHTML = id;
+        $.ajax({
+            url: 'Home/ChatSetRoom',
+            data: { id: id }
+        }).done(function () {
+           // alert('Added');
+            window.location = "Home/ChatRoom"
+        });
+        }
+        function DeleteFR() {
+            let itemname = "Tomas";
+
+            $.ajax({
+                url: 'ChatExplorer/Delete',
+                type: 'POST',
+                dataType: 'json',
+                data: { id: itemname }
+            });
+            /*
+            $.ajax({
+                type: "POST",
+                url: "/ChatExplorer/AjaxMethod",
+                data: '{name: "' + $("#txtName").val() + '" }',
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (response) {
+                    alert("Hello: "  + " .\nCurrent Date and Time: " + response.DateTime);
+                },
+                failure: function (response) {
+                    alert(response.responseText);
+                },
+                error: function (response) {
+                    alert(response.responseText);
+                }
+            });
+
+            $.ajax({
+                type: "POST",
+                url: "/ChatExplorer/Delete",
+                data: '{name: Labas}',
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (response) {
+                    alert("Hello: " + response.Name + " .\nCurrent Date and Time: " + response.DateTime);
+                },
+                failure: function (response) {
+                    alert(response.responseText);
+                },
+                error: function (response) {
+                    alert(response.responseText);
+                }
+            });*/
+
+        }
+
+
+</script>
