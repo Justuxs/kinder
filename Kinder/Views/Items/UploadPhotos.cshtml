@@ -1,0 +1,157 @@
+﻿@model kinder_app.Models.Item
+
+@{
+    ViewData["Title"] = "UploadPhotos";
+}
+
+<h1>Upload Photos</h1>
+
+<style>
+    .container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    input[type="file"] {
+        position: absolute;
+        z-index: -1;
+        top: 10px;
+        left: 8px;
+        font-size: 17px;
+        color: transparent;
+    }
+
+    .button-wrap {
+        position: relative;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 12px 18px;
+        height: 150px;
+        width: 150px;
+        cursor: pointer;
+        border-radius: 5px;
+        background-color: #efefef;
+        font-size: 16px;
+        font-weight: bold;
+        color: transparent;
+    }
+</style>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="UploadPhotos">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <table>
+                <tr>
+                    <th>
+                        <div class="container">
+                            <div class="button-wrap">
+                                <label class="button" name="" for="upload"></label>
+                                <input id="photo0" title="" type="file" {color: transparent}>
+                            </div>
+                        </div>
+                    </th>
+
+                    <th>
+                        <div class="container">
+                            <div class="button-wrap">
+                                <label class="button" name="" for="upload"></label>
+                                <input id="photo1" title="" type="file" {color: transparent}>
+                            </div>
+                        </div>
+                    </th>
+
+                    <th>
+                        <div class="container">
+                            <div class="button-wrap">
+                                <label class="button" name="" for="upload"></label>
+                                <input id="photo2" title="" type="file" {color: transparent}>
+                            </div>
+                        </div>
+                    </th>
+
+                    <th>
+                        <div class="container">
+                            <div class="button-wrap">
+                                <label class="button" name="" for="upload"></label>
+                                <input id="photo3" title="" type="file" {color: transparent}>
+                            </div>
+                        </div>
+                    </th>
+
+                    <th>
+                        <div class="container">
+                            <div class="button-wrap">
+                                <label class="button" name="" for="upload"></label>
+                                <input id="photo4" title="" type="file" {color: transparent}>
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <div class="container">
+                            <div class="button-wrap">
+                                <label class="button" name="" for="upload"></label>
+                                <input id="photo5" title="" type="file" {color: transparent}>
+                            </div>
+                        </div>
+                    </th>
+
+                    <th>
+                        <div class="container">
+                            <div class="button-wrap">
+                                <label class="button" name="" for="upload"></label>
+                                <input id="photo6" title="" type="file" {color: transparent}>
+                            </div>
+                        </div>
+                    </th>
+
+                    <th>
+                        <div class="container">
+                            <div class="button-wrap">
+                                <label class="button" name="" for="upload"></label>
+                                <input id="photo7" title="" type="file" {color: transparent}>
+                            </div>
+                        </div>
+                    </th>
+
+                    <th>
+                        <div class="container">
+                            <div class="button-wrap">
+                                <label class="button" name="" for="upload"></label>
+                                <input id="photo8" title="" type="file" {color: transparent}>
+                            </div>
+                        </div>
+                    </th>
+
+                    <th>
+                        <div class="container">
+                            <div class="button-wrap">
+                                <label class="button" name="" for="upload"></label>
+                                <input id="upload" title="" type="file" {color: transparent}>
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+            </table>
+
+            <div class="form-group">
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <input type="button" value="Home" color="00ffff" class="btn btn-primary" onclick="location.href = '@Url.Action("Index", "Home" )'" />
+    <input type="button" value="Next" class="btn btn-primary" onclick="location.href = '@Url.Action("SelectCategory", "Items" )'" />
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

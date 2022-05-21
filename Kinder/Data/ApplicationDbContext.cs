@@ -14,9 +14,14 @@ namespace kinder_app.Data
         {
         }
         public DbSet<kinder_app.Models.Item> Item { get; set; }
+        public DbSet<kinder_app.Models.FurnitureItem> FurnitureItem { get; set; }
+        public DbSet<kinder_app.Models.ElectronicsItem> ElectronicsItem { get; set; }
+        public DbSet<kinder_app.Models.ClothingItem> ClothingItem { get; set; }
+
+        //public DbSet<kinder_app.Models.Photo> Photo { get; set; }
 
         public DbSet<kinder_app.Models.LikedItems> LikedItems { get; set; }
-        
+
         public DbSet<kinder_app.Models.ApplicationUser> ApplicationUsers { get; set; }
 
         public DbSet<kinder_app.Models.Message> Messages { get; set; }

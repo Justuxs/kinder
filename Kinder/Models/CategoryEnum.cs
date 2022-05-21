@@ -6,11 +6,9 @@ namespace kinder_app.Models
     {
         [Display(Name = "Furniture")]
         Furniture,
-        [Display(Name = "Transport")]
-        Transport,
-        [Display(Name = "Technology")]
-        Technology,
-        [Display(Name = "Education")]
-        Education
+        [Display(Name = "Clothing")]
+        Clothing,
+        [Display(Name = "Electronics")]
+        Electronics
     }
 }

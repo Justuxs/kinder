@@ -1,62 +1,154 @@
-﻿@model IEnumerable<kinder_app.Models.ItemDTO>
+﻿@using Newtonsoft.Json
+@using Microsoft.CodeAnalysis.CSharp.Syntax
+@model IEnumerable<kinder_app.Models.ItemDTO>
 
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>Your items</h1>
+<h1 style="margin-bottom: 50px">Your items</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+
+<table>
+    <tr style="border-bottom: none">
+        <td style="width:662px">
+            <div class="form-group">
+                <label class="control-label"></label>
+                <select asp-items="Html.GetEnumSelectList<FilterEnum>()"></select>
+                <span class="text-danger"></span>
+            </div>
+        </td>
+    </tr>
+
+</table>
+
 <table class="table">
 
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.ID)
-            </th>
-            <th>
+            <td>
                 @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Description)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.KarmaPoints)
-            </th>
-            <th></th>
-        </tr>
+            </td>
+            <td>
+                <a>Visibility</a>
+            </td>
+            <td>
+                @Html.DisplayNameFor(model => model.Points)
+            </td>
+            <td>
+            </td>
     </thead>
     <tbody>
         @foreach (var item in Model)
         {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.ID)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.KarmaPoints)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
-            </td>
-        </tr>
+            if (item.Cat == null || item.Cat.Equals("Furniture")) // || item.Cat == null
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+
+                    <td>
+                        @if (@Html.DisplayFor(modelItem => item.State).ToString() == "true")
+                        {
+                            <a>Public</a>
+                        }
+                        else
+                        {
+                            <a>Private</a>
+                        }
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Points)
+                    </td>
+                    <td>
+                        <a asp-action="FurnitureEdit" asp-route-id="@item.ID">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+                    </td>
+                    <td align="center">
+                        @Html.CheckBoxFor(modelItem => item.NSFW)
+                    </td>
+                </tr>
+
+            }
+            else if (item.Cat.Equals("Electronics"))
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @if (@Html.DisplayFor(modelItem => item.State).ToString() == "true")
+                        {
+                            <a>Public</a>
+                        }
+                        else
+                        {
+                            <a>Private</a>
+                        }
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Points)
+                    </td>
+                    <td>
+                        <a asp-action="ElectronicsEdit" asp-route-id="@item.ID">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+                    </td>
+                    <td align="center">
+                        @Html.CheckBoxFor(modelItem => item.NSFW)
+                    </td>
+                </tr>
+            }
+            else if (item.Cat.Equals("Clothing"))
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @if (@Html.DisplayFor(modelItem => item.State).ToString() == "true")
+                        {
+                            <a>Public</a>
+                        }
+                        else
+                        {
+                            <a>Private</a>
+                        }
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Points)
+                    </td>
+                    <td>
+                        <a asp-action="ClothingEdit" asp-route-id="@item.ID">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+                    </td>
+                    <td align="center">
+                        @Html.CheckBoxFor(modelItem => item.NSFW)
+                    </td>
+                </tr>
+            }
         }
-        <tr>            
+        <tr>
             <td></td>
             <td></td>
-            <td style="text-align: right"><i>Total karma posted: </i></td>
-            <td><i>@TempData["sum"]</i></td>
-            <td></td>            
+            <td></td>
+            <td></td>
+            <td align="center" style="border-bottom: none">
+                <a asp-action="FurnitureEdit">Delete</a> |
+                <a asp-action="Details">Make Private</a> |
+                <a asp-action="Delete">Make Public</a>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
 
     </tbody>

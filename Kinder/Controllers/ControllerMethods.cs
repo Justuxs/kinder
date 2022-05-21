@@ -75,7 +75,7 @@ namespace kinder_app.Controllers
 
             RemoveAllLiked(item, context);
 
-            user.Karma_points += item.KarmaPoints;
+            user.Karma_points += item.Points;
 
             context.Item.Remove(item);
             context.SaveChanges();
