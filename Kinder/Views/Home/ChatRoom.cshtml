@@ -6,6 +6,7 @@
 <head>
     <link rel="stylesheet" href="~/css/Chat.css" />
     <link rel="stylesheet" href="~/css/Alert.css" />
+    <link rel="stylesheet" href="~/css/EffectButton.css" />
 </head>
 <body>
     <div id="dialog">
@@ -72,6 +73,10 @@
             </button>
         </form>
     </section>
+    <div>
+        <button class="btn draw-border" id='Confirm' onclick="ConfirmClicked()">Confirm</button>
+        <p style="color: #58afd1" id="cancelText"></p>
+    </div>
 </body>
 
 
@@ -191,7 +196,6 @@
 
 
     function SendMessage() {
-        document.getElementById("demo").innerHTML = document.getElementById("textas").value;
         var message = document.getElementById("textas").value;
         if (message.length > 0 && ChatStatus.localeCompare("Active") == 0) {
 
@@ -200,8 +204,17 @@
                 return console.error(err.toString());
             });
 
-            document.getElementById("demo").innerHTML = "issiustas";
-            document.getElementById("textas").value = "";
+        }
+    }
+    function SendCommand(cmd) {
+        
+        if (ChatStatus.localeCompare("Active") == 0) {
+
+            connection.invoke("SendCommand", Writer, Reader, ChatName, cmd).catch(function (err) {
+                document.getElementById("demo").innerHTML = err.toString();
+                return console.error(err.toString());
+            });
+
         }
     }
     function Aprove() {
@@ -211,6 +224,7 @@
         }).done(function () {
             var element = document.getElementById("dialog");
             element.style.display = "none";
+            SendCommand("Aprove");
         });
     };
 
@@ -224,7 +238,20 @@
         });
 
     }
+    function ConfirmClicked() {
+        var elem = document.getElementById("Confirm");
+        if (elem.innerHTML == "Confirm") {
+            document.getElementById("cancelText").innerHTML = "waiting for another person to approve";
+            elem.innerHTML = "Cancel";
+            SendCommand("Confirm");
+        }
+        else {
+            elem.innerHTML = "Confirm";
+            document.getElementById("cancelText").innerHTML = "";
+            SendCommand("Cancel");
 
+        }
+    }
 
 
 

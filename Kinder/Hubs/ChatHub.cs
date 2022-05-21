@@ -35,5 +35,26 @@ namespace Chat.Hubs
             await Clients.All.SendAsync("ReceiveMessage", username, username2, chatname, text, message.Date.ToString());
             
         }
+        public async Task SendCommand(string username, string username2, string chatname, string text)
+        {
+
+            Console.WriteLine("gAVAU comanda " + username + " m " + username2 + " " + chatname + " " + text);
+            if (text.Equals("Confirm"))
+            {
+                text = "System: " + username + " confirms.";
+            }
+            else if (text.Equals("Cancel"))
+            {
+                text = "System: " + username + " cancels.";
+            }
+            else if (text.Equals("Aprove"))
+            {
+                text = "System: " + username + " aproves chathub. You can chat now.";
+            }
+            else return;
+            Message message = new Message(username, username2, text, chatname);
+            ControllerMethods.SaveMessage(message, _db);
+            await Clients.All.SendAsync("ReceiveMessage", username, username2, chatname, text, message.Date.ToString());
+        }
     }
 }

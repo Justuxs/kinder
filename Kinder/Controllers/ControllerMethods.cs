@@ -200,11 +200,14 @@ namespace kinder_app.Controllers
         public static void RemoveOldChatHubs(string userN, ApplicationDbContext context)
         {
             DateTime date = DateTime.Now;
-            List<ChatHub> Oldchats = context.ChatHubs.Where(x => (x.ReceiverID.Equals(userN) || x.SenderID.Equals(userN)) && x.Status != "Pending" && (date - x.Date).TotalDays>ApplicationDbContext.DaysPendingCHat).ToList();
+            List<ChatHub> Oldchats = context.ChatHubs.Where(x => (x.ReceiverID.Equals(userN) || x.SenderID.Equals(userN)) && x.Status != "Pending").ToList();
             if (Oldchats.Count == 0) return;
             foreach(var chat in Oldchats)
             {
-                context.Remove(chat);
+                if((date - chat.Date).TotalDays > ApplicationDbContext.DaysPendingCHat)
+                {
+                    context.Remove(chat);
+                }
             }
             context.SaveChanges();
         }

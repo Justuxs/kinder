@@ -1,0 +1,206 @@
+2022-05-21 10:34:58.400 +03:00 [INF] User jonass requested / (status: 200)
+2022-05-21 10:35:11.302 +03:00 [INF] User jonass requested /Identity/Account/Manage (status: 200)
+2022-05-21 10:35:14.515 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-21 10:35:14.515 +03:00 [INF] Arguments: jonass| DB requested| 
+2022-05-21 10:35:14.609 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-21 10:35:14.623 +03:00 [INF] User jonass requested /ChatExplorer (status: 200)
+2022-05-21 10:35:15.496 +03:00 [INF] User jonass requested /Home/ChatSetRoom (status: 200)
+2022-05-21 10:35:15.512 +03:00 [INF] Calling "GetChatRoom" method
+2022-05-21 10:35:15.512 +03:00 [INF] Arguments: jonass| jonas-Gele-jonass| DB requested| 
+2022-05-21 10:35:15.573 +03:00 [INF] Return: kinder_app.Models.ChatRoom| 
+2022-05-21 10:35:15.589 +03:00 [INF] User jonass requested /Home/ChatRoom (status: 200)
+2022-05-21 10:35:15.622 +03:00 [INF] User null requested /css/Chat.css (status: 304)
+2022-05-21 10:35:15.622 +03:00 [INF] User null requested /js/signalr/dist/browser/signalr.js (status: 304)
+2022-05-21 10:35:15.622 +03:00 [INF] User null requested /css/Alert.css (status: 304)
+2022-05-21 10:35:15.632 +03:00 [INF] User null requested /css/EffectButton.css (status: 200)
+2022-05-21 10:35:15.702 +03:00 [INF] User jonass requested /chatHub/negotiate (status: 200)
+2022-05-21 10:36:16.964 +03:00 [INF] Calling "SaveMessage" method
+2022-05-21 10:36:16.964 +03:00 [INF] Arguments: kinder_app.Models.Message| DB requested| 
+2022-05-21 10:36:17.116 +03:00 [INF] Return: void return| 
+2022-05-21 10:36:21.120 +03:00 [INF] User jonass requested /chatHub (status: 101)
+2022-05-21 10:37:59.683 +03:00 [INF] Calling "GetChatRoom" method
+2022-05-21 10:37:59.715 +03:00 [INF] Arguments: jonass| DB requested| 
+2022-05-21 10:37:59.880 +03:00 [INF] User jonass requested / (status: 200)
+2022-05-21 10:38:02.125 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-21 10:38:02.125 +03:00 [INF] Arguments: jonass| DB requested| 
+2022-05-21 10:38:02.412 +03:00 [INF] Return: null |
+2022-05-21 10:38:02.414 +03:00 [INF] User jonass requested /Home/ChatRoom (status: 302)
+2022-05-21 10:38:02.426 +03:00 [INF] User jonass requested / (status: 200)
+2022-05-21 10:38:02.429 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-21 10:38:02.452 +03:00 [INF] User jonass requested /ChatExplorer (status: 200)
+2022-05-21 10:38:03.594 +03:00 [INF] User jonass requested /Home/ChatSetRoom (status: 200)
+2022-05-21 10:38:03.608 +03:00 [INF] Calling "GetChatRoom" method
+2022-05-21 10:38:03.608 +03:00 [INF] Arguments: jonass| jonas-Ratas-jonass| DB requested| 
+2022-05-21 10:38:03.621 +03:00 [INF] Return: kinder_app.Models.ChatRoom| 
+2022-05-21 10:38:03.631 +03:00 [INF] User jonass requested /Home/ChatRoom (status: 200)
+2022-05-21 10:38:03.665 +03:00 [INF] User null requested /css/EffectButton.css (status: 304)
+2022-05-21 10:38:03.737 +03:00 [INF] User jonass requested /chatHub/negotiate (status: 200)
+2022-05-21 10:42:09.005 +03:00 [INF] Calling "GetChatRoom" method
+2022-05-21 10:42:09.030 +03:00 [INF] Arguments: jonass| DB requested| 
+2022-05-21 10:42:09.152 +03:00 [INF] User jonass requested / (status: 200)
+2022-05-21 10:42:11.181 +03:00 [INF] Return: null |
+2022-05-21 10:42:11.185 +03:00 [INF] User jonass requested /Home/ChatRoom (status: 302)
+2022-05-21 10:42:11.227 +03:00 [INF] User jonass requested / (status: 200)
+2022-05-21 10:42:11.234 +03:00 [INF] User jonass requested / (status: 200)
+2022-05-21 10:42:17.821 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-21 10:42:17.821 +03:00 [INF] Arguments: jonass| DB requested| 
+2022-05-21 10:42:17.925 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-21 10:42:17.941 +03:00 [INF] User jonass requested /ChatExplorer (status: 200)
+2022-05-21 10:42:19.321 +03:00 [INF] User jonass requested /Home/ChatSetRoom (status: 200)
+2022-05-21 10:42:19.335 +03:00 [INF] Calling "GetChatRoom" method
+2022-05-21 10:42:19.335 +03:00 [INF] Arguments: jonass| jonas-Gele-jonass| DB requested| 
+2022-05-21 10:42:19.350 +03:00 [INF] Return: kinder_app.Models.ChatRoom| 
+2022-05-21 10:42:19.360 +03:00 [INF] User jonass requested /Home/ChatRoom (status: 200)
+2022-05-21 10:42:19.390 +03:00 [INF] User null requested /css/EffectButton.css (status: 304)
+2022-05-21 10:42:19.451 +03:00 [INF] User jonass requested /chatHub/negotiate (status: 200)
+2022-05-21 10:42:26.955 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-21 10:42:26.955 +03:00 [INF] Arguments: jonass| DB requested| 
+2022-05-21 10:42:26.960 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-21 10:42:26.963 +03:00 [INF] User jonass requested /ChatExplorer (status: 200)
+2022-05-21 10:42:26.981 +03:00 [INF] User jonass requested /chatHub (status: 101)
+2022-05-21 10:46:34.374 +03:00 [INF] Calling "GetChatRoom" method
+2022-05-21 10:46:34.397 +03:00 [INF] Arguments: jonass| DB requested| 
+2022-05-21 10:46:34.528 +03:00 [INF] User jonass requested / (status: 200)
+2022-05-21 10:46:35.749 +03:00 [INF] Return: null |
+2022-05-21 10:46:35.750 +03:00 [INF] User jonass requested /Home/ChatRoom (status: 302)
+2022-05-21 10:46:35.768 +03:00 [INF] User jonass requested / (status: 200)
+2022-05-21 10:46:36.177 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-21 10:46:36.178 +03:00 [INF] Arguments: jonass| DB requested| 
+2022-05-21 10:46:36.354 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-21 10:46:36.381 +03:00 [INF] User jonass requested /ChatExplorer (status: 200)
+2022-05-21 10:46:36.490 +03:00 [INF] User jonass requested / (status: 200)
+2022-05-21 10:46:39.285 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-21 10:46:39.285 +03:00 [INF] Arguments: jonass| DB requested| 
+2022-05-21 10:46:39.299 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-21 10:46:39.303 +03:00 [INF] User jonass requested /ChatExplorer (status: 200)
+2022-05-21 10:46:40.484 +03:00 [INF] User jonass requested /Home/ChatSetRoom (status: 200)
+2022-05-21 10:46:40.499 +03:00 [INF] Calling "GetChatRoom" method
+2022-05-21 10:46:40.499 +03:00 [INF] Arguments: jonass| jonas-Gele-jonass| DB requested| 
+2022-05-21 10:46:40.505 +03:00 [INF] Return: kinder_app.Models.ChatRoom| 
+2022-05-21 10:46:40.517 +03:00 [INF] User jonass requested /Home/ChatRoom (status: 200)
+2022-05-21 10:46:40.556 +03:00 [INF] User null requested /css/EffectButton.css (status: 304)
+2022-05-21 10:46:40.627 +03:00 [INF] User jonass requested /chatHub/negotiate (status: 200)
+2022-05-21 10:46:50.783 +03:00 [INF] User jonass requested /chatHub (status: 101)
+2022-05-21 10:47:18.696 +03:00 [INF] Calling "GetChatRoom" method
+2022-05-21 10:47:18.733 +03:00 [INF] Arguments: jonass| DB requested| 
+2022-05-21 10:47:18.902 +03:00 [INF] User jonass requested / (status: 200)
+2022-05-21 10:47:20.429 +03:00 [INF] Return: null |
+2022-05-21 10:47:20.431 +03:00 [INF] User jonass requested /Home/ChatRoom (status: 302)
+2022-05-21 10:47:20.465 +03:00 [INF] User jonass requested / (status: 200)
+2022-05-21 10:47:20.683 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-21 10:47:20.683 +03:00 [INF] Arguments: jonass| DB requested| 
+2022-05-21 10:47:20.733 +03:00 [INF] User jonass requested / (status: 200)
+2022-05-21 10:47:20.818 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-21 10:47:20.843 +03:00 [INF] User jonass requested /ChatExplorer (status: 200)
+2022-05-21 10:47:21.180 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-21 10:47:21.180 +03:00 [INF] Arguments: jonass| DB requested| 
+2022-05-21 10:47:21.192 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-21 10:47:21.195 +03:00 [INF] User jonass requested /ChatExplorer (status: 200)
+2022-05-21 10:47:21.765 +03:00 [INF] User jonass requested /Home/ChatSetRoom (status: 200)
+2022-05-21 10:47:21.778 +03:00 [INF] Calling "GetChatRoom" method
+2022-05-21 10:47:21.778 +03:00 [INF] Arguments: jonass| jonas-Ratas-jonass| DB requested| 
+2022-05-21 10:47:21.783 +03:00 [INF] Return: kinder_app.Models.ChatRoom| 
+2022-05-21 10:47:21.793 +03:00 [INF] User jonass requested /Home/ChatRoom (status: 200)
+2022-05-21 10:47:21.876 +03:00 [INF] User jonass requested /chatHub/negotiate (status: 200)
+2022-05-21 10:47:27.717 +03:00 [INF] User jonass requested /chatHub (status: 101)
+2022-05-21 10:47:46.824 +03:00 [INF] Calling "GetChatRoom" method
+2022-05-21 10:47:46.861 +03:00 [INF] Arguments: jonass| DB requested| 
+2022-05-21 10:47:46.996 +03:00 [INF] User jonass requested / (status: 200)
+2022-05-21 10:47:48.770 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-21 10:47:48.770 +03:00 [INF] Arguments: jonass| DB requested| 
+2022-05-21 10:47:49.013 +03:00 [INF] Return: null |
+2022-05-21 10:47:49.015 +03:00 [INF] User jonass requested /Home/ChatRoom (status: 302)
+2022-05-21 10:47:49.025 +03:00 [INF] User jonass requested / (status: 200)
+2022-05-21 10:47:49.030 +03:00 [INF] User jonass requested / (status: 200)
+2022-05-21 10:47:49.031 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-21 10:47:49.049 +03:00 [INF] User jonass requested /ChatExplorer (status: 200)
+2022-05-21 10:47:49.522 +03:00 [INF] User jonass requested / (status: 200)
+2022-05-21 10:47:49.931 +03:00 [INF] User jonass requested /Home/ChatSetRoom (status: 200)
+2022-05-21 10:47:49.944 +03:00 [INF] Calling "GetChatRoom" method
+2022-05-21 10:47:49.944 +03:00 [INF] Arguments: jonass| jonas-Ratas-jonass| DB requested| 
+2022-05-21 10:47:49.956 +03:00 [INF] Return: kinder_app.Models.ChatRoom| 
+2022-05-21 10:47:49.983 +03:00 [INF] User jonass requested /Home/ChatRoom (status: 200)
+2022-05-21 10:47:50.064 +03:00 [INF] User jonass requested /chatHub/negotiate (status: 200)
+2022-05-21 10:48:07.270 +03:00 [INF] User jonass requested /chatHub (status: 101)
+2022-05-21 10:48:17.007 +03:00 [INF] Calling "GetChatRoom" method
+2022-05-21 10:48:17.034 +03:00 [INF] Arguments: jonass| DB requested| 
+2022-05-21 10:48:17.152 +03:00 [INF] User jonass requested / (status: 200)
+2022-05-21 10:48:18.350 +03:00 [INF] Return: null |
+2022-05-21 10:48:18.351 +03:00 [INF] User jonass requested /Home/ChatRoom (status: 302)
+2022-05-21 10:48:18.366 +03:00 [INF] User jonass requested / (status: 200)
+2022-05-21 10:48:19.077 +03:00 [INF] User jonass requested / (status: 200)
+2022-05-21 10:48:19.910 +03:00 [INF] User jonass requested / (status: 200)
+2022-05-21 10:49:07.531 +03:00 [INF] User jonass requested / (status: 200)
+2022-05-21 10:49:07.573 +03:00 [INF] User jonass requested / (status: 200)
+2022-05-21 10:49:08.737 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-21 10:49:08.737 +03:00 [INF] Arguments: jonass| DB requested| 
+2022-05-21 10:49:09.328 +03:00 [INF] User jonass requested / (status: 200)
+2022-05-21 10:49:09.732 +03:00 [INF] User jonass requested / (status: 200)
+2022-05-21 10:49:09.987 +03:00 [INF] User jonass requested / (status: 200)
+2022-05-21 10:49:10.698 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-21 10:49:10.712 +03:00 [INF] User jonass requested /ChatExplorer (status: 200)
+2022-05-21 10:49:11.751 +03:00 [INF] User jonass requested /Home/ChatSetRoom (status: 200)
+2022-05-21 10:49:11.766 +03:00 [INF] Calling "GetChatRoom" method
+2022-05-21 10:49:11.767 +03:00 [INF] Arguments: jonass| jonas-Gele-jonass| DB requested| 
+2022-05-21 10:49:11.817 +03:00 [INF] Return: kinder_app.Models.ChatRoom| 
+2022-05-21 10:49:11.827 +03:00 [INF] User jonass requested /Home/ChatRoom (status: 200)
+2022-05-21 10:49:11.858 +03:00 [INF] User null requested /css/EffectButton.css (status: 304)
+2022-05-21 10:49:11.909 +03:00 [INF] User jonass requested /chatHub/negotiate (status: 200)
+2022-05-21 10:49:16.572 +03:00 [INF] User jonass requested /chatHub (status: 101)
+2022-05-21 10:54:23.623 +03:00 [INF] Calling "GetChatRoom" method
+2022-05-21 10:54:23.652 +03:00 [INF] Arguments: jonass| DB requested| 
+2022-05-21 10:54:23.778 +03:00 [INF] User jonass requested / (status: 200)
+2022-05-21 10:54:25.624 +03:00 [INF] User jonass requested / (status: 200)
+2022-05-21 10:54:27.769 +03:00 [INF] Return: null |
+2022-05-21 10:54:27.770 +03:00 [INF] User jonass requested /Home/ChatRoom (status: 302)
+2022-05-21 10:54:27.775 +03:00 [INF] User jonass requested / (status: 200)
+2022-05-21 10:54:27.778 +03:00 [INF] User jonass requested / (status: 200)
+2022-05-21 10:54:27.782 +03:00 [INF] User jonass requested / (status: 200)
+2022-05-21 10:54:28.918 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-21 10:54:28.918 +03:00 [INF] Arguments: jonass| DB requested| 
+2022-05-21 10:54:29.006 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-21 10:54:29.020 +03:00 [INF] User jonass requested /ChatExplorer (status: 200)
+2022-05-21 10:54:29.889 +03:00 [INF] User jonass requested /Home/ChatSetRoom (status: 200)
+2022-05-21 10:54:29.905 +03:00 [INF] Calling "GetChatRoom" method
+2022-05-21 10:54:29.905 +03:00 [INF] Arguments: jonass| jonas-Gele-jonass| DB requested| 
+2022-05-21 10:54:29.917 +03:00 [INF] Return: kinder_app.Models.ChatRoom| 
+2022-05-21 10:54:29.928 +03:00 [INF] User jonass requested /Home/ChatRoom (status: 200)
+2022-05-21 10:54:29.961 +03:00 [INF] User null requested /css/EffectButton.css (status: 304)
+2022-05-21 10:54:30.016 +03:00 [INF] User jonass requested /chatHub/negotiate (status: 200)
+2022-05-21 10:54:31.455 +03:00 [INF] Calling "SaveMessage" method
+2022-05-21 10:54:31.455 +03:00 [INF] Arguments: kinder_app.Models.Message| DB requested| 
+2022-05-21 10:54:31.555 +03:00 [INF] Return: void return| 
+2022-05-21 10:54:35.541 +03:00 [INF] Calling "SaveMessage" method
+2022-05-21 10:54:35.541 +03:00 [INF] Arguments: kinder_app.Models.Message| DB requested| 
+2022-05-21 10:54:35.545 +03:00 [INF] Return: void return| 
+2022-05-21 10:54:42.136 +03:00 [INF] User jonass requested /chatHub (status: 101)
+2022-05-21 10:58:32.242 +03:00 [INF] Calling "GetChatRoom" method
+2022-05-21 10:58:32.269 +03:00 [INF] Arguments: jonass| DB requested| 
+2022-05-21 10:58:32.382 +03:00 [INF] User jonass requested / (status: 200)
+2022-05-21 10:58:34.020 +03:00 [INF] User jonass requested / (status: 200)
+2022-05-21 10:58:34.229 +03:00 [INF] Return: null |
+2022-05-21 10:58:34.230 +03:00 [INF] User jonass requested /Home/ChatRoom (status: 302)
+2022-05-21 10:58:34.242 +03:00 [INF] User jonass requested / (status: 200)
+2022-05-21 10:58:34.511 +03:00 [INF] User jonass requested / (status: 200)
+2022-05-21 10:58:34.561 +03:00 [INF] User jonass requested / (status: 200)
+2022-05-21 10:58:36.642 +03:00 [INF] Calling "GetUsersChatHub" method
+2022-05-21 10:58:36.642 +03:00 [INF] Arguments: jonass| DB requested| 
+2022-05-21 10:58:36.743 +03:00 [INF] Return: System.Collections.Generic.List`1[kinder_app.Models.ChatHub]| 
+2022-05-21 10:58:36.761 +03:00 [INF] User jonass requested /ChatExplorer (status: 200)
+2022-05-21 10:58:37.675 +03:00 [INF] User jonass requested /Home/ChatSetRoom (status: 200)
+2022-05-21 10:58:37.686 +03:00 [INF] Calling "GetChatRoom" method
+2022-05-21 10:58:37.686 +03:00 [INF] Arguments: jonass| jonas-Gele-jonass| DB requested| 
+2022-05-21 10:58:37.699 +03:00 [INF] Return: kinder_app.Models.ChatRoom| 
+2022-05-21 10:58:37.708 +03:00 [INF] User jonass requested /Home/ChatRoom (status: 200)
+2022-05-21 10:58:37.742 +03:00 [INF] User null requested /css/EffectButton.css (status: 304)
+2022-05-21 10:58:37.796 +03:00 [INF] User jonass requested /chatHub/negotiate (status: 200)
+2022-05-21 10:58:39.537 +03:00 [INF] Calling "SaveMessage" method
+2022-05-21 10:58:39.537 +03:00 [INF] Arguments: kinder_app.Models.Message| DB requested| 
+2022-05-21 10:58:39.644 +03:00 [INF] Return: void return| 
+2022-05-21 10:58:42.410 +03:00 [INF] Calling "SaveMessage" method
+2022-05-21 10:58:42.410 +03:00 [INF] Arguments: kinder_app.Models.Message| DB requested| 
+2022-05-21 10:58:42.416 +03:00 [INF] Return: void return| 
+2022-05-21 10:58:44.037 +03:00 [INF] Calling "SaveMessage" method
+2022-05-21 10:58:44.037 +03:00 [INF] Arguments: kinder_app.Models.Message| DB requested| 
+2022-05-21 10:58:44.041 +03:00 [INF] Return: void return| 
+2022-05-21 10:58:45.595 +03:00 [INF] User jonass requested /chatHub (status: 101)
