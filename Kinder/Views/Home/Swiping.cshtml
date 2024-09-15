@@ -1,6 +1,6 @@
 ﻿<div class="text-center">
 
-    <h1 class="display-4">Swiping</h1>
+    <h1 class="display-4">Item</h1>
 
     <p><b>Item name:</b> @TempData["name"]</p>
 
@@ -15,11 +15,13 @@
     <p><b>Date of purchase:</b> @TempData["date"]</p>
 
     <p><b>Karma Points:</b> @TempData["karma"]</p>
+    <p><b>User id:</b> @TempData["UserID"]</p>
 
     <form>
         <button type="submit" name="button" value="Next" asp-action="LoadNext" class="btn btn-primary">Next</button>
         <button type="submit" name="button" value="Like" asp-action="LikeThis" class="btn btn-primary">Like</button>
-    </form>
+        <button type="submit" name="button" value="@TempData["UserID"]" asp-action="Chat" class="btn btn-primary" hidden>Chat</button> 
+        </form>
 
     <p></p>
 

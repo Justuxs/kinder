@@ -17,5 +17,14 @@ namespace kinder_app.Models
 
             return currentUser.FindFirst(ClaimTypes.NameIdentifier).Value;
         }
+        public static string GetUserName(this ClaimsPrincipal user)
+        {
+            if (!user.Identity.IsAuthenticated)
+                return null;
+
+            ClaimsPrincipal currentUser = user;
+
+            return currentUser.FindFirst(ClaimTypes.Name).Value;
+        }
     }
 }

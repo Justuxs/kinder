@@ -1,0 +1,38 @@
+﻿@model kinder_app.Models.Item
+
+@{
+    ViewData["Title"] = "SelectCategory";
+}
+
+<h1>Select Category</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="SelectCategory">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            @*<select asp-for="Category" class="form-control" asp-items="Html.GetEnumSelectList<CategoryEnum>()"></select>*@
+
+            <div class="form-group">
+
+                <input type="button" value="Furniture" class="btn btn-primary" onclick="location.href = '@Url.Action("FurnitureDesc", "Items" )'" />
+                <input type="button" value="Electronics" class="btn btn-primary" onclick="location.href = '@Url.Action("ElectronicsDesc", "Items" )'" />
+                <input type="button" value="Clothing" class="btn btn-primary" onclick="location.href = '@Url.Action("ClothingDesc", "Items" )'" />
+
+            </div>
+
+
+        </form>
+    </div>
+</div>
+
+<div>
+
+    <input type="button" value="Back" class="btn btn-primary" onclick="location.href = '@Url.Action("UploadPhotos", "Items" )'" />
+
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

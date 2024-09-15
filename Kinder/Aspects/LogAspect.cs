@@ -23,9 +23,10 @@ namespace kinder_app.Aspects
             Log.Information("Calling \"{name}\" method", name);
 
             string argumentsStr = "";
-            foreach(var arg in args)
+            foreach (var arg in args)
             {
-                Type type = arg.GetType();                 
+                if (arg != null) { 
+                    Type type = arg.GetType();                 
 
                 if (typeof(List<ItemDTO>) == type)
                 {
@@ -92,6 +93,7 @@ namespace kinder_app.Aspects
                         
                     }                    
                 }
+            }
             }
 
             Log.Information("Arguments: {args}", argumentsStr);
